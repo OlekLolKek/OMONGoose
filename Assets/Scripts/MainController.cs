@@ -10,7 +10,7 @@ namespace OMONGoose
 
         [SerializeField] private PlayerData _player;
 
-       // private List<IUpdateble> _iUpdatebles = new List<IUpdateble>();
+        private List<IUpdatable> _iUpdatebles = new List<IUpdatable>();
 
         #endregion
 
@@ -19,16 +19,28 @@ namespace OMONGoose
 
         private void Start()
         {
-          //  new InitializeController(this, _player);
+            new InitializeController(this, _player);
         }
 
         private void Update()
         {
-            
+            for (int i = 0; i < _iUpdatebles.Count; i++)
+            {
+                _iUpdatebles[i].UpdateTick();
+            }
         }
 
         #endregion
 
+
+        #region Methods
+
+        public void AddUpdatable(IUpdatable iUpdatable)
+        {
+            _iUpdatebles.Add(iUpdatable);
+        }
+
+        #endregion
     }
 }
 
