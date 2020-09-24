@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2d110bd0c19b14e81b6e8ad0099c45, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  Struct: {fileID: 5299876527874885771, guid: 460228a74f8c59442b47612b7fcf3cf6, type: 3}
+  playerStruct:
+    PlayerPrefab: {fileID: 147799674140951904, guid: 460228a74f8c59442b47612b7fcf3cf6,
+      type: 3}
+    StartPosition: {x: 5, y: 0, z: -5}
+    PlayerSpeed: 5
+    Sensitivity: 100

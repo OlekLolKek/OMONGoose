@@ -10,5 +10,6 @@ namespace OMONGoose
         public GameObject PlayerPrefab;
         public Vector3 StartPosition;
         public float PlayerSpeed;
+        public float Sensitivity;
     }
 }

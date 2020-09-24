@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-
-
-namespace OMONGoose
+﻿namespace OMONGoose
 {
     public sealed class InputInitializator
     {

@@ -7,12 +7,10 @@ namespace OMONGoose
     {
         public PlayerInitializator(MainController mainController, PlayerData playerData)
         {
-            var spawnedPlayer = Object.Instantiate(playerData.playerStruct.PlayerPrefab, 
-                playerData.playerStruct.StartPosition, 
-                Quaternion.identity);
+            var player = GameObject.FindGameObjectWithTag("Player");
 
             var playerStruct = playerData.playerStruct;
-            playerStruct.PlayerPrefab = spawnedPlayer;
+            playerStruct.PlayerPrefab = player;
 
             var cubeModel = new PlayerModel(playerStruct);
             mainController.AddUpdatable(new PlayerController(cubeModel));
