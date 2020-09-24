@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace OMONGoose
+﻿namespace OMONGoose
 {
     public sealed class PlayerModel
     {
-        public PlayerStruct playerStruct;
-    }
+        public PlayerStruct PlayerStruct;
 
+        public PlayerModel(PlayerStruct playerStruct)
+        {
+            PlayerStruct = playerStruct;
+        }
+    }
 }

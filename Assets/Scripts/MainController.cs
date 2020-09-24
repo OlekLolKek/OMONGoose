@@ -38,6 +38,7 @@ namespace OMONGoose
         public void AddUpdatable(IUpdatable iUpdatable)
         {
             _iUpdatebles.Add(iUpdatable);
+            ServiceLocator.SetService(iUpdatable);
         }
 
         #endregion

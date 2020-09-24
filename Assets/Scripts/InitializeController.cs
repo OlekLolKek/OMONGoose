@@ -5,6 +5,7 @@
         public InitializeController(MainController mainController, PlayerData playerData)
         {
             new PlayerInitializator(mainController, playerData);
+            new InputInitializator(mainController);
         }
     }
 }

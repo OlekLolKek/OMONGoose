@@ -5,7 +5,7 @@ using System;
 namespace OMONGoose
 {
     [Serializable]
-    public class PlayerStruct : MonoBehaviour
+    public struct PlayerStruct
     {
         public GameObject PlayerPrefab;
         public Vector3 StartPosition;
