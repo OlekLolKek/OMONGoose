@@ -22,10 +22,10 @@ namespace OMONGoose
 
         public void UpdateTick()
         {
-            Horizontal = Input.GetAxis("Horizontal");
-            Vertical = Input.GetAxis("Vertical");
-            MouseX = Input.GetAxis("Mouse X");
-            MouseY = Input.GetAxis("Mouse Y");
+            Horizontal = Input.GetAxisRaw("Horizontal");
+            Vertical = Input.GetAxisRaw("Vertical");
+            MouseX = Input.GetAxisRaw("Mouse X");
+            MouseY = Input.GetAxisRaw("Mouse Y");
 
             CheckQuit();
         }
