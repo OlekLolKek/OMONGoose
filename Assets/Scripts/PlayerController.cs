@@ -22,8 +22,8 @@ namespace OMONGoose
         public PlayerController(PlayerModel playermodel)
         {
             _playerModel = playermodel;
-            _rigidbody = _playerModel.PlayerStruct.PlayerPrefab.GetComponent<Rigidbody>();
-            _transform = _playerModel.PlayerStruct.PlayerPrefab.GetComponent<Transform>();
+            _rigidbody = _playerModel.PlayerStruct.Player.GetComponent<Rigidbody>();
+            _transform = _playerModel.PlayerStruct.Player.transform;
             _cameraTransform = Camera.main.transform;
             _inputController = ServiceLocator.Resolve<InputController>();
 
@@ -49,7 +49,7 @@ namespace OMONGoose
 
         private void Move()
         {
-            Vector3 move = _transform.right * _inputController.Horizontal + _transform.forward * _inputController.Vertical;
+            Vector3 move = (_transform.right * _inputController.Horizontal + _transform.forward * _inputController.Vertical).normalized;
             _rigidbody.velocity = move * _playerModel.PlayerStruct.PlayerSpeed;
         }
 

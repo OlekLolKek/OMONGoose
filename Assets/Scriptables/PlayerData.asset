@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   playerStruct:
-    PlayerPrefab: {fileID: 147799674140951904, guid: 460228a74f8c59442b47612b7fcf3cf6,
-      type: 3}
-    StartPosition: {x: 5, y: 0, z: -5}
-    PlayerSpeed: 5
+    Player: {fileID: 0}
+    PlayerSpeed: 7.5
     Sensitivity: 100

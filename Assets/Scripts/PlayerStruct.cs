@@ -7,8 +7,7 @@ namespace OMONGoose
     [Serializable]
     public struct PlayerStruct
     {
-        public GameObject PlayerPrefab;
-        public Vector3 StartPosition;
+        public GameObject Player;
         public float PlayerSpeed;
         public float Sensitivity;
     }

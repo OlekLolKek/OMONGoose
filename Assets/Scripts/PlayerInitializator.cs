@@ -10,10 +10,10 @@ namespace OMONGoose
             var player = GameObject.FindGameObjectWithTag("Player");
 
             var playerStruct = playerData.playerStruct;
-            playerStruct.PlayerPrefab = player;
+            playerStruct.Player = player;
 
-            var cubeModel = new PlayerModel(playerStruct);
-            mainController.AddUpdatable(new PlayerController(cubeModel));
+            var playerModel = new PlayerModel(playerStruct);
+            mainController.AddUpdatable(new PlayerController(playerModel));
         }
     }
 }
