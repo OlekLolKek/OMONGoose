@@ -13,7 +13,7 @@ namespace OMONGoose
         public float MouseX;
         public float MouseY;
 
-        private KeyCode _quit;
+        private KeyCode _quit = KeyCode.Escape;
 
         #endregion
 
