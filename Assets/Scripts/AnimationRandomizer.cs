@@ -9,6 +9,7 @@ public class AnimationRandomizer : MonoBehaviour
     private Animator _animator;
     private float _direction;
     private float _speed;
+    private int _counter;
 
     #endregion
 
@@ -24,7 +25,10 @@ public class AnimationRandomizer : MonoBehaviour
 
     private void Update()
     {
-        StartCoroutine(nameof(ChangeParameters));
+        if (Time.frameCount % 300 == 0)
+        {
+            StartCoroutine(nameof(ChangeParameters));
+        }
     }
 
     #endregion
@@ -34,13 +38,18 @@ public class AnimationRandomizer : MonoBehaviour
 
     private IEnumerator ChangeParameters()
     {
-        for(; ; )
+        var newDir = Random.Range(-1.0f, 1.0f);
+        var newSpeed = Random.Range(0.0f, 2.0f);
+
+        while (!Mathf.Approximately(_direction, newDir) || !Mathf.Approximately(_speed, newSpeed))
         {
-            _direction = Random.Range(-1.0f, 1.0f);
-            _speed = Random.Range(0.0f, 2.0f);
+            _direction = Mathf.Lerp(_direction, newDir, 0.1f);
+            _speed = Mathf.Lerp(_speed, newSpeed, 0.1f);
             _animator.SetFloat("Direction", _direction);
             _animator.SetFloat("Speed", _speed);
-            yield return new WaitForSeconds(5);
+            print("Скорость " + _speed);
+            print("Направление " + _direction);
+            yield return 0;
         }
     }
 

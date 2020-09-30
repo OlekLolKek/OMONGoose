@@ -13,7 +13,18 @@ namespace OMONGoose
         public float MouseX;
         public float MouseY;
 
+        private PlayerController _playerController;
         private KeyCode _quit = KeyCode.Escape;
+
+        #endregion
+
+
+        #region ClassLifeCycles
+
+        public InputController()
+        {
+            _playerController = ServiceLocator.Resolve<PlayerController>();
+        }
 
         #endregion
 
@@ -26,6 +37,9 @@ namespace OMONGoose
             Vertical = Input.GetAxisRaw("Vertical");
             MouseX = Input.GetAxisRaw("Mouse X");
             MouseY = Input.GetAxisRaw("Mouse Y");
+
+            _playerController.Move(Horizontal, Vertical);
+            _playerController.Look(MouseX, MouseY);
 
             CheckQuit();
         }
