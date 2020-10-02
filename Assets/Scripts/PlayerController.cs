@@ -36,7 +36,7 @@ namespace OMONGoose
 
         public void UpdateTick()
         {
-            
+
         }
 
         public void Look(float mouseX, float mouseY)

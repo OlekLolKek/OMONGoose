@@ -47,8 +47,6 @@ public class AnimationRandomizer : MonoBehaviour
             _speed = Mathf.Lerp(_speed, newSpeed, 0.1f);
             _animator.SetFloat("Direction", _direction);
             _animator.SetFloat("Speed", _speed);
-            print("Скорость " + _speed);
-            print("Направление " + _direction);
             yield return 0;
         }
     }
