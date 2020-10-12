@@ -13,7 +13,6 @@ namespace OMONGoose
         public float MouseX;
         public float MouseY;
 
-        private PlayerData _playerData;
         private PlayerController _playerController;
         private KeyCode _quit = KeyCode.Escape;
 

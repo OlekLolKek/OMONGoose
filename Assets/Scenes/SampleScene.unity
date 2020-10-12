@@ -6156,25 +6156,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 963194227, guid: 460228a74f8c59442b47612b7fcf3cf6, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 963194227, guid: 460228a74f8c59442b47612b7fcf3cf6, type: 3}
-      propertyPath: m_RenderingPath
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 147799674140951904, guid: 460228a74f8c59442b47612b7fcf3cf6,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 147799674140951905, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1,
-        type: 2}
     - target: {fileID: 147799674140951908, guid: 460228a74f8c59442b47612b7fcf3cf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6229,66 +6215,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 808210272377411927, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 808210272377411927, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2527336837468305270, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2527336837468305270, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6600902596486626633, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6600902596486626633, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608335562282422292, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 116
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635399530382553136, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7635399530382553136, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7896536807306563849, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: MaxDistance
-      value: 9.817606
-      objectReference: {fileID: 0}
-    - target: {fileID: 7896536807306563849, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: MinDistance
-      value: 1.4036427
-      objectReference: {fileID: 0}
-    - target: {fileID: 7896536807306563849, guid: 460228a74f8c59442b47612b7fcf3cf6,
-        type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460228a74f8c59442b47612b7fcf3cf6, type: 3}
