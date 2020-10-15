@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AudioClips
   m_EditorClassIdentifier: 
   AudioClips:
-    Woosh: {fileID: 8300000, guid: 6a8f251695f754436b1e1089d68baff2, type: 3}
+    Woosh: {fileID: 8300000, guid: dbe0df64a7554b74da9dee5de75e3b71, type: 3}
     WooshShort: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
-    Tick: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+    Tick: {fileID: 8300000, guid: 4cdd073ea795daf40b45d058d1a98c53, type: 3}
     TickLoud: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
-    Pop: {fileID: 8300000, guid: 6d93223e9ce2b4954969d5d541c1189f, type: 3}
+    Pop: {fileID: 8300000, guid: 4cdd073ea795daf40b45d058d1a98c53, type: 3}
