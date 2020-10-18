@@ -2,10 +2,10 @@
 {
     public sealed class InitializeController
     {
-        public InitializeController(MainController mainController, PlayerData playerData)
+        public InitializeController(MainController mainController, PlayerData playerData, InputData inputData, UILinks links)
         {
-            new PlayerInitializator(mainController, playerData);
-            new InputInitializator(mainController);
+            new PlayerInitializator(mainController, playerData, links);
+            new InputInitializator(mainController, inputData, links);
         }
     }
 }

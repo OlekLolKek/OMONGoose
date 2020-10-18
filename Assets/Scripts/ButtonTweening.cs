@@ -24,7 +24,7 @@ namespace OMONGoose
 
         #region UnityMethods
 
-        private void Start()
+        private void Awake()
         {
             _thisButton = GetComponent<Button>();
             _audioSource = GetComponent<AudioSource>();
@@ -58,7 +58,6 @@ namespace OMONGoose
         {
             if (!_thisButton.interactable) return;
             LeanTween.scale(gameObject, _tweeningScale, _tweeningTime);
-
         }
 
         #endregion

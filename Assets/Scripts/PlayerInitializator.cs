@@ -5,7 +5,7 @@ namespace OMONGoose
 {
     public sealed class PlayerInitializator
     {
-        public PlayerInitializator(MainController mainController, PlayerData playerData)
+        public PlayerInitializator(MainController mainController, PlayerData playerData, UILinks links)
         {
             var player = GameObject.FindGameObjectWithTag("Player");
 
@@ -13,7 +13,7 @@ namespace OMONGoose
             playerStruct.Player = player;
 
             var playerModel = new PlayerModel(playerStruct);
-            mainController.AddUpdatable(new PlayerController(playerModel));
+            mainController.AddUpdatable(new PlayerController(playerModel, links));
         }
     }
 }

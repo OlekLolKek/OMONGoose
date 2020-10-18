@@ -9,7 +9,9 @@ namespace OMONGoose
         #region Fields
 
         [SerializeField] private PlayerData _player;
+        [SerializeField] private InputData _input;
 
+        private UILinks _links;
         private List<IUpdatable> _iUpdatebles = new List<IUpdatable>();
 
         #endregion
@@ -19,7 +21,8 @@ namespace OMONGoose
 
         private void Start()
         {
-            new InitializeController(this, _player);
+            _links = new UILinks();
+            new InitializeController(this, _player, _input, _links);
         }
 
         private void Update()

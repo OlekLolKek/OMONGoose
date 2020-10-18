@@ -14,15 +14,22 @@ namespace OMONGoose
         public float MouseY;
 
         private PlayerController _playerController;
-        private KeyCode _quit = KeyCode.Escape;
+        private InputStruct _inputStruct;
+        private UILinks _links;
+        private KeyCode _interact;
+        private KeyCode _quit;
 
         #endregion
 
 
         #region ClassLifeCycles
 
-        public InputController()
+        public InputController(InputModel inputModel, UILinks links)
         {
+            _links = links;
+            _inputStruct = inputModel.InputStruct;
+            _quit = _inputStruct.Quit;
+            _interact = _inputStruct.Interact;
             _playerController = ServiceLocator.Resolve<PlayerController>();
         }
 
@@ -42,6 +49,15 @@ namespace OMONGoose
             _playerController.Look(MouseX, MouseY);
 
             CheckQuit();
+            CheckInteract();
+        }
+
+        private void CheckInteract()
+        {
+            if (Input.GetKeyDown(_interact))
+            {
+                _playerController.UseTask();
+            }
         }
 
         private void CheckQuit()

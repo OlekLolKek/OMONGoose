@@ -2,9 +2,11 @@
 {
     public sealed class InputInitializator
     {
-        public InputInitializator(MainController mainController)
+        public InputInitializator(MainController mainController, InputData inputData, UILinks _links)
         {
-            mainController.AddUpdatable(new InputController());
+            var inputModel = new InputModel(inputData.inputStruct);
+
+            mainController.AddUpdatable(new InputController(inputModel, _links));
         }
     }
 }
