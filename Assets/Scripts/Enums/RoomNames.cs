@@ -7,7 +7,7 @@
         O2,
         Navigation,
         Shields,
-        Communications,
+        Comms,
         Storage,
         Admin,
         Electrical,

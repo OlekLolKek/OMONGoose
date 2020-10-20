@@ -20,25 +20,16 @@ namespace OMONGoose
 
         #region Methods
 
-        protected override void Awake()
+        public override void Initialize(TaskController taskController)
         {
-            base.Awake();
-            _thisRoomText.text = "";
+            base.Initialize(taskController);
             _maxProgress = 100.0f;
         }
 
         public override void SetName(RoomNames roomName)
         {
             base.SetName(roomName);
-            switch (RoomName)
-            {
-                case RoomNames.Weapons:
-                    _thisRoomText.text = "Weapons";
-                    break;
-                case RoomNames.Cafeteria:
-                    _thisRoomText.text = "Cafeteria";
-                    break;
-            }
+            _thisRoomText.text = $"{roomName}";
         }
 
         public void OnDownloadButtonPressed()
@@ -58,9 +49,10 @@ namespace OMONGoose
                 _progressBar.fillAmount = _progress / _maxProgress;
                 yield return 0;
             }
-            yield return new WaitForSeconds(0.75f);
-            _progressBar.gameObject.SetActive(false);
             IsDone = true;
+            Completed();
+            yield return new WaitForSeconds(0.75f);
+            LeanTween.scale(_progressBar.gameObject, Vector3.zero, 0.1f);
         }
 
         #endregion
