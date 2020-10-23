@@ -23,15 +23,11 @@ namespace OMONGoose
 
         #region Methods
 
-        public virtual void Initialize(TaskController taskController)
+        public virtual void Initialize(TaskController taskController, RoomNames roomName)
         {
             _taskController = taskController;
             IsActive = true;
             LeanTween.scale(gameObject, _normalSize, _tweenTime);
-        }
-
-        public virtual void SetName(RoomNames roomName)
-        {
             RoomName = roomName;
         }
 
@@ -44,6 +40,7 @@ namespace OMONGoose
 
         protected virtual void Completed()
         {
+            IsDone = true;
             ServiceLocator.Resolve<TaskController>().CompleteTask();
         }
 

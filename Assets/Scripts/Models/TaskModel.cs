@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public class TaskModel : MonoBehaviour
+    public sealed class TaskModel
     {
         public TaskStruct TaskStruct;
 

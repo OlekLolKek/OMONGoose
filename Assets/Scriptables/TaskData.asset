@@ -15,3 +15,7 @@ MonoBehaviour:
   TaskStruct:
     TaskbarPrefab: {fileID: 841050341629364664, guid: 78444a5653b2e2b43b3aa169ddf8b3cf,
       type: 3}
+    DownloadPanelPrefab: {fileID: 4085472771529766934, guid: 3c3f54969068a1d4084e49166ad76156,
+      type: 3}
+    GarbagePanelPrefab: {fileID: 827385541451062887, guid: 40207d1ddfd75e04b93c55efc4d61323,
+      type: 3}

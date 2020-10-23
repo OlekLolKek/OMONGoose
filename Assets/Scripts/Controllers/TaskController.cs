@@ -41,7 +41,7 @@ namespace OMONGoose
         {
             foreach (var taskObject in _tasks)
             {
-                taskObject.Initialize(this, _context.Canvas);
+                taskObject.Initialize(this, _context.Canvas, _taskModel);
             }
             _taskbar.Initialize(_tasks.Length);
         }

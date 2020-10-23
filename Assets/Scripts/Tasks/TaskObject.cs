@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 namespace OMONGoose
@@ -7,15 +8,16 @@ namespace OMONGoose
     public sealed class TaskObject : MonoBehaviour
     {
         #region Fields
-
-        public TaskTypes Type;
-        public BaseTask TaskPanel;
+        
         public bool IsDone = false;
 
-        [SerializeField] private RoomNames RoomName;
-        [SerializeField] private GameObject _panelPrefab;
+        [SerializeField] private RoomNames _roomName; 
+        [SerializeField] private TaskTypes _type;
 
         private TaskController _taskController;
+        private GameObject _panelPrefab;
+        private TaskModel _taskModel;
+        private BaseTask _taskPanel;
         private Canvas _canvas;
 
         #endregion
@@ -23,27 +25,36 @@ namespace OMONGoose
 
         #region Methods
 
-        public void Initialize(TaskController taskController, Canvas canvas)
+        public void Initialize(TaskController taskController, Canvas canvas, TaskModel taskModel)
         {
             _canvas = canvas;
             _taskController = taskController;
+            _taskModel = taskModel;
+            switch (_type)
+            {
+                case TaskTypes.Upload:
+                    _panelPrefab = _taskModel.TaskStruct.DownloadPanelPrefab;
+                    break;
+                case TaskTypes.Garbage:
+                    _panelPrefab = _taskModel.TaskStruct.GarbagePanelPrefab;
+                    break;
+            }
         }
 
         public void Switch()
         {
-            if (!TaskPanel)
+            if (!_taskPanel)
             {
-                TaskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
-                TaskPanel.Initialize(_taskController);
-                TaskPanel.SetName(RoomName);
+                _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
+                _taskPanel.Initialize(_taskController, _roomName);
             }
             else
             {
-                if (TaskPanel.IsDone)
+                if (_taskPanel.IsDone)
                 {
                     IsDone = true;
                 }
-                TaskPanel.Deactivate();
+                _taskPanel.Deactivate();
             }
         }
 

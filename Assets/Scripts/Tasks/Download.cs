@@ -11,7 +11,9 @@ namespace OMONGoose
 
         [SerializeField] private Button _downloadButton;
         [SerializeField] private Image _progressBar;
+        [SerializeField] private Image _arrow;
         [SerializeField] private Text _thisRoomText;
+        [SerializeField] private Text _buttonText;
 
         private float _downloadSpeed = 15.0f;
 
@@ -20,16 +22,22 @@ namespace OMONGoose
 
         #region Methods
 
-        public override void Initialize(TaskController taskController)
+        public override void Initialize(TaskController taskController, RoomNames roomName)
         {
-            base.Initialize(taskController);
+            base.Initialize(taskController, roomName);
             _maxProgress = 100.0f;
-        }
-
-        public override void SetName(RoomNames roomName)
-        {
-            base.SetName(roomName);
-            _thisRoomText.text = $"{roomName}";
+            var random = new System.Random();
+            int arrowRotation = random.Next(2);
+            if (arrowRotation == 1)
+            {
+                _arrow.transform.Rotate(transform.forward, 180.0f);
+                _buttonText.text = "Upload";
+                _thisRoomText.text = "HQ";
+            }
+            else
+            {
+                _thisRoomText.text = $"{roomName}";
+            }
         }
 
         public void OnDownloadButtonPressed()
@@ -49,7 +57,6 @@ namespace OMONGoose
                 _progressBar.fillAmount = _progress / _maxProgress;
                 yield return 0;
             }
-            IsDone = true;
             Completed();
             yield return new WaitForSeconds(0.75f);
             LeanTween.scale(_progressBar.gameObject, Vector3.zero, 0.1f);
