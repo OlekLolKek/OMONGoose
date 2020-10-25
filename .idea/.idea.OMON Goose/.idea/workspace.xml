@@ -20,20 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/InputData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/InputData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/PlayerData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitializator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitializator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitializator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitializator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SliderTweening.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SliderTweening.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/DownloadArrow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/DownloadArrow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/GarbageHandle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/GarbageHandle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/Taskbar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/Taskbar.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/TaskbarBorder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/TaskbarBorder.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +53,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TaskStruct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImageTweening.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SliderTweening.cs" />
@@ -73,6 +60,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InputData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
       </list>
     </option>
   </component>
@@ -149,7 +139,7 @@
       <workItem from="1603563958659" duration="363000" />
       <workItem from="1603568802402" duration="1870000" />
       <workItem from="1603632057760" duration="6000" />
-      <workItem from="1603634885992" duration="920000" />
+      <workItem from="1603634885992" duration="1450000" />
     </task>
     <servers />
   </component>

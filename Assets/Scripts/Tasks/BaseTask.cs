@@ -11,8 +11,7 @@ namespace OMONGoose
         public TaskTypes Type;
         public bool IsActive = false;
         public bool IsDone = false;
-
-        protected TaskController _taskController;
+        
         protected Vector3 _normalSize = new Vector3(1.0f, 1.0f, 1.0f);
         protected float _tweenTime = 0.2f;
         protected float _progress = 0.0f;
@@ -23,9 +22,8 @@ namespace OMONGoose
 
         #region Methods
 
-        public virtual void Initialize(TaskController taskController, RoomNames roomName)
+        public virtual void Initialize(RoomNames roomName)
         {
-            _taskController = taskController;
             IsActive = true;
             LeanTween.scale(gameObject, _normalSize, _tweenTime);
             RoomName = roomName;
@@ -38,7 +36,7 @@ namespace OMONGoose
             Destroy(gameObject, _tweenTime);
         }
 
-        protected virtual void Completed()
+        protected void Completed()
         {
             IsDone = true;
             ServiceLocator.Resolve<TaskController>().CompleteTask();

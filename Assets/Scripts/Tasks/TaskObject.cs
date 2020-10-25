@@ -46,7 +46,7 @@ namespace OMONGoose
             if (!_taskPanel)
             {
                 _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
-                _taskPanel.Initialize(_taskController, _roomName);
+                _taskPanel.Initialize(_roomName);
             }
             else
             {
