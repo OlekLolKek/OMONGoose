@@ -38,6 +38,9 @@ namespace OMONGoose
                 case TaskTypes.Garbage:
                     _panelPrefab = _taskModel.TaskStruct.GarbagePanelPrefab;
                     break;
+                case TaskTypes.Wires:
+                    _panelPrefab = _taskModel.TaskStruct.WiresPanelPrefab;
+                    break;
             }
         }
 
@@ -46,7 +49,7 @@ namespace OMONGoose
             if (!_taskPanel)
             {
                 _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
-                _taskPanel.Initialize(_roomName);
+                _taskPanel.Initialize(_taskController, _roomName);
             }
             else
             {

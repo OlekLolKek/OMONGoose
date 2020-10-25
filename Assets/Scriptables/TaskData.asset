@@ -19,3 +19,5 @@ MonoBehaviour:
       type: 3}
     GarbagePanelPrefab: {fileID: 827385541451062887, guid: 40207d1ddfd75e04b93c55efc4d61323,
       type: 3}
+    WiresPanelPrefab: {fileID: 2728656060377711005, guid: 50013678814ca0042a17a54e8254f30b,
+      type: 3}

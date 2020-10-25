@@ -79,9 +79,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AudioClips.cs" t="Include" />
-          <e p="AudioClipsSO.cs" t="Include" />
-          <e p="ButtonTweening.cs" t="Include" />
           <e p="Controllers" t="Include">
             <e p="InitializeController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
@@ -89,6 +86,12 @@
             <e p="MainMenuController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="TaskController.cs" t="Include" />
+          </e>
+          <e p="DataStructs" t="Include">
+            <e p="AudioClips.cs" t="Include" />
+            <e p="InputStruct.cs" t="Include" />
+            <e p="PlayerStruct.cs" t="Include" />
+            <e p="TaskStruct.cs" t="Include" />
           </e>
           <e p="Enums" t="Include">
             <e p="MainMenuStates.cs" t="Include" />
@@ -102,29 +105,34 @@
             <e p="PlayerInitializator.cs" t="Include" />
             <e p="TaskInitializator.cs" t="Include" />
           </e>
-          <e p="InputData.cs" t="Include" />
-          <e p="InputStruct.cs" t="Include" />
           <e p="IUpdatable.cs" t="Include" />
           <e p="Models" t="Include">
             <e p="InputModel.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
             <e p="TaskModel.cs" t="Include" />
           </e>
-          <e p="PlayerData.cs" t="Include" />
-          <e p="PlayerStruct.cs" t="Include" />
           <e p="PostProcessing.cs" t="Include" />
+          <e p="Scriptables" t="Include">
+            <e p="AudioClipsSO.cs" t="Include" />
+            <e p="InputData.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+            <e p="TaskData.cs" t="Include" />
+          </e>
           <e p="ServiceLocators" t="Include">
             <e p="ServiceLocator.cs" t="Include" />
           </e>
-          <e p="SliderTweening.cs" t="Include" />
-          <e p="TaskData.cs" t="Include" />
           <e p="Tasks" t="Include">
             <e p="BaseTask.cs" t="Include" />
             <e p="Download.cs" t="Include" />
             <e p="Garbage.cs" t="Include" />
             <e p="TaskObject.cs" t="Include" />
+            <e p="WiresTask.cs" t="Include" />
           </e>
-          <e p="TaskStruct.cs" t="Include" />
+          <e p="Tweening" t="Include">
+            <e p="ButtonTweening.cs" t="Include" />
+            <e p="SliderTweening.cs" t="Include" />
+            <e p="WireTweening.cs" t="Include" />
+          </e>
           <e p="Views" t="Include">
             <e p="AsteroidsTaskView.cs" t="Include" />
             <e p="CrosshairView.cs" t="Include" />

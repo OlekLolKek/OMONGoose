@@ -10,5 +10,6 @@ namespace OMONGoose
         public GameObject TaskbarPrefab;
         public GameObject DownloadPanelPrefab;
         public GameObject GarbagePanelPrefab;
+        public GameObject WiresPanelPrefab;
     }
 }
