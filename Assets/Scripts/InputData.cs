@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 
 namespace OMONGoose
@@ -6,6 +7,6 @@ namespace OMONGoose
     [CreateAssetMenu(fileName = "InputData", menuName = "Data/Input")]
     public sealed class InputData : ScriptableObject
     {
-        public InputStruct inputStruct;
+        public InputStruct InputStruct;
     }
 }

@@ -9,7 +9,7 @@ namespace OMONGoose
         {
             var player = GameObject.FindGameObjectWithTag("Player");
 
-            var playerStruct = playerData.playerStruct;
+            var playerStruct = playerData.PlayerStruct;
             playerStruct.Player = player;
 
             var playerModel = new PlayerModel(playerStruct);

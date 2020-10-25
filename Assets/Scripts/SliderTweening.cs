@@ -11,10 +11,9 @@ namespace OMONGoose
 
         [SerializeField] private AudioClipsSO _audioClips;
         private AudioSource _audioSource;
-        private Vector3 _tweeningScale = new Vector3(1.05f, 1.05f, 1.05f);
-        private Vector3 _defaultScale = new Vector3(1.0f, 1.0f, 1.0f);
+        private readonly Vector3 _tweeningScale = new Vector3(1.05f, 1.05f, 1.05f);
+        private readonly Vector3 _defaultScale = new Vector3(1.0f, 1.0f, 1.0f);
         private Slider _parentSlider;
-        private float _defaultAngle = 0.0f;
         private float _tweeningTime = 0.05f;
 
         #endregion
@@ -45,6 +44,7 @@ namespace OMONGoose
 
         public void OnPointerExit(PointerEventData eventData)
         {
+            if (!_parentSlider.interactable) return;
             LeanTween.scale(gameObject, _defaultScale, _tweeningTime);
         }
 
@@ -58,6 +58,7 @@ namespace OMONGoose
 
         public void OnPointerUp(PointerEventData eventData)
         {
+            if (!_parentSlider.interactable) return;
             LeanTween.scale(gameObject, _tweeningScale, _tweeningTime);
         }
 

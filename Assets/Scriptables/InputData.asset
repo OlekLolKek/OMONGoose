@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4952de9ce63c4a4391e56c5c3e793fd, type: 3}
   m_Name: InputData
   m_EditorClassIdentifier: 
-  inputStruct:
+  InputStruct:
     Interact: 101
     Quit: 27

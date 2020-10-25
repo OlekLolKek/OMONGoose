@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OMONGoose.AudioClipsSO">
+    <Position X="20" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\AudioClipsSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AudioClips" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.ButtonTweening" BaseTypeListCollapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAAAAAAAIAAAAAAAAEEAAAIAgAAEAgAAABQAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ButtonTweening.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_audioClips" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OMONGoose.InitializeController">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\InitializeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.InputController" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAACAAABABAAEAERAAAAAIAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\InputController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_inputStruct" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OMONGoose.MainController">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAABAAAAEAAAAAAQEAAAAAAgAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Controllers\MainController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_inputData" />
+      <Field Name="_playerData" />
+      <Field Name="_taskData" />
+      <Field Name="_links" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.MainMenuController">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BASAAAAQABAAAQQIqABBCAAAAACEAAACEQEEACCGBAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\MainMenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.PlayerController" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIQAggAAIAQAECABTAAAAAAAAABQAAAJCAAADAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\PlayerController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_links" />
+      <Field Name="_playerModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="OMONGoose.TaskController">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgSAAAAAAAABQkAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\TaskController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_taskModel" />
+      <Field Name="_tasks" />
+      <Field Name="_taskbar" />
+      <Field Name="_mainController" />
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.FootstepEvent">
+    <Position X="20" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\FootstepEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.GameContext">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAIAAACIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.InputInitializator" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Initializators\InputInitializator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.PlayerInitializator" Collapsed="true">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Initializators\PlayerInitializator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.TaskInitializator" Collapsed="true">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Initializators\TaskInitializator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.InputData">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\InputData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="InputStruct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.InputModel">
+    <Position X="12.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\Models\InputModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="InputStruct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.PlayerModel">
+    <Position X="12.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Models\PlayerModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PlayerStruct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.TaskModel">
+    <Position X="12.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Models\TaskModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TaskStruct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.PlayerData">
+    <Position X="14.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PlayerStruct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.ServiceLocator">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ServiceLocators\ServiceLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.SliderTweening" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAAAAAAAIAAAAAABAEAAAAIAgAAAAgAAABQAAAEA=</HashCode>
+      <FileName>Assets\Scripts\SliderTweening.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_audioClips" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OMONGoose.TaskData">
+    <Position X="17.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TaskData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TaskStruct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.BaseTask">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAAAABAAQYAEAAAAAAAIAAAAAAAEQAAABBAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tasks\BaseTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.Download">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAQAAAAAAAAJQAAAAAAAQAAIAAAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\Tasks\Download.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.Garbage">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAIAAAAAAAAAAACAAAAAAAAAAAAAIAAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Tasks\Garbage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.TaskObject">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAYQAAQAAAgAAAAEAgAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Scripts\Tasks\TaskObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_taskPanel" />
+      <Field Name="_type" />
+      <Field Name="_roomName" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMONGoose.CrosshairView">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIACAAAAIACAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\Views\CrosshairView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMONGoose.TaskbarView">
+    <Position X="10.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAQAIAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Views\TaskbarView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PostProcessing" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PostProcessing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.ScriptableObject" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="OMONGoose.AudioClips">
+    <Position X="20" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAACAAAAgBAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\AudioClips.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OMONGoose.InputStruct">
+    <Position X="16" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\InputStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OMONGoose.PlayerStruct">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAABAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OMONGoose.TaskStruct">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\TaskStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="OMONGoose.IUpdatable">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\IUpdatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="OMONGoose.MainMenuStates">
+    <Position X="4.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enums\MainMenuStates.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OMONGoose.RoomNames">
+    <Position X="4.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAQgABAAgAEAQAAAGAAAAQhA=</HashCode>
+      <FileName>Assets\Scripts\Enums\RoomNames.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OMONGoose.TaskTypes">
+    <Position X="4.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAgAAAAAAABBAkAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enums\TaskTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

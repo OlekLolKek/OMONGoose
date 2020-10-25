@@ -20,68 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-10_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-10_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-10_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-10_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-11_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-11_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-11_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-11_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-11_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-11_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-12_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-12_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-12_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-12_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-13_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-13_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-13_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-13_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-13_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-13_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-14_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-14_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-14_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-14_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-15_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-15_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-15_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-15_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-16_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-16_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-16_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-16_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-16_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-16_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-17_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-17_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-17_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-17_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-18_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-18_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-18_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-18_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-19_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-19_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-19_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-19_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-1_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-1_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-2_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-2_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-3_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-3_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-4_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-4_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-4_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-4_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-5_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-5_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-5_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-5_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-6_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-6_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-6_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-6_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-7_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-7_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-7_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-7_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-7_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-7_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-8_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-8_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-8_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-8_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-9_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-9_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-9_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld/Lightmap-9_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/TaskData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/TaskData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TaskStruct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TaskStruct.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/InputData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/InputData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/PlayerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitializator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitializator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitializator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitializator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SliderTweening.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SliderTweening.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/DownloadArrow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/DownloadArrow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/GarbageHandle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/GarbageHandle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/Taskbar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/Taskbar.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tasks/TaskbarBorder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tasks/TaskbarBorder.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +58,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/TaskInitializator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TaskData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TaskStruct.cs" />
@@ -118,6 +69,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImageTweening.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SliderTweening.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
       </list>
     </option>
   </component>
@@ -188,6 +143,13 @@
       <workItem from="1603398934234" duration="1024000" />
       <workItem from="1603399984211" duration="2244000" />
       <workItem from="1603461239637" duration="17807000" />
+      <workItem from="1603544953693" duration="8137000" />
+      <workItem from="1603562711127" duration="1130000" />
+      <workItem from="1603563892416" duration="27000" />
+      <workItem from="1603563958659" duration="363000" />
+      <workItem from="1603568802402" duration="1870000" />
+      <workItem from="1603632057760" duration="6000" />
+      <workItem from="1603634885992" duration="920000" />
     </task>
     <servers />
   </component>
@@ -206,6 +168,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -215,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="220" key="RiderGenerateDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1603485786879" />
-    <state x="67" y="159" key="SettingsEditor" timestamp="1603477043831">
+    <state x="67" y="159" key="SettingsEditor" timestamp="1603563846868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="67" y="159" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1603477043831" />
+    <state x="67" y="159" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1603563846868" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1603390924333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
