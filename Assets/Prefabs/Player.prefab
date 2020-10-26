@@ -162,11 +162,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147799674140951908}
-  - component: {fileID: 147799674140951905}
-  - component: {fileID: 7608335562282422292}
   - component: {fileID: 2302386291233798361}
   - component: {fileID: 7896536807306563849}
   - component: {fileID: 5629449856989574593}
+  - component: {fileID: 251809068604160926}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -192,36 +191,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &147799674140951905
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147799674140951904}
-  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.69914526
-  m_Height: 2.103238
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!54 &7608335562282422292
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147799674140951904}
-  serializedVersion: 2
-  m_Mass: 60
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!95 &2302386291233798361
 Animator:
   serializedVersion: 3
@@ -349,6 +318,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f46d3431237cc846971e2efbefd69b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!143 &251809068604160926
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147799674140951904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.6
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &808210272377411927
 GameObject:
   m_ObjectHideFlags: 0

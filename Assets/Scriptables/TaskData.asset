@@ -21,3 +21,5 @@ MonoBehaviour:
       type: 3}
     WiresPanelPrefab: {fileID: 2728656060377711005, guid: 50013678814ca0042a17a54e8254f30b,
       type: 3}
+    AsteroidsPanelPrefab: {fileID: 2217291763687555909, guid: 945186e869097a74393b54cf31d922b6,
+      type: 3}

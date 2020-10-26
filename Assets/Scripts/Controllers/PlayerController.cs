@@ -7,13 +7,15 @@ namespace OMONGoose
     {
         #region Fields
 
-        private GameContext _links;
+        private CharacterController _characterController;
         private PlayerModel _playerModel;
-        private Transform _transform;
-        private Transform _cameraTransform;
-        private Rigidbody _rigidbody;
-        private Animator _animator;
         private TaskObject _visibleTask;
+        private TaskObject _activeTask;
+        private Transform _cameraTransform;
+        private Transform _transform;
+        private Animator _animator;
+        private GameContext _links;
+        private Vector3 gravity;
         private string _speedName = "Speed";
         private float _minYRotation = -90.0f;
         private float _maxYRotation = 90.0f;
@@ -29,7 +31,7 @@ namespace OMONGoose
         {
             _links = links;
             _playerModel = playermodel;
-            _rigidbody = _playerModel.PlayerStruct.Player.GetComponent<Rigidbody>();
+            _characterController = _playerModel.PlayerStruct.Player.GetComponent<CharacterController>();
             _animator = _playerModel.PlayerStruct.Player.GetComponent<Animator>();
             _transform = _playerModel.PlayerStruct.Player.transform;
             _cameraTransform = Camera.main.transform;
@@ -69,15 +71,23 @@ namespace OMONGoose
                     if (!_isDoingTask)
                     {
                         _isDoingTask = true;
+                        _activeTask = _visibleTask;
                         UnlockCursor();
-                        Stop();
+                        _animator.SetFloat(_speedName, 0.0f);
                     }
                     else
                     {
                         _isDoingTask = false;
+                        _activeTask = null;
                         LockCursor();
                     }
                 }
+            }
+            else if (_isDoingTask)
+            {
+                _activeTask.Switch();
+                _isDoingTask = false;
+                LockCursor();
             }
         }
 
@@ -88,7 +98,7 @@ namespace OMONGoose
                 _xRotation -= mouseY * _playerModel.PlayerStruct.Sensitivity * Time.deltaTime;
                 _xRotation = Mathf.Clamp(_xRotation, _minYRotation, _maxYRotation);
                 _cameraTransform.localRotation = Quaternion.Euler(_xRotation, 0.0f, 0.0f);
-                _transform.Rotate(Vector3.up * mouseX * _playerModel.PlayerStruct.Sensitivity * Time.deltaTime);
+                _transform.Rotate(Vector3.up * (mouseX * _playerModel.PlayerStruct.Sensitivity * Time.deltaTime));
             }
         }
 
@@ -97,17 +107,20 @@ namespace OMONGoose
             if (_isCursorLocked)
             {
                 Vector3 move = (_transform.right * horizontal + _transform.forward * vertical).normalized;
-                _rigidbody.velocity = move * _playerModel.PlayerStruct.PlayerSpeed;
-                _animator.SetFloat(_speedName, _rigidbody.velocity.magnitude);
+                _characterController.Move(move * (_playerModel.PlayerStruct.PlayerSpeed * Time.deltaTime));
+                _animator.SetFloat(_speedName, _characterController.velocity.magnitude);
+            }
+
+            if (!_characterController.isGrounded)
+            {
+                gravity.y += Physics.gravity.y * Time.deltaTime;
+                _characterController.Move(gravity * Time.deltaTime);
+            }
+            else
+            {
+                gravity.y = -2.0f;
             }
         }
-
-        private void Stop()
-        {
-            _rigidbody.velocity = Vector3.zero;
-            _animator.SetFloat(_speedName, 0.0f);
-        }
-
 
         private void CheckTask()
         {

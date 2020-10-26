@@ -12,7 +12,6 @@ namespace OMONGoose
         [SerializeField] private AudioClipsSO _audioClips;
         private AudioSource _audioSource;
         private Slider _parentSlider;
-        private float _tweeningTime = 0.05f;
 
         #endregion
         

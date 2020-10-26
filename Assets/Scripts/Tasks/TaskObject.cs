@@ -41,6 +41,9 @@ namespace OMONGoose
                 case TaskTypes.Wires:
                     _panelPrefab = _taskModel.TaskStruct.WiresPanelPrefab;
                     break;
+                case TaskTypes.Asteroids:
+                    _panelPrefab = _taskModel.TaskStruct.AsteroidsPanelPrefab;
+                    break;
             }
         }
 
