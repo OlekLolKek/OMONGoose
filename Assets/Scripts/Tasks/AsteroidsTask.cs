@@ -10,7 +10,7 @@ namespace OMONGoose
         #region Fields
 
         [SerializeField] private GameObject _asteroidButtonPrefab;
-        private Image[] _asteroids = new Image[10];
+        private Button[] _asteroids = new Button[10];
 
         #endregion
         
@@ -25,7 +25,7 @@ namespace OMONGoose
             {
                 _asteroids[i] = Instantiate(
                     _asteroidButtonPrefab,
-                    transform).GetComponent<Image>();
+                    transform).GetComponent<Button>();
             }
         }
 
