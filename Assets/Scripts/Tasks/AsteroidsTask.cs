@@ -110,6 +110,7 @@ namespace OMONGoose
         private void DestroyAsteroid(int i)
         {
             _animators[i].SetTrigger("Explosion");
+            _asteroids[i].interactable = false;
             _audioSource.clip = _audioClips.AudioClips.AsteroidExplosion;
             _audioSource.Play();
             StartCoroutine(AsteroidExplosion(i));

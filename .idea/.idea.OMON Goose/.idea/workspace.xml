@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Asteroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Asteroid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AsteroidTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AsteroidTask.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GarbageTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GarbageTask.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WiresTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WiresTask.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/AudioClips.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/AudioClips.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DataStructs/AudioClips.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataStructs/AudioClips.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +156,7 @@
       <workItem from="1603834245852" duration="771000" />
       <workItem from="1604009434386" duration="1456000" />
       <workItem from="1604014421312" duration="2703000" />
-      <workItem from="1604063867850" duration="17884000" />
+      <workItem from="1604063867850" duration="18131000" />
     </task>
     <servers />
   </component>
