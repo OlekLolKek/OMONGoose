@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +154,7 @@
       <workItem from="1603834245852" duration="771000" />
       <workItem from="1604009434386" duration="1456000" />
       <workItem from="1604014421312" duration="2703000" />
-      <workItem from="1604063867850" duration="18131000" />
+      <workItem from="1604063867850" duration="18660000" />
     </task>
     <servers />
   </component>
