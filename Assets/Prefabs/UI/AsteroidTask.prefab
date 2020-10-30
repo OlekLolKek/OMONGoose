@@ -92,3 +92,4 @@ MonoBehaviour:
   IsDone: 0
   _asteroidButtonPrefab: {fileID: 5747747164331569078, guid: 30ec2fa0977de2f44874f991feae2c05,
     type: 3}
+  _clip: {fileID: 7400000, guid: 95626c0f774f0ce4580d80675bd69346, type: 2}

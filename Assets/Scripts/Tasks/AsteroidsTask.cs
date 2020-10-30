@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
@@ -11,8 +12,17 @@ namespace OMONGoose
         #region Fields
 
         [SerializeField] private GameObject _asteroidButtonPrefab;
+        [SerializeField] private AnimationClip _clip;
+        
+        //Как лучше сделать: контролировать все астероиды из этого класса, но создавать 3 списка,
+        // или создать новый MonoBehaviour класс для каждого астероида и контролировать их направление и аниматоры оттуда?
+        // Сейчас все астероиды контролируются из одного класса, но я не уверен, что 3 списка - хорошая идея,
+        // ведь при втором подходе можно было бы просто сделать список астероидов и вовремя вызывать у них тот или иной метод.
+        
         private List<Button> _asteroids = new List<Button>();
         private List<Vector2> _directions = new List<Vector2>();
+        private List<Animator> _animators = new List<Animator>();
+        private Animator _animator;
         private Image _thisImage;
         private Canvas _canvas;
         private Vector2 _sizeDelta;
@@ -91,18 +101,27 @@ namespace OMONGoose
                     Random.Range(0, _asteroidSpeed),
                     Random.Range(0, _asteroidSpeed)).normalized * _asteroidSpeed;
                 _directions.Add(direction * _canvasScaleFactor);
+                var animator = _asteroids[i].GetComponent<Animator>();
+                _animators.Add(animator);
             }
         }
 
         private void DestroyAsteroid(int i)
         {
-            _asteroids[i].GetComponent<Image>().enabled = false;
-            _asteroids[i].enabled = false;
+            _animators[i].SetTrigger("Explosion");
+            StartCoroutine(AsteroidExplosion(i));
             _progress++;
             if (_progress >= _maxProgress)
             {
                 Completed();
             }
+        }
+
+        private IEnumerator AsteroidExplosion(int i)
+        {
+            yield return new WaitForSeconds(_clip.length);
+            _asteroids[i].GetComponent<Image>().enabled = false;
+            _asteroids[i].enabled = false;
         }
 
         public override void Deactivate()
