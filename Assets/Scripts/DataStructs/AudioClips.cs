@@ -10,5 +10,8 @@ namespace OMONGoose
         public AudioClip Woosh;
         public AudioClip Pop;
         public AudioClip WireBuzz;
+        public AudioClip WindowAppear;
+        public AudioClip WindowDisappear;
+        public AudioClip AsteroidExplosion;
     }
 }

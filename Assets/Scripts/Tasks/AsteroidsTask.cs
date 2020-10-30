@@ -74,6 +74,7 @@ namespace OMONGoose
 
             //TODO: Передавать канвас при создании объекта
             _canvas = GetComponentInParent<Canvas>();
+            _audioSource = GetComponent<AudioSource>();
             _sizeDelta = _thisImage.rectTransform.sizeDelta;
             _canvasScaleFactor = _canvas.scaleFactor;
 
@@ -109,6 +110,8 @@ namespace OMONGoose
         private void DestroyAsteroid(int i)
         {
             _animators[i].SetTrigger("Explosion");
+            _audioSource.clip = _audioClips.AudioClips.AsteroidExplosion;
+            _audioSource.Play();
             StartCoroutine(AsteroidExplosion(i));
             _progress++;
             if (_progress >= _maxProgress)

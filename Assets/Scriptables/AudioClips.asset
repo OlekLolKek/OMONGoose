@@ -16,3 +16,6 @@ MonoBehaviour:
     Woosh: {fileID: 8300000, guid: dbe0df64a7554b74da9dee5de75e3b71, type: 3}
     Pop: {fileID: 8300000, guid: 4cdd073ea795daf40b45d058d1a98c53, type: 3}
     WireBuzz: {fileID: 8300000, guid: 103318540ea2c6144af98357c01e95ef, type: 3}
+    WindowAppear: {fileID: 8300000, guid: 04b88b83c7305c34c9ebb0266827d783, type: 3}
+    WindowDisappear: {fileID: 8300000, guid: 1341c93043559644386b563830cabbcb, type: 3}
+    AsteroidExplosion: {fileID: 8300000, guid: 91df237eac8f9d142be8bed8df282f42, type: 3}
