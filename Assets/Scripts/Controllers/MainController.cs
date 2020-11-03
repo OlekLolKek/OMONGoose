@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 namespace OMONGoose
@@ -8,12 +10,14 @@ namespace OMONGoose
     {
         #region Fields
 
-        [SerializeField] private PlayerData _playerData;
-        [SerializeField] private InputData _inputData;
-        [SerializeField] private TaskData _taskData;
+        [SerializeField] private Data _data;
+
+        //TODO: Разобраться, что за canvas и button и нужны ли они тут вообще (в коде есть, в вебинаре на 20:00 нет)
+        [SerializeField] private Transform _canvas;
+        [SerializeField] private Button _button;
 
         private GameContext _links;
-        private List<IUpdatable> _iUpdatebles = new List<IUpdatable>();
+        private Controllers _controllers;
 
         #endregion
 
@@ -22,28 +26,44 @@ namespace OMONGoose
 
         private void Start()
         {
-            _links = new GameContext();
-            var tasksArray = FindObjectsOfType<TaskObject>();
-            new InitializeController(this, _playerData, _inputData, _taskData, tasksArray, _links);
+            Camera camera = Camera.main;
+            var inputInitialization = new InputInitialization(new MobileInputFactory(_canvas, _button));
+            var playerFactory = new PlayerFactory(_data.PlayerData);
+            var playerInitialization = new PlayerInitialization(playerFactory);
+            var taskFactory = new TaskFactory(_data.TaskData);
+            var taskInitialization = new TaskInitialization(taskFactory);
+            _controllers = new Controllers();
+            _controllers.Add(inputInitialization);
+            _controllers.Add(playerInitialization);
+            _controllers.Add(taskInitialization);
+            _controllers.Add(new InputController(inputInitialization.GetInput());
+            _controllers.Add(new MoveController(inputInitialization.GetInput(), playerInitialization.GetPlayer(), _data.Player)));
+            _controllers.Add(new TaskController(taskInitialization.GetTask()));
+            _controllers.Add(new CameraController(playerInitialization.GetPlayer(), camera.transform));
+            _controllers.Initialization();
+            
+
+            //TODO: Убрать старый код, если всё будет работать
+            //_links = new GameContext();
+            //var tasksArray = FindObjectsOfType<TaskObject>();
+            //new InitializeController(this, _playerData, _inputData, _taskData, tasksArray, _links);
         }
 
         private void Update()
         {
-            for (int i = 0; i < _iUpdatebles.Count; i++)
-            {
-                _iUpdatebles[i].UpdateTick();
-            }
+            var deltaTime = Time.deltaTime;
+            _controllers.Execute(deltaTime);
         }
 
-        #endregion
-
-
-        #region Methods
-
-        public void AddUpdatable(IUpdatable iUpdatable)
+        private void LateUpdate()
         {
-            _iUpdatebles.Add(iUpdatable);
-            ServiceLocator.SetService(iUpdatable);
+            var deltaTime = Time.deltaTime;
+            _controllers.LateExecute(deltaTime);
+        }
+
+        private void OnDestroy()
+        {
+            _controllers.Cleanup();
         }
 
         #endregion

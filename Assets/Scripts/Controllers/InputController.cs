@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public sealed class InputController : IUpdatable
+    public sealed class InputController : IExecutable
     {
 
         #region Fields
@@ -15,7 +15,6 @@ namespace OMONGoose
 
         private PlayerController _playerController;
         private InputStruct _inputStruct;
-        private GameContext _links;
         private KeyCode _interact;
         private KeyCode _quit;
 
@@ -24,9 +23,8 @@ namespace OMONGoose
 
         #region ClassLifeCycles
 
-        public InputController(InputModel inputModel, GameContext links)
+        public InputController(InputModel inputModel)
         {
-            _links = links;
             _inputStruct = inputModel.InputStruct;
             _quit = _inputStruct.Quit;
             _interact = _inputStruct.Interact;
@@ -38,7 +36,7 @@ namespace OMONGoose
 
         #region Methods
 
-        public void UpdateTick()
+        public void Execute()
         {
             Horizontal = Input.GetAxisRaw("Horizontal");
             Vertical = Input.GetAxisRaw("Vertical");

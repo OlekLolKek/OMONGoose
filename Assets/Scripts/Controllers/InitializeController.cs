@@ -4,9 +4,9 @@
     {
         public InitializeController(MainController mainController, PlayerData playerData, InputData inputData, TaskData taskData, TaskObject[] tasksArray, GameContext links)
         {
-            new PlayerInitializator(mainController, playerData, links);
-            new InputInitializator(mainController, inputData, links);
-            new TaskInitializator(mainController, taskData, tasksArray, links);
+            new PlayerInitialization(mainController, playerData, links);
+            new InputInitialization(mainController, inputData, links);
+            new TaskInitialization(mainController, taskData, tasksArray, links);
         }
     }
 }

@@ -4,7 +4,7 @@
 namespace OMONGoose
 {
     [CreateAssetMenu(fileName = "AudioClips", menuName = "Data/Audio Clips")]
-    public sealed class AudioClipsSO : ScriptableObject
+    public sealed class AudioClipsData : ScriptableObject
     {
         public AudioClips AudioClips;
     }

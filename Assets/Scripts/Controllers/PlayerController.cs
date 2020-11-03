@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public sealed class PlayerController : IUpdatable
+    public sealed class PlayerController : IExecutable
     {
         #region Fields
 
@@ -56,7 +56,7 @@ namespace OMONGoose
         }
 
 
-        public void UpdateTick()
+        public void Execute()
         {
             CheckTask();
         }

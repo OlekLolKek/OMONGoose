@@ -12,7 +12,7 @@ namespace OMONGoose
         
         [HideInInspector] public bool IsDone = false;
 
-        [SerializeField] protected AudioClipsSO _audioClips;
+        [SerializeField] protected AudioClipsData _audioClips;
         protected TaskController _taskController;
         protected AudioSource _audioSource;
         protected Vector3 _normalSize = new Vector3(1.0f, 1.0f, 1.0f);
