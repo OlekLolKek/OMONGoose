@@ -149,5 +149,10 @@ namespace OMONGoose
         }
 
         #endregion
+
+        public void Execute(float deltaTime)
+        {
+            Debug.Log("Why");
+        }
     }
 }

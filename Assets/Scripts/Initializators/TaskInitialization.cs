@@ -1,13 +1,15 @@
 ﻿namespace OMONGoose
 {
-    internal class TaskInitialization
+    internal class TaskInitialization : IInitializable
     {
-        public TaskInitialization(MainController mainController, TaskData taskData, TaskObject[] tasksArray, GameContext context)
+        public TaskInitialization(TaskFactory taskFactory)
         {
-            var model = new TaskModel(taskData.TaskStruct);
-            var controller = new TaskController(mainController, model, tasksArray, context);
+            
+        }
 
-            ServiceLocator.SetService(controller);
+        public void Initialization()
+        {
+            
         }
     }
 }

@@ -36,10 +36,10 @@ namespace OMONGoose
             _controllers.Add(inputInitialization);
             _controllers.Add(playerInitialization);
             _controllers.Add(taskInitialization);
-            _controllers.Add(new InputController(inputInitialization.GetInput());
-            _controllers.Add(new MoveController(inputInitialization.GetInput(), playerInitialization.GetPlayer(), _data.Player)));
-            _controllers.Add(new TaskController(taskInitialization.GetTask()));
-            _controllers.Add(new CameraController(playerInitialization.GetPlayer(), camera.transform));
+            _controllers.Add(new InputController(inputInitialization.GetInput()));
+            _controllers.Add(new MoveController(inputInitialization.GetInput(), playerInitialization.GetPlayer(), _data.PlayerData));
+            //_controllers.Add(new TaskController(taskInitialization.GetTask()));
+            //_controllers.Add(new CameraController(playerInitialization.GetPlayer(), camera.transform));
             _controllers.Initialization();
             
 

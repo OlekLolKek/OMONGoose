@@ -12,11 +12,11 @@ namespace OMONGoose
             _playerData = playerData;
         }
 
-        public Transform CreatePlayer()
+        public CharacterController CreatePlayer()
         {
             //Так как игрок - не просто кружок, а полноценный персонаж с анимациями, решил заменить постепенное создание на префаб 
-            //Возможно, поменяю позже
-            return Object.Instantiate(_playerData.PlayerStruct.Player).transform;
+            //Возможно, поменяю позже на постепенное формирование игрока
+            return Object.Instantiate(_playerData.PlayerPrefab).GetComponent<CharacterController>();
         }
     }
 }

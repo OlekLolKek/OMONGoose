@@ -9,7 +9,7 @@ namespace OMONGoose
         #region Fields
 
         private readonly IPlayerFactory _playerFactory;
-        private Transform _player;
+        private CharacterController _player;
 
         #endregion
         
@@ -24,7 +24,7 @@ namespace OMONGoose
             
         }
 
-        public Transform GetPlayer()
+        public CharacterController GetPlayer()
         {
             return _player;
         }

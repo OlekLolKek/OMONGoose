@@ -8,27 +8,20 @@ namespace OMONGoose
 
         #region Fields
 
-        public float Horizontal;
-        public float Vertical;
-        public float MouseX;
-        public float MouseY;
-
-        private PlayerController _playerController;
-        private InputStruct _inputStruct;
-        private KeyCode _interact;
-        private KeyCode _quit;
+        private readonly IUserInputProxy _horizontal;
+        private readonly IUserInputProxy _vertical;
+        private readonly IUserInputProxy _mouseX;
+        private readonly IUserInputProxy _mouseY;
 
         #endregion
 
 
         #region ClassLifeCycles
 
-        public InputController(InputModel inputModel)
+        public InputController((IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input)
         {
-            _inputStruct = inputModel.InputStruct;
-            _quit = _inputStruct.Quit;
-            _interact = _inputStruct.Interact;
-            _playerController = ServiceLocator.Resolve<PlayerController>();
+            _horizontal = input.inputHorizontal;
+            _vertical = input.inputVertical;
         }
 
         #endregion
@@ -36,31 +29,12 @@ namespace OMONGoose
 
         #region Methods
 
-        public void Execute()
+        public void Execute(float deltaTime)
         {
-            Horizontal = Input.GetAxisRaw("Horizontal");
-            Vertical = Input.GetAxisRaw("Vertical");
-            MouseX = Input.GetAxisRaw("Mouse X");
-            MouseY = Input.GetAxisRaw("Mouse Y");
-
-            _playerController.Move(Horizontal, Vertical);
-            _playerController.Look(MouseX, MouseY);
-
-            CheckQuit();
-            CheckInteract();
-        }
-
-        private void CheckInteract()
-        {
-            if (Input.GetKeyDown(_interact))
-            {
-                _playerController.UseTask();
-            }
-        }
-
-        private void CheckQuit()
-        {
-            if (Input.GetKeyDown(_quit)) Application.Quit();
+            _horizontal.GetAxis();
+            _vertical.GetAxis();
+            
+            //TODO: Добавить управление мышью
         }
 
         #endregion

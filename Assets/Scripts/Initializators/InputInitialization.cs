@@ -19,9 +19,10 @@ namespace OMONGoose
         {
             _pcInputHorizontal = new PCInputHorizontal();
             _pcInputVertical = new PCInputVertical();
-            _button = mobileInputFactory.Create();
-            _mobileInput = new MobileInput();
-            _button.onClick.AddListener(_mobileInput.GetAxis);
+            
+            //_button = mobileInputFactory.Create();
+            //_mobileInput = new MobileInput();
+            //_button.onClick.AddListener(_mobileInput.GetAxis);
         }
 
         public void Initialization()

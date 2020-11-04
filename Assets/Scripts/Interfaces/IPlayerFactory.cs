@@ -4,6 +4,6 @@ namespace OMONGoose
 {
     public interface IPlayerFactory
     {
-        Transform CreatePlayer();
+        CharacterController CreatePlayer();
     }
 }
