@@ -7,41 +7,49 @@ namespace OMONGoose
     {
         #region Fields
 
-        private IUserInputProxy _pcInputHorizontal;
-        private IUserInputProxy _pcInputVertical;
-        //TODO: разобраться, что за button и MobileInput
-        private Button _button;
-        private MobileInput _mobileInput;
+        private readonly IInputAxisChangeable _pcInputHorizontal;
+        private readonly IInputAxisChangeable _pcInputVertical;
+        private readonly IInputAxisChangeable _pcInputMouseX;
+        private readonly IInputAxisChangeable _pcInputMouseY;
+        private readonly IInputKeyPressable _pcInputInteract;
 
         #endregion
         
-        public InputInitialization(IMobileInputFactory mobileInputFactory)
+        public InputInitialization()
         {
             _pcInputHorizontal = new PCInputHorizontal();
             _pcInputVertical = new PCInputVertical();
-            
-            //_button = mobileInputFactory.Create();
-            //_mobileInput = new MobileInput();
-            //_button.onClick.AddListener(_mobileInput.GetAxis);
+            _pcInputMouseX = new PCInputMouseX();
+            _pcInputMouseY = new PCInputMouseY();
+            _pcInputInteract = new PCInputInteract();
         }
 
         public void Initialization()
         {
-            //TODO: Зачем
         }
-
-        //TODO: загуглить кортежи
-        public (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) GetInput()
+        
+        public (IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) GetInputKeyboard()
         {
-            (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) result = (_pcInputHorizontal,
+            (IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) result = (_pcInputHorizontal,
                 _pcInputVertical);
             return result;
         }
 
+        public (IInputAxisChangeable inputMouseX, IInputAxisChangeable inputMouseY) GetInputMouse()
+        {
+            (IInputAxisChangeable inputMouseX, IInputAxisChangeable inputMouseY) result = (_pcInputMouseX, 
+                _pcInputMouseY);
+            return result;
+        }
+
+        public IInputKeyPressable GetInputInteract()
+        {
+            return _pcInputInteract;
+        }
+
         ~InputInitialization()
         {
-            _button.onClick.RemoveListener(_mobileInput.GetAxis);
+            
         }
-        
     }
 }

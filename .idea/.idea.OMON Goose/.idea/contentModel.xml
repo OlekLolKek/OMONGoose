@@ -84,6 +84,7 @@
             <e p="CameraController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
+            <e p="InteractController.cs" t="Include" />
             <e p="MainController.cs" t="Include" />
             <e p="MainMenuController.cs" t="Include" />
             <e p="MoveController.cs" t="Include" />
@@ -116,9 +117,10 @@
             <e p="TaskInitialization.cs" t="Include" />
           </e>
           <e p="Input" t="Include">
-            <e p="MobileInput.cs" t="Include" />
-            <e p="MobileInputFactory.cs" t="Include" />
             <e p="PCInputHorizontal.cs" t="Include" />
+            <e p="PCInputInteract.cs" t="Include" />
+            <e p="PCInputMouseX.cs" t="Include" />
+            <e p="PCInputMouseY.cs" t="Include" />
             <e p="PCInputVertical.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
@@ -126,12 +128,13 @@
             <e p="IControllable.cs" t="Include" />
             <e p="IExecutable.cs" t="Include" />
             <e p="IInitializable.cs" t="Include" />
+            <e p="IInputAxisChangeable.cs" t="Include" />
+            <e p="IInputKeyPressable.cs" t="Include" />
             <e p="ILateExecutable.cs" t="Include" />
             <e p="IMobileInputFactory.cs" t="Include" />
             <e p="IPlayerFactory.cs" t="Include" />
             <e p="ITaskFactory.cs" t="Include" />
             <e p="IUnit.cs" t="Include" />
-            <e p="IUserInputProxy.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
             <e p="AxisManager.cs" t="Include" />

@@ -1,9 +1,13 @@
-﻿namespace OMONGoose
+﻿using UnityEngine;
+
+namespace OMONGoose
 {
     public class AxisManager
     {
         public const string HORIZONTAL = "Horizontal";
         public const string VERTICAL = "Vertical";
-        public const string FIRE1 = "Fire1";
+        public const string MOUSE_X = "Mouse X";
+        public const string MOUSE_Y = "Mouse Y";
+        public const KeyCode INTERACT = KeyCode.E;
     }
 }

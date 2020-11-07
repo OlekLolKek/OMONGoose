@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 
 namespace OMONGoose
@@ -7,13 +8,14 @@ namespace OMONGoose
     {
         #region Fields
 
+        public delegate void CompletedTaskChange();
+        public event CompletedTaskChange CompletedTask;
         public RoomNames RoomName;
         public TaskTypes Type;
         
         [HideInInspector] public bool IsDone = false;
 
         [SerializeField] protected AudioClipsData _audioClips;
-        protected TaskController _taskController;
         protected AudioSource _audioSource;
         protected Vector3 _normalSize = new Vector3(1.0f, 1.0f, 1.0f);
         protected float _tweenTime = 0.2f;
@@ -25,9 +27,8 @@ namespace OMONGoose
 
         #region Methods
 
-        public virtual void Initialize(TaskController taskController, RoomNames roomName)
+        public virtual void Initialize(RoomNames roomName)
         {
-            _taskController = taskController;
             LeanTween.scale(gameObject, _normalSize, _tweenTime);
             RoomName = roomName;
             _audioSource = GetComponent<AudioSource>();
@@ -46,7 +47,7 @@ namespace OMONGoose
         protected void Completed()
         {
             IsDone = true;
-            _taskController.CompleteTask();
+            CompletedTask?.Invoke();
         }
 
         #endregion

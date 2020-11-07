@@ -65,9 +65,9 @@ namespace OMONGoose
             }
         }
 
-        public override void Initialize(TaskController taskController, RoomNames roomName)
+        public override void Initialize(RoomNames roomName)
         {
-            base.Initialize(taskController, roomName);
+            base.Initialize(roomName);
 
             _thisImage = GetComponent<Image>();
             _maxProgress = 10.0f;

@@ -1,51 +1,46 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 
 namespace OMONGoose
 {
-    public class TaskController
+    public class TaskController : IInitializable
     {
         #region Fields
 
-        private TaskObject[] _tasks;
+        private readonly TaskObject[] _taskObjects;
         private MainController _mainController;
-        private TaskModel _taskModel;
-        private GameContext _context;
         private TaskbarView _taskbar;
         private int _tasksDone = 0;
 
         #endregion
 
-        public TaskController(MainController mainController, TaskModel taskModel, TaskObject[] tasksArray, GameContext context)
+        public TaskController(TaskObject[] taskObjectObjects, TaskData taskData, GameContext context)
         {
-            _mainController = mainController;
-            _taskModel = taskModel;
-            _context = context;
-            _tasks = tasksArray;
-            _taskbar = Object.Instantiate(_taskModel.TaskStruct.TaskbarPrefab, _context.Canvas.transform).GetComponent<TaskbarView>();
-            Initialize();
+            _taskObjects = taskObjectObjects;
+            _taskbar = Object.Instantiate(taskData.TaskStruct.TaskbarPrefab, context.Canvas.transform).GetComponent<TaskbarView>();
+            _taskbar.Initialize(_taskObjects.Length);
+            
+            foreach (var taskObject in _taskObjects)
+            {
+                taskObject.Initialize(context, taskData);
+                taskObject.CompletedTask += CompleteTask;
+            }
         }
 
 
         #region Methods
 
-        public void CompleteTask()
+        public void CompleteTask(TaskObject taskObject)
         {
             _tasksDone++;
-            _taskbar.TaskCompleted(_tasksDone, _tasks.Length);
+            _taskbar.TaskCompleted(_tasksDone, _taskObjects.Length);
+            taskObject.CompletedTask -= CompleteTask;
         }
-
-        private void Initialize()
+        
+        public void Initialization()
         {
-            foreach (var taskObject in _tasks)
-            {
-                taskObject.Initialize(this, _context.Canvas, _taskModel);
-            }
-            _taskbar.Initialize(_tasks.Length);
         }
-
+        
         #endregion
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using System.Collections.Generic;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -10,13 +8,10 @@ namespace OMONGoose
     {
         #region Fields
 
+        [SerializeField] private Transform _taskRoot;
         [SerializeField] private Data _data;
 
-        //TODO: Разобраться, что за canvas и button и нужны ли они тут вообще (в коде есть, в вебинаре на 20:00 нет)
-        [SerializeField] private Transform _canvas;
-        [SerializeField] private Button _button;
-
-        private GameContext _links;
+        private GameContext _context;
         private Controllers _controllers;
 
         #endregion
@@ -26,27 +21,31 @@ namespace OMONGoose
 
         private void Start()
         {
-            Camera camera = Camera.main;
-            var inputInitialization = new InputInitialization(new MobileInputFactory(_canvas, _button));
+            _context = new GameContext();
+            
+            //TODO: Переместить изменение состояния курсора в отдельный класс
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            
             var playerFactory = new PlayerFactory(_data.PlayerData);
+            
+            var inputInitialization = new InputInitialization();
             var playerInitialization = new PlayerInitialization(playerFactory);
-            var taskFactory = new TaskFactory(_data.TaskData);
-            var taskInitialization = new TaskInitialization(taskFactory);
+            var taskInitialization = new TaskInitialization(_taskRoot);
+            
             _controllers = new Controllers();
             _controllers.Add(inputInitialization);
             _controllers.Add(playerInitialization);
             _controllers.Add(taskInitialization);
-            _controllers.Add(new InputController(inputInitialization.GetInput()));
-            _controllers.Add(new MoveController(inputInitialization.GetInput(), playerInitialization.GetPlayer(), _data.PlayerData));
-            //_controllers.Add(new TaskController(taskInitialization.GetTask()));
-            //_controllers.Add(new CameraController(playerInitialization.GetPlayer(), camera.transform));
+            Camera camera = playerInitialization.GetCamera();
+            _controllers.Add(new InputController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputMouse(), inputInitialization.GetInputInteract()));
+            _controllers.Add(new MoveController(inputInitialization.GetInputKeyboard(), playerInitialization.GetCharacterController(), 
+                playerInitialization.GetTransform(), _data.PlayerData));
+            _controllers.Add(new TaskController(taskInitialization.GetTasks(), _data.TaskData, _context));
+            _controllers.Add(new CameraController(inputInitialization.GetInputMouse(), playerInitialization.GetCharacterController().transform,
+                _data.PlayerData, camera.transform));
+            _controllers.Add(new InteractController(camera.transform, inputInitialization.GetInputInteract()));
             _controllers.Initialization();
-            
-
-            //TODO: Убрать старый код, если всё будет работать
-            //_links = new GameContext();
-            //var tasksArray = FindObjectsOfType<TaskObject>();
-            //new InitializeController(this, _playerData, _inputData, _taskData, tasksArray, _links);
         }
 
         private void Update()

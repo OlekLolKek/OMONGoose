@@ -8,20 +8,26 @@ namespace OMONGoose
 
         #region Fields
 
-        private readonly IUserInputProxy _horizontal;
-        private readonly IUserInputProxy _vertical;
-        private readonly IUserInputProxy _mouseX;
-        private readonly IUserInputProxy _mouseY;
+        private readonly IInputAxisChangeable _horizontal;
+        private readonly IInputAxisChangeable _vertical;
+        private readonly IInputAxisChangeable _mouseX;
+        private readonly IInputAxisChangeable _mouseY;
+        private readonly IInputKeyPressable _interact;
 
         #endregion
 
 
         #region ClassLifeCycles
 
-        public InputController((IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input)
+        public InputController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) inputKeys, 
+            (IInputAxisChangeable inputMouseX, IInputAxisChangeable inputMouseY) inputMouse,
+            IInputKeyPressable inputInteract)
         {
-            _horizontal = input.inputHorizontal;
-            _vertical = input.inputVertical;
+            _horizontal = inputKeys.inputHorizontal;
+            _vertical = inputKeys.inputVertical;
+            _mouseX = inputMouse.inputMouseX;
+            _mouseY = inputMouse.inputMouseY;
+            _interact = inputInteract;
         }
 
         #endregion
@@ -33,8 +39,9 @@ namespace OMONGoose
         {
             _horizontal.GetAxis();
             _vertical.GetAxis();
-            
-            //TODO: Добавить управление мышью
+            _mouseX.GetAxis();
+            _mouseY.GetAxis();
+            _interact.GetKey();
         }
 
         #endregion

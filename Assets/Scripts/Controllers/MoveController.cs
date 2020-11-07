@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 namespace OMONGoose
 {
     public class MoveController : IExecutable, ICleanable
@@ -9,23 +10,28 @@ namespace OMONGoose
         private readonly CharacterController _characterController;
         private readonly IUnit _unitData;
         
-        private IUserInputProxy _horizontalInputProxy;
-        private IUserInputProxy _verticalInputProxy;
+        private readonly IInputAxisChangeable _horizontalInputAxisChangeable;
+        private readonly IInputAxisChangeable _verticalInputAxisChangeable;
+        private readonly Transform _playerTransform;
+        
         private Vector3 _move;
+        private Vector3 _gravity;
         private float _horizontal;
         private float _vertical;
         
         #endregion
 
 
-        public MoveController((IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input, CharacterController characterController, IUnit unitData)
+        public MoveController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) input, CharacterController characterController, 
+            Transform playerTransform, IUnit unitData)
         {
             _characterController = characterController;
+            _playerTransform = playerTransform;
             _unitData = unitData;
-            _horizontalInputProxy = input.inputHorizontal;
-            _verticalInputProxy = input.inputVertical;
-            _horizontalInputProxy.OnAxisChanged += OnHorizontalAxisChanged;
-            _verticalInputProxy.OnAxisChanged += OnVerticalAxisChanged;
+            _horizontalInputAxisChangeable = input.inputHorizontal;
+            _verticalInputAxisChangeable = input.inputVertical;
+            _horizontalInputAxisChangeable.OnAxisChanged += OnHorizontalAxisChanged;
+            _verticalInputAxisChangeable.OnAxisChanged += OnVerticalAxisChanged;
         }
 
         private void OnVerticalAxisChanged(float value)
@@ -40,15 +46,32 @@ namespace OMONGoose
 
         public void Execute(float deltaTime)
         {
-            var speed = deltaTime * _unitData.Speed;
-            _move.Set(_horizontal * speed, 0.0f, _vertical * speed);
-            _characterController.Move(_move);
+            Move(deltaTime);
+            
+        }
+
+        private void Move(float deltaTime)
+        {
+            var speed = _unitData.Speed * deltaTime;
+            _move = (_playerTransform.right * _horizontal + _playerTransform.forward * _vertical).normalized;
+            _characterController.Move(_move * speed);
+
+            if (!_characterController.isGrounded)
+            {
+                _gravity.y += Physics.gravity.y * deltaTime;
+                _characterController.Move(_gravity * deltaTime);
+            }
+            else
+            {
+                _gravity.y = -2.0f;
+                _characterController.Move(_gravity * deltaTime);
+            }
         }
 
         public void Cleanup()
         {
-            _horizontalInputProxy.OnAxisChanged -= OnHorizontalAxisChanged;
-            _verticalInputProxy.OnAxisChanged -= OnVerticalAxisChanged;
+            _horizontalInputAxisChangeable.OnAxisChanged -= OnHorizontalAxisChanged;
+            _verticalInputAxisChangeable.OnAxisChanged -= OnVerticalAxisChanged;
         }
     }
 }
