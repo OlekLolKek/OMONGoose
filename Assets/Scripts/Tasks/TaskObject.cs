@@ -38,6 +38,12 @@ namespace OMONGoose
                 case TaskTypes.Garbage:
                     _panelPrefab = _taskModel.TaskStruct.GarbagePanelPrefab;
                     break;
+                case TaskTypes.Wires:
+                    _panelPrefab = _taskModel.TaskStruct.WiresPanelPrefab;
+                    break;
+                case TaskTypes.Asteroids:
+                    _panelPrefab = _taskModel.TaskStruct.AsteroidsPanelPrefab;
+                    break;
             }
         }
 

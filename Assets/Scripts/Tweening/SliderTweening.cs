@@ -17,14 +17,7 @@ namespace OMONGoose
         private float _tweeningTime = 0.05f;
 
         #endregion
-
-
-        #region Methods
         
-        
-
-        #endregion
-
 
         #region Methods
 

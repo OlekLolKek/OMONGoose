@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioClips:
     Woosh: {fileID: 8300000, guid: dbe0df64a7554b74da9dee5de75e3b71, type: 3}
-    WooshShort: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
-    Tick: {fileID: 8300000, guid: 4cdd073ea795daf40b45d058d1a98c53, type: 3}
-    TickLoud: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
     Pop: {fileID: 8300000, guid: 4cdd073ea795daf40b45d058d1a98c53, type: 3}
+    WireBuzz: {fileID: 8300000, guid: 103318540ea2c6144af98357c01e95ef, type: 3}
