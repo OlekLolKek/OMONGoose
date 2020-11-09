@@ -40,7 +40,7 @@ namespace OMONGoose
             Camera camera = playerInitialization.GetCamera();
             _controllers.Add(new InputController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputMouse(), inputInitialization.GetInputInteract()));
             _controllers.Add(new MoveController(inputInitialization.GetInputKeyboard(), playerInitialization.GetCharacterController(), 
-                playerInitialization.GetTransform(), _data.PlayerData));
+                playerInitialization.GetTransform(), playerInitialization.GetAnimator(), _data.PlayerData));
             _controllers.Add(new TaskController(taskInitialization.GetTasks(), _data.TaskData, _context));
             _controllers.Add(new CameraController(inputInitialization.GetInputMouse(), playerInitialization.GetCharacterController().transform,
                 _data.PlayerData, camera.transform));

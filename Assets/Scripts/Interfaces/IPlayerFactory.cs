@@ -8,5 +8,6 @@ namespace OMONGoose
         CharacterController GetCharacterController();
         Transform GetTransform();
         Camera GetCamera();
+        Animator GetAnimator();
     }
 }
