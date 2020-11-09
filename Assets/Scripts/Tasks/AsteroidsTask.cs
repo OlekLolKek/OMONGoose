@@ -112,7 +112,7 @@ namespace OMONGoose
             _animators[i].SetTrigger("Explosion");
             _asteroids[i].interactable = false;
             _audioSource.clip = _audioClips.AudioClips.AsteroidExplosion;
-            _audioSource.Play();
+            _audioSource.Play(); 
             StartCoroutine(AsteroidExplosion(i));
             _progress++;
             if (_progress >= _maxProgress)
