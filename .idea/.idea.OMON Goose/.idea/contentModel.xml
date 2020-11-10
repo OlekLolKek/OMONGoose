@@ -83,6 +83,7 @@
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
+            <e p="CursorController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InteractController.cs" t="Include" />
             <e p="MainController.cs" t="Include" />
@@ -113,6 +114,7 @@
           <e p="GameContext.cs" t="Include" />
           <e p="Initializators" t="Include">
             <e p="InputInitialization.cs" t="Include" />
+            <e p="InteractInitialization.cs" t="Include" />
             <e p="PlayerInitialization.cs" t="Include" />
             <e p="TaskInitialization.cs" t="Include" />
           </e>
@@ -157,6 +159,7 @@
             <e p="BaseTask.cs" t="Include" />
             <e p="Download.cs" t="Include" />
             <e p="Garbage.cs" t="Include" />
+            <e p="InteractionSwitch.cs" t="Include" />
             <e p="TaskFactory.cs" t="Include" />
             <e p="TaskObject.cs" t="Include" />
             <e p="WiresTask.cs" t="Include" />

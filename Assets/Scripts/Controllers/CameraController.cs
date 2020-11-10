@@ -9,14 +9,16 @@ namespace OMONGoose
         private readonly Transform _playerTransform;
         private readonly IInputAxisChangeable _mouseXInputAxisChangeable;
         private readonly IInputAxisChangeable _mouseYInputAxisChangeable;
+        private readonly IInputKeyPressable _interact;
         private readonly float _sensitivity;
         private readonly float _minXRotation;
         private readonly float _maxXRotation;
         private float _mouseX;
         private float _mouseY;
         private float _xRotation;
+        private bool _isInteracting;
 
-        public CameraController((IInputAxisChangeable mouseX, IInputAxisChangeable mouseY) input, Transform playerTransform, 
+        public CameraController((IInputAxisChangeable mouseX, IInputAxisChangeable mouseY) input, IInputKeyPressable interact, Transform playerTransform, 
             PlayerData playerData, Transform cameraTransform)
         {
             _playerTransform = playerTransform;
@@ -28,12 +30,20 @@ namespace OMONGoose
             
             _mouseXInputAxisChangeable = input.mouseX;
             _mouseYInputAxisChangeable = input.mouseY;
+            _interact = interact;
             _mouseXInputAxisChangeable.OnAxisChanged += OnMouseXAxisChanged;
             _mouseYInputAxisChangeable.OnAxisChanged += OnMouseYAxisChanged;
+            _interact.OnKeyPressed += OnInteract;
         }
 
         public void Execute(float deltaTime)
         {
+            Look(deltaTime);
+        }
+
+        private void Look(float deltaTime)
+        {
+            if (_isInteracting) return;
             _xRotation -= _mouseY * _sensitivity * deltaTime;
             _xRotation = Mathf.Clamp(_xRotation, _minXRotation, _maxXRotation);
             _cameraTransform.localRotation = Quaternion.Euler(_xRotation, 0.0f, 0.0f);
@@ -48,6 +58,11 @@ namespace OMONGoose
         private void OnMouseYAxisChanged(float value)
         {
             _mouseY = value;
+        }
+
+        private void OnInteract(bool b)
+        {
+            _isInteracting = !_isInteracting;
         }
         
         public void Cleanup()

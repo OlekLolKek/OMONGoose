@@ -14,17 +14,19 @@ namespace OMONGoose
         
         private readonly IInputAxisChangeable _horizontalInputAxisChangeable;
         private readonly IInputAxisChangeable _verticalInputAxisChangeable;
+        private readonly IInputKeyPressable _interact;
 
         private Vector3 _move;
         private Vector3 _gravity;
         private float _horizontal;
         private float _vertical;
+        private bool _isInteracting;
         private static readonly int Speed = Animator.StringToHash("Speed");
 
         #endregion
 
 
-        public MoveController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) input, CharacterController characterController, 
+        public MoveController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) input, IInputKeyPressable interact, CharacterController characterController, 
             Transform playerTransform, Animator animator, IUnit unitData)
         {
             _characterController = characterController;
@@ -33,8 +35,10 @@ namespace OMONGoose
             _unitData = unitData;
             _horizontalInputAxisChangeable = input.inputHorizontal;
             _verticalInputAxisChangeable = input.inputVertical;
+            _interact = interact;
             _horizontalInputAxisChangeable.OnAxisChanged += OnHorizontalAxisChanged;
             _verticalInputAxisChangeable.OnAxisChanged += OnVerticalAxisChanged;
+            _interact.OnKeyPressed += OnInteract;
         }
 
         private void OnVerticalAxisChanged(float value)
@@ -47,6 +51,11 @@ namespace OMONGoose
             _horizontal = value;
         }
 
+        private void OnInteract(bool b)
+        {
+            _isInteracting = !_isInteracting;
+        }
+
         public void Execute(float deltaTime)
         {
             Move(deltaTime);
@@ -54,6 +63,11 @@ namespace OMONGoose
 
         private void Move(float deltaTime)
         {
+            if (_isInteracting)
+            {
+                _animator.SetFloat(Speed, 0);
+                return;
+            }
             var speed = _unitData.Speed * deltaTime;
             _move = (_playerTransform.right * _horizontal + _playerTransform.forward * _vertical).normalized;
             _characterController.Move(_move * speed);

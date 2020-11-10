@@ -6,7 +6,8 @@ namespace OMONGoose
     {
         #region Fields
 
-        private IInputKeyPressable _interact;
+        private readonly IInputKeyPressable _interact;
+        private InteractionSwitch _interactionSwitch;
         private readonly Transform _cameraTransform;
         private TaskObject _visibleTask;
         private bool _seesTask;
@@ -14,7 +15,7 @@ namespace OMONGoose
         #endregion
 
         
-        public InteractController(Transform cameraTransform, IInputKeyPressable interact)
+        public InteractController(Transform cameraTransform, IInputKeyPressable interact, InteractionSwitch interactionSwitch)
         {
             _cameraTransform = cameraTransform;
             _interact = interact;
@@ -45,7 +46,7 @@ namespace OMONGoose
             }
         }
 
-        public void TryInteract(bool value)
+        private void TryInteract(bool value)
         {
             if (_seesTask)
             {
