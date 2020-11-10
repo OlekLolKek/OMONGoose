@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +197,7 @@
       <workItem from="1604684921434" duration="1213000" />
       <workItem from="1604686798889" duration="16701000" />
       <workItem from="1604772499761" duration="589000" />
-      <workItem from="1604917425442" duration="7148000" />
+      <workItem from="1604917425442" duration="7740000" />
     </task>
     <servers />
   </component>
