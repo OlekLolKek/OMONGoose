@@ -18,8 +18,8 @@ namespace OMONGoose
         private float _xRotation;
         private bool _isInteracting;
 
-        public CameraController((IInputAxisChangeable mouseX, IInputAxisChangeable mouseY) input, InteractionSwitch interactionSwitch, Transform playerTransform, 
-            PlayerData playerData, Transform cameraTransform)
+        public CameraController((IInputAxisChangeable mouseX, IInputAxisChangeable mouseY) input, InteractionSwitch interactionSwitch, 
+            Transform playerTransform, PlayerData playerData, Transform cameraTransform)
         {
             _playerTransform = playerTransform;
             _cameraTransform = cameraTransform;
@@ -69,6 +69,7 @@ namespace OMONGoose
         {
             _mouseXInputAxisChangeable.OnAxisChanged -= OnMouseXAxisChanged;
             _mouseYInputAxisChangeable.OnAxisChanged -= OnMouseYAxisChanged;
+            _interact.OnInteraction -= OnInteract;
         }
     }
 }

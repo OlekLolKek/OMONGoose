@@ -9,16 +9,18 @@ namespace OMONGoose
         private readonly InteractionSwitch _interactionSwitch;
         private readonly IInputKeyPressable _interact;
         private readonly Transform _cameraTransform;
+        private CrosshairView _crosshairView;
         private TaskObject _visibleTask;
         private bool _seesTask;
 
         #endregion
 
         
-        public InteractController(Transform cameraTransform, IInputKeyPressable interact, InteractionSwitch interactionSwitch)
+        public InteractController(IInputKeyPressable interact, InteractionSwitch interactionSwitch, Transform cameraTransform, CrosshairView crosshairView)
         {
             _cameraTransform = cameraTransform;
             _interact = interact;
+            _crosshairView = crosshairView;
             _interact.OnKeyPressed += TryInteract;
             _interactionSwitch = interactionSwitch;
         }
@@ -27,6 +29,7 @@ namespace OMONGoose
 
         public void Execute(float deltaTime)
         {
+            //TODO: разобраться, нужно ли создавать для расширения и сужения прицела отдельные классы
             var ray = new Ray(_cameraTransform.position, _cameraTransform.forward);
             if (Physics.Raycast(ray, out var hit, 3.0f))
             {
@@ -34,15 +37,18 @@ namespace OMONGoose
                 {
                     _seesTask = true;
                     _visibleTask = taskObject;
+                    _crosshairView.TaskLocated();
                 }
                 else
                 {
                     _seesTask = false;
+                    _crosshairView.TaskUnlocated();
                 }
             }
             else
             {
                 _seesTask = false;
+                _crosshairView.TaskUnlocated();
             }
         }
 

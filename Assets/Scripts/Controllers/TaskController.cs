@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
-    public class TaskController : IInitializable, IExecutable
+    public class TaskController : IInitializable, IExecutable, ICleanable
     {
         #region Fields
 
@@ -53,7 +53,15 @@ namespace OMONGoose
             _taskbar.TaskCompleted(_tasksDone, _taskObjects.Length);
             taskObject.CompletedTask -= CompleteTask;
         }
-        
+
+        public void Cleanup()
+        {
+            foreach (var taskObject in _taskObjects)
+            {
+                taskObject.CompletedTask -= CompleteTask;
+            }
+        }
+
         #endregion
     }
 }

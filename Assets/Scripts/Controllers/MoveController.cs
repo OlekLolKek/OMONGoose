@@ -89,6 +89,7 @@ namespace OMONGoose
         {
             _horizontalInputAxisChangeable.OnAxisChanged -= OnHorizontalAxisChanged;
             _verticalInputAxisChangeable.OnAxisChanged -= OnVerticalAxisChanged;
+            _interactionSwitch.OnInteraction -= OnInteractionSwitch;
         }
     }
 }

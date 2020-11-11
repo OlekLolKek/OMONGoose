@@ -110,9 +110,13 @@
             <e p="RoomNames.cs" t="Include" />
             <e p="TaskTypes.cs" t="Include" />
           </e>
+          <e p="Events" t="Include">
+            <e p="CrosshairEvent.cs" t="Include" />
+          </e>
           <e p="FootstepEvent.cs" t="Include" />
           <e p="GameContext.cs" t="Include" />
           <e p="Initializators" t="Include">
+            <e p="CrosshairInitializator.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
             <e p="InteractInitialization.cs" t="Include" />
             <e p="PlayerInitialization.cs" t="Include" />
@@ -168,7 +172,6 @@
             <e p="WireTweening.cs" t="Include" />
           </e>
           <e p="Views" t="Include">
-            <e p="AsteroidsTaskView.cs" t="Include" />
             <e p="CrosshairView.cs" t="Include" />
             <e p="TaskbarView.cs" t="Include" />
           </e>

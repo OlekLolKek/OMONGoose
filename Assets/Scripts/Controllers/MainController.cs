@@ -46,7 +46,8 @@ namespace OMONGoose
             _controllers.Add(new CameraController(inputInitialization.GetInputMouse(), interactInitialization.GetInteractionSwitch(),
                 playerInitialization.GetCharacterController().transform,
                 _data.PlayerData, camera.transform));
-            _controllers.Add(new InteractController(camera.transform, inputInitialization.GetInputInteract(), interactInitialization.GetInteractionSwitch()));
+            _controllers.Add(new InteractController(inputInitialization.GetInputInteract(), interactInitialization.GetInteractionSwitch(), 
+                camera.transform, _context.CrosshairView));
             _controllers.Add(new CursorController(interactInitialization.GetInteractionSwitch()));
             _controllers.Initialization();
         }

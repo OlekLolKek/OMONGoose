@@ -3,17 +3,19 @@
 
 namespace OMONGoose
 {
-    public class CursorController : IInitializable
+    public class CursorController : IInitializable, ICleanable
     {
         #region Fields
 
+        private InteractionSwitch _interactionSwitch;
         private bool _isCursorLocked;
 
         #endregion
         
         public CursorController(InteractionSwitch interactionSwitch)
         {
-            interactionSwitch.OnInteraction += SwitchCursorLock;
+            _interactionSwitch = interactionSwitch;
+            _interactionSwitch.OnInteraction += SwitchCursorLock;
         }
 
         public void Initialization()
@@ -37,6 +39,11 @@ namespace OMONGoose
                 Cursor.visible = false;
                 _isCursorLocked = true;
             }
+        }
+
+        public void Cleanup()
+        {
+            _interactionSwitch.OnInteraction -= SwitchCursorLock;
         }
     }
 }

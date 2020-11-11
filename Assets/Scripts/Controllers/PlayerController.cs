@@ -3,6 +3,8 @@
 
 namespace OMONGoose
 {
+    //Этот класс нигде не используется, я оставил его просто для того, чтобы брать его части за основу при переписывании кода
+    //TODO: Убрать класс, когда он перестанет быть полезным
     public sealed class PlayerController : IExecutable
     {
         #region Fields
@@ -15,7 +17,7 @@ namespace OMONGoose
         private Transform _transform;
         private Animator _animator;
         private GameContext _links;
-        private Vector3 gravity;
+        private Vector3 _gravity;
         private string _speedName = "Speed";
         private float _minYRotation = -90.0f;
         private float _maxYRotation = 90.0f;
@@ -113,12 +115,12 @@ namespace OMONGoose
 
             if (!_characterController.isGrounded)
             {
-                gravity.y += Physics.gravity.y * Time.deltaTime;
-                _characterController.Move(gravity * Time.deltaTime);
+                _gravity.y += Physics.gravity.y * Time.deltaTime;
+                _characterController.Move(_gravity * Time.deltaTime);
             }
             else
             {
-                gravity.y = -2.0f;
+                _gravity.y = -2.0f;
             }
         }
 
