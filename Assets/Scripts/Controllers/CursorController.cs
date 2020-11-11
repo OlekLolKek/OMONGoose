@@ -7,15 +7,13 @@ namespace OMONGoose
     {
         #region Fields
 
-        private readonly IInputKeyPressable _interact;
         private bool _isCursorLocked;
 
         #endregion
         
-        public CursorController(IInputKeyPressable interact)
+        public CursorController(InteractionSwitch interactionSwitch)
         {
-            _interact = interact;
-            _interact.OnKeyPressed += SwitchCursorLock;
+            interactionSwitch.OnInteraction += SwitchCursorLock;
         }
 
         public void Initialization()

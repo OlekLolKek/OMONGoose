@@ -92,7 +92,7 @@ MonoBehaviour:
   Type: 0
   IsDone: 0
   _audioClips: {fileID: 11400000, guid: 21d3a1490da94a249aa4128b49399e18, type: 2}
-  _asteroidButtonPrefab: {fileID: 5747747164331569078, guid: 30ec2fa0977de2f44874f991feae2c05,
+  _asteroidPrefab: {fileID: 5964175751151836604, guid: 30ec2fa0977de2f44874f991feae2c05,
     type: 3}
   _clip: {fileID: 7400000, guid: 95626c0f774f0ce4580d80675bd69346, type: 2}
 --- !u!82 &4753193024110840375

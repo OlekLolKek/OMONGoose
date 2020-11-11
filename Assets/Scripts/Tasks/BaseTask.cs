@@ -17,8 +17,9 @@ namespace OMONGoose
 
         [SerializeField] protected AudioClipsData _audioClips;
         protected AudioSource _audioSource;
+        protected Canvas _canvas;
         protected Vector3 _normalSize = new Vector3(1.0f, 1.0f, 1.0f);
-        protected float _tweenTime = 0.2f;
+        protected readonly float _tweenTime = 0.2f;
         protected float _progress = 0.0f;
         protected float _maxProgress;
 
@@ -27,10 +28,11 @@ namespace OMONGoose
 
         #region Methods
 
-        public virtual void Initialize(RoomNames roomName)
+        public virtual void Initialize(RoomNames roomName, Canvas canvas)
         {
             LeanTween.scale(gameObject, _normalSize, _tweenTime);
             RoomName = roomName;
+            _canvas = canvas;
             _audioSource = GetComponent<AudioSource>();
             _audioSource.clip = _audioClips.AudioClips.WindowAppear;
             _audioSource.Play();

@@ -9,7 +9,7 @@ namespace OMONGoose
         private readonly Transform _playerTransform;
         private readonly IInputAxisChangeable _mouseXInputAxisChangeable;
         private readonly IInputAxisChangeable _mouseYInputAxisChangeable;
-        private readonly IInputKeyPressable _interact;
+        private readonly InteractionSwitch _interact;
         private readonly float _sensitivity;
         private readonly float _minXRotation;
         private readonly float _maxXRotation;
@@ -18,7 +18,7 @@ namespace OMONGoose
         private float _xRotation;
         private bool _isInteracting;
 
-        public CameraController((IInputAxisChangeable mouseX, IInputAxisChangeable mouseY) input, IInputKeyPressable interact, Transform playerTransform, 
+        public CameraController((IInputAxisChangeable mouseX, IInputAxisChangeable mouseY) input, InteractionSwitch interactionSwitch, Transform playerTransform, 
             PlayerData playerData, Transform cameraTransform)
         {
             _playerTransform = playerTransform;
@@ -30,10 +30,10 @@ namespace OMONGoose
             
             _mouseXInputAxisChangeable = input.mouseX;
             _mouseYInputAxisChangeable = input.mouseY;
-            _interact = interact;
+            _interact = interactionSwitch;
             _mouseXInputAxisChangeable.OnAxisChanged += OnMouseXAxisChanged;
             _mouseYInputAxisChangeable.OnAxisChanged += OnMouseYAxisChanged;
-            _interact.OnKeyPressed += OnInteract;
+            _interact.OnInteraction += OnInteract;
         }
 
         public void Execute(float deltaTime)

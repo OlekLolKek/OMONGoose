@@ -6,8 +6,8 @@ namespace OMONGoose
     {
         #region Fields
 
+        private readonly InteractionSwitch _interactionSwitch;
         private readonly IInputKeyPressable _interact;
-        private InteractionSwitch _interactionSwitch;
         private readonly Transform _cameraTransform;
         private TaskObject _visibleTask;
         private bool _seesTask;
@@ -20,8 +20,8 @@ namespace OMONGoose
             _cameraTransform = cameraTransform;
             _interact = interact;
             _interact.OnKeyPressed += TryInteract;
+            _interactionSwitch = interactionSwitch;
         }
-        
 
         #region Methods
 
@@ -48,10 +48,11 @@ namespace OMONGoose
 
         private void TryInteract(bool value)
         {
-            if (_seesTask)
-            {
-                _visibleTask.Switch();
-            }
+            if (!_seesTask) return;
+            if (_visibleTask.IsDone) return;
+            
+            _visibleTask.Switch();
+            _interactionSwitch.Interaction();
         }
         
         public void Cleanup()

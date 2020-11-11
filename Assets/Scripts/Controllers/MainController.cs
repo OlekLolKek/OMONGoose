@@ -39,15 +39,15 @@ namespace OMONGoose
             Camera camera = playerInitialization.GetCamera();
             
             _controllers.Add(new InputController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputMouse(), inputInitialization.GetInputInteract()));
-            _controllers.Add(new MoveController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputInteract(), 
+            _controllers.Add(new MoveController(inputInitialization.GetInputKeyboard(), interactInitialization.GetInteractionSwitch(), 
                 playerInitialization.GetCharacterController(), playerInitialization.GetTransform(), playerInitialization.GetAnimator(), 
                 _data.PlayerData));
             _controllers.Add(new TaskController(taskInitialization.GetTasks(), _data.TaskData, _context));
-            _controllers.Add(new CameraController(inputInitialization.GetInputMouse(), inputInitialization.GetInputInteract(),
+            _controllers.Add(new CameraController(inputInitialization.GetInputMouse(), interactInitialization.GetInteractionSwitch(),
                 playerInitialization.GetCharacterController().transform,
                 _data.PlayerData, camera.transform));
             _controllers.Add(new InteractController(camera.transform, inputInitialization.GetInputInteract(), interactInitialization.GetInteractionSwitch()));
-            _controllers.Add(new CursorController(inputInitialization.GetInputInteract()));
+            _controllers.Add(new CursorController(interactInitialization.GetInteractionSwitch()));
             _controllers.Initialization();
         }
 

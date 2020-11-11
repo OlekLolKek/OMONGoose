@@ -142,9 +142,7 @@
             <e p="AxisManager.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
-            <e p="InputModel.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
-            <e p="TaskModel.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerFactory.cs" t="Include" />

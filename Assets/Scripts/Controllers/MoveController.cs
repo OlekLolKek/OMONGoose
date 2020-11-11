@@ -14,7 +14,7 @@ namespace OMONGoose
         
         private readonly IInputAxisChangeable _horizontalInputAxisChangeable;
         private readonly IInputAxisChangeable _verticalInputAxisChangeable;
-        private readonly IInputKeyPressable _interact;
+        private readonly InteractionSwitch _interactionSwitch;
 
         private Vector3 _move;
         private Vector3 _gravity;
@@ -26,7 +26,7 @@ namespace OMONGoose
         #endregion
 
 
-        public MoveController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) input, IInputKeyPressable interact, CharacterController characterController, 
+        public MoveController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) input, InteractionSwitch interactionSwitch, CharacterController characterController, 
             Transform playerTransform, Animator animator, IUnit unitData)
         {
             _characterController = characterController;
@@ -35,10 +35,10 @@ namespace OMONGoose
             _unitData = unitData;
             _horizontalInputAxisChangeable = input.inputHorizontal;
             _verticalInputAxisChangeable = input.inputVertical;
-            _interact = interact;
+            _interactionSwitch = interactionSwitch;
             _horizontalInputAxisChangeable.OnAxisChanged += OnHorizontalAxisChanged;
             _verticalInputAxisChangeable.OnAxisChanged += OnVerticalAxisChanged;
-            _interact.OnKeyPressed += OnInteract;
+            _interactionSwitch.OnInteraction += OnInteractionSwitch;
         }
 
         private void OnVerticalAxisChanged(float value)
@@ -51,7 +51,7 @@ namespace OMONGoose
             _horizontal = value;
         }
 
-        private void OnInteract(bool b)
+        private void OnInteractionSwitch(bool b)
         {
             _isInteracting = !_isInteracting;
         }

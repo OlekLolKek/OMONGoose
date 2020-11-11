@@ -7,24 +7,16 @@ using Random = UnityEngine.Random;
 
 namespace OMONGoose
 {
-    public class AsteroidsTask : BaseTask
+    public class AsteroidsTask : BaseTask, IExecutable
     {
         #region Fields
 
-        [SerializeField] private GameObject _asteroidButtonPrefab;
+        [SerializeField] private Asteroid _asteroidPrefab;
         [SerializeField] private AnimationClip _clip;
-        
-        //Как лучше сделать: контролировать все астероиды из этого класса, но создавать 3 списка,
-        // или создать новый MonoBehaviour класс для каждого астероида и контролировать их направление и аниматоры оттуда?
-        // Сейчас все астероиды контролируются из одного класса, но я не уверен, что 3 списка - хорошая идея,
-        // ведь при втором подходе можно было бы просто сделать список астероидов и вовремя вызывать у них тот или иной метод.
-        
-        private List<Button> _asteroids = new List<Button>();
-        private List<Vector2> _directions = new List<Vector2>();
-        private List<Animator> _animators = new List<Animator>();
+
+        private readonly List<Asteroid> _asteroids = new List<Asteroid>();
         private Animator _animator;
         private Image _thisImage;
-        private Canvas _canvas;
         private Vector2 _sizeDelta;
         private Vector2 _direction;
         private float _asteroidSpeed = 2.0f;
@@ -35,45 +27,28 @@ namespace OMONGoose
         private float _maxUp;
         private float _maxDown;
         private float _startOffset = 150.0f;
-        private float _boundsOffset = 50.0f;
 
         #endregion
 
 
         #region Methods
 
-        // Я не смог придумать, как вызывать Update из одного места в этом случае.
-        // Ссылка на этот объект есть только в соответствующем TaskObject, ссылка на который есть только в TaskController
-        // В этом же TaskController есть ещё куча ссылок на другие TaskObject, которые обновлять не надо.
-        private void Update()
+        //TODO: Поменять Update на Execute и вызывать его из другого места
+        public void Execute(float deltaTime)
         {
-            for (int i = 0; i < _asteroids.Count; i++)
+            foreach (var asteroid in _asteroids)
             {
-                if (_asteroids[i].transform.position.x >= _maxRight - _boundsOffset)
-                    _asteroids[i].transform.Rotate(transform.forward, 90.0f);
-                
-                else if (_asteroids[i].transform.position.x <= _maxLeft + _boundsOffset)
-                    _asteroids[i].transform.Rotate(transform.forward, -90.0f);
-                
-                else if (_asteroids[i].transform.position.y >= _maxUp - _boundsOffset)
-                    _asteroids[i].transform.Rotate(transform.forward, 90.0f);
-
-                else if (_asteroids[i].transform.position.y <= _maxDown + _boundsOffset)
-                    _asteroids[i].transform.Rotate(transform.forward, 90.0f);
-
-                _asteroids[i].transform.Translate(_directions[i]);
+                asteroid.Execute(deltaTime);
             }
         }
 
-        public override void Initialize(RoomNames roomName)
+        public override void Initialize(RoomNames roomName, Canvas canvas)
         {
-            base.Initialize(roomName);
+            base.Initialize(roomName, canvas);
 
             _thisImage = GetComponent<Image>();
             _maxProgress = 10.0f;
-
-            //TODO: Передавать канвас при создании объекта
-            _canvas = GetComponentInParent<Canvas>();
+            
             _audioSource = GetComponent<AudioSource>();
             _sizeDelta = _thisImage.rectTransform.sizeDelta;
             _canvasScaleFactor = _canvas.scaleFactor;
@@ -87,45 +62,30 @@ namespace OMONGoose
             for (int i = 0; i < _asteroidsCount; i++)
             {
                 var asteroid = Instantiate(
-                    _asteroidButtonPrefab,
+                    _asteroidPrefab,
                     new Vector3(
                         Random.Range(_maxLeft + _startOffset, _maxRight - _startOffset),
                         Random.Range(_maxDown + _startOffset, _maxUp - _startOffset)),
                     Quaternion.identity,
                     _canvas.transform
-                ).GetComponent<Button>();
+                ).GetComponent<Asteroid>();
 
                 _asteroids.Add(asteroid);
                 var i1 = i;
-                _asteroids[i].onClick.AddListener(() => DestroyAsteroid(i1));
-                var direction = new Vector2(
-                    Random.Range(0, _asteroidSpeed),
-                    Random.Range(0, _asteroidSpeed)).normalized * _asteroidSpeed;
-                _directions.Add(direction * _canvasScaleFactor);
-                var animator = _asteroids[i].GetComponent<Animator>();
-                _animators.Add(animator);
+
+                _asteroids[i].OnAsteroidDestroyed += DestroyAsteroid;
+                _asteroids[i].Initialization(i1, _maxRight, _maxLeft, _maxUp, _maxDown);
             }
         }
 
-        private void DestroyAsteroid(int i)
+        
+        private void DestroyAsteroid(int index)
         {
-            _animators[i].SetTrigger("Explosion");
-            _asteroids[i].interactable = false;
-            _audioSource.clip = _audioClips.AudioClips.AsteroidExplosion;
-            _audioSource.Play(); 
-            StartCoroutine(AsteroidExplosion(i));
             _progress++;
             if (_progress >= _maxProgress)
             {
                 Completed();
             }
-        }
-
-        private IEnumerator AsteroidExplosion(int i)
-        {
-            yield return new WaitForSeconds(_clip.length);
-            _asteroids[i].GetComponent<Image>().enabled = false;
-            _asteroids[i].enabled = false;
         }
 
         public override void Deactivate()
