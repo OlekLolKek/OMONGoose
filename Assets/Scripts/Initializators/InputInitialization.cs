@@ -1,7 +1,4 @@
-﻿using UnityEngine.UI;
-
-
-namespace OMONGoose
+﻿namespace OMONGoose
 {
     internal sealed class InputInitialization : IInitializable
     {
@@ -12,6 +9,8 @@ namespace OMONGoose
         private readonly IInputAxisChangeable _pcInputMouseX;
         private readonly IInputAxisChangeable _pcInputMouseY;
         private readonly IInputKeyPressable _pcInputInteract;
+        private readonly IInputKeyPressable _pcInputSave;
+        private readonly IInputKeyPressable _pcInputLoad;
 
         #endregion
         
@@ -21,7 +20,9 @@ namespace OMONGoose
             _pcInputVertical = new PCInputVertical();
             _pcInputMouseX = new PCInputMouseX();
             _pcInputMouseY = new PCInputMouseY();
-            _pcInputInteract = new PCInputInteract();
+            _pcInputInteract = new PCInputKey(AxisManager.INTERACT);
+            _pcInputSave = new PCInputKey(AxisManager.SAVE);
+            _pcInputLoad = new PCInputKey(AxisManager.LOAD);
         }
 
         public void Initialization()
@@ -45,6 +46,16 @@ namespace OMONGoose
         public IInputKeyPressable GetInputInteract()
         {
             return _pcInputInteract;
+        }
+
+        public IInputKeyPressable GetInputLoad()
+        {
+            return _pcInputLoad;
+        }
+        
+        public IInputKeyPressable GetInputSave()
+        {
+            return _pcInputSave;
         }
 
         ~InputInitialization()

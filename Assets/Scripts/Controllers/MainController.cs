@@ -24,6 +24,7 @@ namespace OMONGoose
             _context = new GameContext();
             
             var playerFactory = new PlayerFactory(_data.PlayerData);
+            var saveDataRepository = new SaveDataRepository();
             
             var inputInitialization = new InputInitialization();
             var playerInitialization = new PlayerInitialization(playerFactory);
@@ -38,7 +39,8 @@ namespace OMONGoose
             
             Camera camera = playerInitialization.GetCamera();
             
-            _controllers.Add(new InputController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputMouse(), inputInitialization.GetInputInteract()));
+            _controllers.Add(new InputController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputMouse(), 
+                inputInitialization.GetInputInteract(), inputInitialization.GetInputSave(), inputInitialization.GetInputLoad()));
             _controllers.Add(new MoveController(inputInitialization.GetInputKeyboard(), interactInitialization.GetInteractionSwitch(), 
                 playerInitialization.GetCharacterController(), playerInitialization.GetTransform(), playerInitialization.GetAnimator(), 
                 _data.PlayerData));
@@ -49,6 +51,8 @@ namespace OMONGoose
             _controllers.Add(new InteractController(inputInitialization.GetInputInteract(), interactInitialization.GetInteractionSwitch(), 
                 camera.transform, _context.CrosshairView));
             _controllers.Add(new CursorController(interactInitialization.GetInteractionSwitch()));
+            _controllers.Add(new SaveController(inputInitialization.GetInputLoad(), inputInitialization.GetInputSave(), 
+                saveDataRepository, playerFactory));
             _controllers.Initialization();
         }
 
