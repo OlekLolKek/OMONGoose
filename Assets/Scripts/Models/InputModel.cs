@@ -1,6 +1,6 @@
 ﻿namespace OMONGoose
 {
-    internal sealed class InputInitialization : IInitializable
+    internal sealed class InputModel : IInitializable
     {
         #region Fields
 
@@ -14,7 +14,7 @@
 
         #endregion
         
-        public InputInitialization()
+        public InputModel()
         {
             _pcInputHorizontal = new PCInputHorizontal();
             _pcInputVertical = new PCInputVertical();
@@ -58,7 +58,7 @@
             return _pcInputSave;
         }
 
-        ~InputInitialization()
+        ~InputModel()
         {
             
         }

@@ -11,16 +11,17 @@ namespace OMONGoose
         private readonly List<IExecutable> _executeTasks = new List<IExecutable>();
         private readonly TaskObject[] _taskObjects;
         private readonly TaskbarView _taskbar;
+        private readonly TaskModel _taskModel;
         private MainController _mainController;
-        private int _tasksDone = 0;
 
         #endregion
 
-        public TaskController(TaskObject[] taskObjectObjects, TaskData taskData, GameContext context)
+        public TaskController(TaskModel taskModel, TaskData taskData, GameContext context)
         {
-            _taskObjects = taskObjectObjects;
+            _taskModel = taskModel;
+            _taskObjects = taskModel.GetTasks();
             _taskbar = Object.Instantiate(taskData.TaskStruct.TaskbarPrefab, context.Canvas.transform).GetComponent<TaskbarView>();
-            _taskbar.Initialize(_taskObjects.Length);
+            _taskbar.Initialize(_taskObjects.Length, taskModel);
             
             foreach (var taskObject in _taskObjects)
             {
@@ -49,8 +50,7 @@ namespace OMONGoose
 
         private void CompleteTask(TaskObject taskObject)
         {
-            _tasksDone++;
-            _taskbar.TaskCompleted(_tasksDone, _taskObjects.Length);
+            _taskModel.TasksDone++;
             taskObject.CompletedTask -= CompleteTask;
         }
 

@@ -67,7 +67,6 @@ public class Asteroid : MonoBehaviour, IExecutable
             transform.Rotate(transform.forward, 90.0f);
 
         transform.Translate(_direction);
-        Debug.Log("Execute (executitsya)");
     }
 
     private void DestroyAsteroid()

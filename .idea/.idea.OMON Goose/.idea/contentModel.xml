@@ -89,7 +89,6 @@
             <e p="MainController.cs" t="Include" />
             <e p="MainMenuController.cs" t="Include" />
             <e p="MoveController.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
             <e p="SaveController.cs" t="Include" />
             <e p="TaskController.cs" t="Include" />
           </e>
@@ -125,13 +124,6 @@
           </e>
           <e p="FootstepEvent.cs" t="Include" />
           <e p="GameContext.cs" t="Include" />
-          <e p="Initializators" t="Include">
-            <e p="CrosshairInitializator.cs" t="Include" />
-            <e p="InputInitialization.cs" t="Include" />
-            <e p="InteractInitialization.cs" t="Include" />
-            <e p="PlayerInitialization.cs" t="Include" />
-            <e p="TaskInitialization.cs" t="Include" />
-          </e>
           <e p="Input" t="Include">
             <e p="PCInputHorizontal.cs" t="Include" />
             <e p="PCInputKey.cs" t="Include" />
@@ -156,7 +148,10 @@
             <e p="AxisManager.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
+            <e p="InputModel.cs" t="Include" />
+            <e p="InteractModel.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
+            <e p="TaskModel.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerFactory.cs" t="Include" />

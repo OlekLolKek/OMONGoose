@@ -54,8 +54,8 @@ namespace OMONGoose
 
         public void LateExecute(float deltaTime)
         {
-            _save.GetKey();
             _load.GetKey();
+            _save.GetKey();
         }
 
         #endregion

@@ -24,7 +24,7 @@ namespace OMONGoose
 
         #region Methods
 
-        public void Save(IPlayerFactory player)
+        public void Save(IPlayerFactory player, Transform camera, TaskObject[] tasks, TaskModel taskModel)
         {
             if (!Directory.Exists(Path.Combine(_path)))
             {
@@ -32,35 +32,49 @@ namespace OMONGoose
             }
 
             var transform = player.GetTransform();
-            
-            var savePlayer = new SavedData
+
+            var tasksDone = new bool [tasks.Length];
+            int doneTasksAmount = taskModel.TasksDone;
+            for (int i = 0; i < tasks.Length; i++)
             {
-                Position = transform.position,
-                Rotation = transform.rotation,
-                Name = player.GetTransform().transform.name,
-                IsEnabled = player.GetTransform().gameObject.activeSelf
-            };
-            Debug.Log(savePlayer);
+                tasksDone[i] = tasks[i].IsDone;
+            }
             
-            _data.Save(savePlayer, Path.Combine(_path, _FILE_NAME));
+            var savedData = new SavedData
+            {
+                PlayerPosition = transform.position,
+                PlayerRotation = transform.rotation,
+                CameraRotation = camera.rotation,
+                PlayerName = player.GetTransform().transform.name,
+                IsEnabled = player.GetTransform().gameObject.activeSelf,
+                TasksDone = tasksDone,
+                DoneTasksAmount = doneTasksAmount,
+            };
+
+            _data.Save(savedData, Path.Combine(_path, _FILE_NAME));
         }
 
-        public void Load(IPlayerFactory player)
+        public void Load(IPlayerFactory player, Transform cameraTransform, TaskObject[] tasks, TaskModel taskModel)
         {
             var file = Path.Combine(_path, _FILE_NAME);
             if (!File.Exists(file)) return;
-            var newPlayer = _data.Load(file);
+            var savedData = _data.Load(file);
 
-            var transform = player.GetTransform();
+            var playerTransform = player.GetTransform();
+
+            playerTransform.position = savedData.PlayerPosition;
+            playerTransform.rotation = savedData.PlayerRotation;
+            cameraTransform.rotation = savedData.CameraRotation;
+            playerTransform.gameObject.name = savedData.PlayerName;
+            playerTransform.gameObject.SetActive(savedData.IsEnabled);
+            taskModel.TasksDone = savedData.DoneTasksAmount;
+
+            for (int i = 0; i < savedData.TasksDone.Length; i++)
+            {
+                tasks[i].IsDone = savedData.TasksDone[i];
+            }
             
-            Debug.Log(transform.position);
-            
-            transform.position = newPlayer.Position;
-            transform.rotation = newPlayer.Rotation;
-            transform.gameObject.name = newPlayer.Name;
-            transform.gameObject.SetActive(newPlayer.IsEnabled);
-            
-            Debug.Log(player.GetTransform().position);
+            Debug.Log(cameraTransform.rotation);
         }
 
         #endregion

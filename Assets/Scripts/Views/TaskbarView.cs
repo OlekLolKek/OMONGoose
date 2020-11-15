@@ -10,22 +10,25 @@ namespace OMONGoose
 
         [SerializeField] private Slider _slider;
         [SerializeField] private Text _text;
+        private int _totalTasks = 0;
 
         #endregion
 
 
         #region Methods
 
-        public void Initialize(int totalTasks)
+        public void Initialize(int totalTasks, TaskModel taskModel)
         {
             _slider.value = 0.0f;
-            _text.text = $"0 / {totalTasks}";
+            _totalTasks = totalTasks;
+            _text.text = $"0 / {_totalTasks}";
+            taskModel.OnTasksDoneChanged += TaskCompleted;
         }
 
-        public void TaskCompleted(int tasksDone, int totalTasks)
+        public void TaskCompleted(int tasksDone)
         {
-            _slider.value = (float)tasksDone / (float)totalTasks;
-            _text.text = $"{tasksDone} / {totalTasks}";
+            _slider.value = (float)tasksDone / (float)_totalTasks;
+            _text.text = $"{tasksDone} / {_totalTasks}";
         }
 
         #endregion

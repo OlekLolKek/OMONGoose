@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 
 namespace OMONGoose
@@ -26,33 +25,33 @@ namespace OMONGoose
             var playerFactory = new PlayerFactory(_data.PlayerData);
             var saveDataRepository = new SaveDataRepository();
             
-            var inputInitialization = new InputInitialization();
-            var playerInitialization = new PlayerInitialization(playerFactory);
-            var taskInitialization = new TaskInitialization(_taskRoot);
-            var interactInitialization = new InteractInitialization();
+            var inputModel = new InputModel();
+            var playerModel = new PlayerModel(playerFactory);
+            var taskModel = new TaskModel(_taskRoot);
+            var interactModel = new InteractModel();
             
             _controllers = new Controllers();
-            _controllers.Add(inputInitialization);
-            _controllers.Add(playerInitialization);
-            _controllers.Add(taskInitialization);
-            _controllers.Add(interactInitialization);
+            _controllers.Add(inputModel);
+            _controllers.Add(playerModel);
+            _controllers.Add(taskModel);
+            _controllers.Add(interactModel);
             
-            Camera camera = playerInitialization.GetCamera();
+            Camera camera = playerModel.GetCamera();
             
-            _controllers.Add(new InputController(inputInitialization.GetInputKeyboard(), inputInitialization.GetInputMouse(), 
-                inputInitialization.GetInputInteract(), inputInitialization.GetInputSave(), inputInitialization.GetInputLoad()));
-            _controllers.Add(new MoveController(inputInitialization.GetInputKeyboard(), interactInitialization.GetInteractionSwitch(), 
-                playerInitialization.GetCharacterController(), playerInitialization.GetTransform(), playerInitialization.GetAnimator(), 
+            _controllers.Add(new InputController(inputModel.GetInputKeyboard(), inputModel.GetInputMouse(), 
+                inputModel.GetInputInteract(), inputModel.GetInputSave(), inputModel.GetInputLoad()));
+            _controllers.Add(new MoveController(inputModel.GetInputKeyboard(), interactModel.GetInteractionSwitch(), 
+                playerModel.GetCharacterController(), playerModel.GetTransform(), playerModel.GetAnimator(), 
                 _data.PlayerData));
-            _controllers.Add(new TaskController(taskInitialization.GetTasks(), _data.TaskData, _context));
-            _controllers.Add(new CameraController(inputInitialization.GetInputMouse(), interactInitialization.GetInteractionSwitch(),
-                playerInitialization.GetCharacterController().transform,
+            _controllers.Add(new TaskController(taskModel, _data.TaskData, _context));
+            _controllers.Add(new CameraController(inputModel.GetInputMouse(), interactModel.GetInteractionSwitch(),
+                playerModel.GetCharacterController().transform,
                 _data.PlayerData, camera.transform));
-            _controllers.Add(new InteractController(inputInitialization.GetInputInteract(), interactInitialization.GetInteractionSwitch(), 
+            _controllers.Add(new InteractController(inputModel.GetInputInteract(), interactModel.GetInteractionSwitch(), 
                 camera.transform, _context.CrosshairView));
-            _controllers.Add(new CursorController(interactInitialization.GetInteractionSwitch()));
-            _controllers.Add(new SaveController(inputInitialization.GetInputLoad(), inputInitialization.GetInputSave(), 
-                saveDataRepository, playerFactory));
+            _controllers.Add(new CursorController(interactModel.GetInteractionSwitch()));
+            _controllers.Add(new SaveController(inputModel.GetInputLoad(), inputModel.GetInputSave(), 
+                saveDataRepository, playerFactory, camera.transform, taskModel));
             _controllers.Initialization();
         }
 

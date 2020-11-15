@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEngine;
 
 
 namespace OMONGoose
@@ -9,16 +8,19 @@ namespace OMONGoose
     {
         #region Fields
 
-        public string Name;
-        public Vector3Serializable Position;
-        public QuaternionSerializable Rotation;
+        public string PlayerName;
+        public Vector3Serializable PlayerPosition;
+        public QuaternionSerializable PlayerRotation;
+        public QuaternionSerializable CameraRotation;
         public bool IsEnabled;
+        public int DoneTasksAmount;
+        public bool[] TasksDone;
 
         #endregion
         
         public override string ToString()
         {
-            return $"Name = {Name};\n Position = {Position.X}, {Position.Y}, {Position.Z};\n Rotation = {Rotation.X}, {Rotation.Y}, {Rotation.Z}, {Rotation.W}; IsVisible = {IsEnabled};";
+            return $"PlayerName = {PlayerName};\n PlayerPosition = {PlayerPosition};\n PlayerRotation = {PlayerRotation};\n CameraRotation = {CameraRotation} IsVisible = {IsEnabled};";
         }
     }
 }
