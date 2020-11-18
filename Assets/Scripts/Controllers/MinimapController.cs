@@ -1,6 +1,5 @@
 ﻿using OMONGoose.Minimap;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 
 namespace OMONGoose

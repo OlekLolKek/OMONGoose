@@ -20,20 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Map.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +108,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameContext.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
       </list>
     </option>
   </component>
@@ -232,7 +222,7 @@
       <workItem from="1605432297328" duration="16095000" />
       <workItem from="1605515284631" duration="16043000" />
       <workItem from="1605628610391" duration="4493000" />
-      <workItem from="1605689656524" duration="4475000" />
+      <workItem from="1605689656524" duration="7746000" />
     </task>
     <servers />
   </component>
