@@ -29,13 +29,13 @@ namespace OMONGoose
             var playerModel = new PlayerModel(playerFactory);
             var taskModel = new TaskModel(_taskRoot);
             var interactModel = new InteractModel();
-            
+
             _controllers = new Controllers();
             _controllers.Add(inputModel);
             _controllers.Add(playerModel);
             _controllers.Add(taskModel);
             _controllers.Add(interactModel);
-            
+
             Camera camera = playerModel.GetCamera();
             
             _controllers.Add(new InputController(inputModel.GetInputKeyboard(), inputModel.GetInputMouse(), 
@@ -52,6 +52,7 @@ namespace OMONGoose
             _controllers.Add(new CursorController(interactModel.GetInteractionSwitch()));
             _controllers.Add(new SaveController(inputModel.GetInputLoad(), inputModel.GetInputSave(), 
                 saveDataRepository, playerFactory, camera.transform, taskModel));
+            _controllers.Add(new MinimapController(_context.MinimapView, playerFactory.GetTransform()));
             _controllers.Initialization();
         }
 

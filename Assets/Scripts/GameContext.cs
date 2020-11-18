@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using OMONGoose.Minimap;
+using UnityEngine;
 
 
 namespace OMONGoose
@@ -8,6 +9,7 @@ namespace OMONGoose
         #region Fields
 
         private CrosshairView _crosshairView;
+        private MinimapView _minimapView;
         private Canvas _canvas;
 
         #endregion
@@ -36,6 +38,18 @@ namespace OMONGoose
                     _canvas = Object.FindObjectOfType<Canvas>();
                 }
                 return _canvas;
+            }
+        }
+
+        public MinimapView MinimapView
+        {
+            get
+            {
+                if (!_minimapView)
+                {
+                    _minimapView = Object.FindObjectOfType<MinimapView>();
+                }
+                return _minimapView;
             }
         }
 
