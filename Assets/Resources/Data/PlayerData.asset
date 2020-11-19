@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2d110bd0c19b14e81b6e8ad0099c45, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  PlayerStruct:
-    Player: {fileID: 0}
-    PlayerSpeed: 7.5
-    Sensitivity: 100
+  _playerPrefab: {fileID: 147799674140951904, guid: 460228a74f8c59442b47612b7fcf3cf6,
+    type: 3}
+  _speed: 6.5
+  _sensitivity: 100
+  _minXRotation: -90
+  _maxXRotation: 90

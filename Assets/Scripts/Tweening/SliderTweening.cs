@@ -9,7 +9,7 @@ namespace OMONGoose
     {
         #region Fields
 
-        [SerializeField] private AudioClipsSO _audioClips;
+        [SerializeField] private AudioClipsData _audioClips;
         private AudioSource _audioSource;
         private readonly Vector3 _tweeningScale = new Vector3(1.05f, 1.05f, 1.05f);
         private readonly Vector3 _defaultScale = new Vector3(1.0f, 1.0f, 1.0f);

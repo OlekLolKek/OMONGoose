@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 
 namespace OMONGoose
@@ -9,14 +7,15 @@ namespace OMONGoose
     {
         #region Fields
         
+        
+        public delegate void CompletedTaskChange(TaskObject taskObject);
+        public event CompletedTaskChange CompletedTask;
         public bool IsDone = false;
 
         [SerializeField] private RoomNames _roomName; 
         [SerializeField] private TaskTypes _type;
-
-        private TaskController _taskController;
+        
         private GameObject _panelPrefab;
-        private TaskModel _taskModel;
         private BaseTask _taskPanel;
         private Canvas _canvas;
 
@@ -25,24 +24,22 @@ namespace OMONGoose
 
         #region Methods
 
-        public void Initialize(TaskController taskController, Canvas canvas, TaskModel taskModel)
+        public void Initialize(GameContext context, TaskData taskData)
         {
-            _canvas = canvas;
-            _taskController = taskController;
-            _taskModel = taskModel;
+            _canvas = context.Canvas;
             switch (_type)
             {
                 case TaskTypes.Upload:
-                    _panelPrefab = _taskModel.TaskStruct.DownloadPanelPrefab;
+                    _panelPrefab = taskData.TaskStruct.DownloadPanelPrefab;
                     break;
                 case TaskTypes.Garbage:
-                    _panelPrefab = _taskModel.TaskStruct.GarbagePanelPrefab;
+                    _panelPrefab = taskData.TaskStruct.GarbagePanelPrefab;
                     break;
                 case TaskTypes.Wires:
-                    _panelPrefab = _taskModel.TaskStruct.WiresPanelPrefab;
+                    _panelPrefab = taskData.TaskStruct.WiresPanelPrefab;
                     break;
                 case TaskTypes.Asteroids:
-                    _panelPrefab = _taskModel.TaskStruct.AsteroidsPanelPrefab;
+                    _panelPrefab = taskData.TaskStruct.AsteroidsPanelPrefab;
                     break;
             }
         }
@@ -52,7 +49,8 @@ namespace OMONGoose
             if (!_taskPanel)
             {
                 _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
-                _taskPanel.Initialize(_taskController, _roomName);
+                _taskPanel.Initialize(_roomName);
+                _taskPanel.CompletedTask += OnTaskCompleted;
             }
             else
             {
@@ -60,8 +58,15 @@ namespace OMONGoose
                 {
                     IsDone = true;
                 }
+
+                _taskPanel.CompletedTask -= OnTaskCompleted;
                 _taskPanel.Deactivate();
             }
+        }
+
+        private void OnTaskCompleted()
+        {
+            CompletedTask?.Invoke(this);
         }
 
         #endregion

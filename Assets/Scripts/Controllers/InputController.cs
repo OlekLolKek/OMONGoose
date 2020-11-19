@@ -3,34 +3,31 @@
 
 namespace OMONGoose
 {
-    public sealed class InputController : IUpdatable
+    public sealed class InputController : IExecutable
     {
 
         #region Fields
 
-        public float Horizontal;
-        public float Vertical;
-        public float MouseX;
-        public float MouseY;
-
-        private PlayerController _playerController;
-        private InputStruct _inputStruct;
-        private GameContext _links;
-        private KeyCode _interact;
-        private KeyCode _quit;
+        private readonly IInputAxisChangeable _horizontal;
+        private readonly IInputAxisChangeable _vertical;
+        private readonly IInputAxisChangeable _mouseX;
+        private readonly IInputAxisChangeable _mouseY;
+        private readonly IInputKeyPressable _interact;
 
         #endregion
 
 
         #region ClassLifeCycles
 
-        public InputController(InputModel inputModel, GameContext links)
+        public InputController((IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) inputKeys, 
+            (IInputAxisChangeable inputMouseX, IInputAxisChangeable inputMouseY) inputMouse,
+            IInputKeyPressable inputInteract)
         {
-            _links = links;
-            _inputStruct = inputModel.InputStruct;
-            _quit = _inputStruct.Quit;
-            _interact = _inputStruct.Interact;
-            _playerController = ServiceLocator.Resolve<PlayerController>();
+            _horizontal = inputKeys.inputHorizontal;
+            _vertical = inputKeys.inputVertical;
+            _mouseX = inputMouse.inputMouseX;
+            _mouseY = inputMouse.inputMouseY;
+            _interact = inputInteract;
         }
 
         #endregion
@@ -38,31 +35,13 @@ namespace OMONGoose
 
         #region Methods
 
-        public void UpdateTick()
+        public void Execute(float deltaTime)
         {
-            Horizontal = Input.GetAxisRaw("Horizontal");
-            Vertical = Input.GetAxisRaw("Vertical");
-            MouseX = Input.GetAxisRaw("Mouse X");
-            MouseY = Input.GetAxisRaw("Mouse Y");
-
-            _playerController.Move(Horizontal, Vertical);
-            _playerController.Look(MouseX, MouseY);
-
-            CheckQuit();
-            CheckInteract();
-        }
-
-        private void CheckInteract()
-        {
-            if (Input.GetKeyDown(_interact))
-            {
-                _playerController.UseTask();
-            }
-        }
-
-        private void CheckQuit()
-        {
-            if (Input.GetKeyDown(_quit)) Application.Quit();
+            _horizontal.GetAxis();
+            _vertical.GetAxis();
+            _mouseX.GetAxis();
+            _mouseY.GetAxis();
+            _interact.GetKey();
         }
 
         #endregion

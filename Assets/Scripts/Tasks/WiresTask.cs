@@ -3,67 +3,70 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class WiresTask : BaseTask
+namespace OMONGoose
 {
-    #region Fields
-
-    [SerializeField] private Slider _sliderRed;
-    [SerializeField] private Slider _sliderBlue;
-    [SerializeField] private Slider _sliderYellow;
-    [SerializeField] private Slider _sliderPurple;
-
-    #endregion
-    
-    
-    #region Methods
-
-    public override void Initialize(TaskController taskController, RoomNames roomName)
+    public class WiresTask : BaseTask
     {
-        base.Initialize(taskController, roomName);
-        _maxProgress = 4.0f;
-    }
-
-    public void OnRedSliderValueChanged(float value)
-    {
-        ChangeSliderValue(_sliderRed , value);
-    }
+        #region Fields
     
-    public void OnBlueSliderValueChanged(float value)
-    {
-        ChangeSliderValue(_sliderBlue , value);
-    }
+        [SerializeField] private Slider _sliderRed;
+        [SerializeField] private Slider _sliderBlue;
+        [SerializeField] private Slider _sliderYellow;
+        [SerializeField] private Slider _sliderPurple;
     
-    public void OnYellowSliderValueChanged(float value)
-    {
-        ChangeSliderValue(_sliderYellow , value);
-    }
+        #endregion
+        
+        
+        #region Methods
     
-    public void OnPurpleSliderValueChanged(float value)
-    {
-        ChangeSliderValue(_sliderPurple , value);
-    }
-    
-    private void ChangeSliderValue(Slider slider, float value)
-    {
-        if (value >= 0.95f)
+        public override void Initialize(RoomNames roomName)
         {
-            slider.value = 1.0f;
-            if (slider.interactable)
+            base.Initialize(roomName);
+            _maxProgress = 4.0f;
+        }
+    
+        public void OnRedSliderValueChanged(float value)
+        {
+            ChangeSliderValue(_sliderRed , value);
+        }
+        
+        public void OnBlueSliderValueChanged(float value)
+        {
+            ChangeSliderValue(_sliderBlue , value);
+        }
+        
+        public void OnYellowSliderValueChanged(float value)
+        {
+            ChangeSliderValue(_sliderYellow , value);
+        }
+        
+        public void OnPurpleSliderValueChanged(float value)
+        {
+            ChangeSliderValue(_sliderPurple , value);
+        }
+        
+        private void ChangeSliderValue(Slider slider, float value)
+        {
+            if (value >= 0.95f)
             {
-                AddProgress();
-                slider.interactable = false;
+                slider.value = 1.0f;
+                if (slider.interactable)
+                {
+                    AddProgress();
+                    slider.interactable = false;
+                }
             }
         }
-    }
-
-    private void AddProgress()
-    {
-        _progress += 1.0f;
-        if (_progress >= _maxProgress)
+    
+        private void AddProgress()
         {
-            Completed();
+            _progress += 1.0f;
+            if (_progress >= _maxProgress)
+            {
+                Completed();
+            }
         }
+    
+        #endregion
     }
-
-    #endregion
 }
