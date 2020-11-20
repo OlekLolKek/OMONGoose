@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public sealed class PlayerModel : IInitializable
+    public sealed class PlayerModel
     {
         #region Fields
 
@@ -21,10 +21,6 @@ namespace OMONGoose
             _transform = playerFactory.GetTransform();
             _camera = playerFactory.GetCamera();
             _animator = playerFactory.GetAnimator();
-        }
-        
-        public void Initialization()
-        {
         }
 
         public Transform GetTransform()

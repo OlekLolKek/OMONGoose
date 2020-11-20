@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
-    public class PCInputHorizontal : IInputAxisChangeable
+    public sealed class PCInputHorizontal : IInputAxisChangeable
     {
         public event Action<float> OnAxisChanged = delegate(float f) {  };
 

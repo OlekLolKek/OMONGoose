@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
-    public class PCInputKey : IInputKeyPressable
+    public sealed class PCInputKey : IInputKeyPressable
     {
         public event Action<bool> OnKeyPressed = delegate(bool b) {  };
         private KeyCode _keyCode;

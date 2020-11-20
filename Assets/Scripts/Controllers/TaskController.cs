@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
-    public class TaskController : IInitializable, IExecutable, ICleanable
+    public sealed class TaskController : IExecutable, ICleanable
     {
         #region Fields
 
@@ -35,10 +35,6 @@ namespace OMONGoose
         }
 
         #region Methods
-
-        public void Initialization()
-        {
-        }
 
         public void Execute(float deltaTime)
         {

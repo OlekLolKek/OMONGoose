@@ -161,9 +161,6 @@
             <e p="PlayerFactory.cs" t="Include" />
           </e>
           <e p="PostProcessing.cs" t="Include" />
-          <e p="ServiceLocators" t="Include">
-            <e p="ServiceLocator.cs" t="Include" />
-          </e>
           <e p="Tasks" t="Include">
             <e p="Asteroid.cs" t="Include" />
             <e p="AsteroidsTask.cs" t="Include" />

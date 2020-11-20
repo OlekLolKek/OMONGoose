@@ -1,6 +1,6 @@
 ﻿namespace OMONGoose
 {
-    internal sealed class InputModel : IInitializable
+    internal sealed class InputModel
     {
         #region Fields
 
@@ -11,6 +11,8 @@
         private readonly IInputKeyPressable _pcInputInteract;
         private readonly IInputKeyPressable _pcInputSave;
         private readonly IInputKeyPressable _pcInputLoad;
+        private readonly IInputKeyPressable _pcInputMap1;
+        private readonly IInputKeyPressable _pcInputMap2;
 
         #endregion
         
@@ -23,10 +25,8 @@
             _pcInputInteract = new PCInputKey(AxisManager.INTERACT);
             _pcInputSave = new PCInputKey(AxisManager.SAVE);
             _pcInputLoad = new PCInputKey(AxisManager.LOAD);
-        }
-
-        public void Initialization()
-        {
+            _pcInputMap1 = new PCInputKey(AxisManager.MAP1);
+            _pcInputMap2 = new PCInputKey(AxisManager.MAP2);
         }
         
         public (IInputAxisChangeable inputHorizontal, IInputAxisChangeable inputVertical) GetInputKeyboard()
@@ -58,9 +58,10 @@
             return _pcInputSave;
         }
 
-        ~InputModel()
+        public (IInputKeyPressable Map1, IInputKeyPressable Map2) GetInputMap()
         {
-            
+            (IInputKeyPressable Map1, IInputKeyPressable Map2) result = (_pcInputMap1, _pcInputMap2);
+            return result;
         }
     }
 }

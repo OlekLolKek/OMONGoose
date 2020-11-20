@@ -11,5 +11,7 @@ namespace OMONGoose
         public const KeyCode INTERACT = KeyCode.E;
         public const KeyCode SAVE = KeyCode.C;
         public const KeyCode LOAD = KeyCode.V;
+        public const KeyCode MAP1 = KeyCode.Tab;
+        public const KeyCode MAP2 = KeyCode.M;
     }
 }

@@ -20,10 +20,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputHorizontal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputHorizontal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputKey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Map.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/InputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/InputModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/ServiceLocator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ServiceLocators/ServiceLocator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dataSave/data.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dataSave/data.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +88,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputAxisChangeable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputKeyPressable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/TaskInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputInteract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CursorInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InteractInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/InteractionSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CursorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/UIStruct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/UIController.cs" />
@@ -75,41 +112,33 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/Vector3Serializable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/QuaternionSerializable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/IData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/Crypto.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputInteract.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputKey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/InputModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/JsonData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InputModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InteractModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputHorizontal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputKey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseY.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SavedData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Radar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Radar/RadarObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Radar/RadarGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Radar/Radar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Radar/RadarObj.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/Minimap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
       </list>
     </option>
   </component>
@@ -139,7 +168,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -211,18 +240,8 @@
       <workItem from="1605006679607" duration="3033000" />
       <workItem from="1605044849854" duration="8909000" />
       <workItem from="1605076559816" duration="4140000" />
-      <workItem from="1605081167564" duration="3156000" />
-      <workItem from="1605233638107" duration="2308000" />
-      <workItem from="1605241055935" duration="78000" />
-      <workItem from="1605241191602" duration="595000" />
-      <workItem from="1605241814614" duration="44000" />
-      <workItem from="1605241876042" duration="278000" />
-      <workItem from="1605242174187" duration="16845000" />
-      <workItem from="1605352591579" duration="1574000" />
-      <workItem from="1605432297328" duration="16095000" />
-      <workItem from="1605515284631" duration="16043000" />
-      <workItem from="1605628610391" duration="4493000" />
-      <workItem from="1605689656524" duration="7746000" />
+      <workItem from="1605081167564" duration="2673000" />
+      <workItem from="1605877087631" duration="8861000" />
     </task>
     <servers />
   </component>
@@ -255,10 +274,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="220" key="RiderGenerateDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604706729025" />
-    <state x="169" y="201" width="1288" height="752" key="SettingsEditor" timestamp="1605459709573">
+    <state x="169" y="201" width="1089" height="711" key="SettingsEditor" timestamp="1605891402613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="169" y="201" width="1288" height="752" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605459709573" />
+    <state x="169" y="201" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605891402613" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1605077481850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -267,9 +286,9 @@
       <screen x="-1600" y="-181" width="1600" height="860" />
     </state>
     <state x="-1570" y="-181" width="1586" height="947" key="dock-window-1/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604528187535" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605538940934">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605050861843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605538940934" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605050861843" />
   </component>
 </project>

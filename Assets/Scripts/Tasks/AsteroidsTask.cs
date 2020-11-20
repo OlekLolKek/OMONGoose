@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 namespace OMONGoose
 {
-    public class AsteroidsTask : BaseTask, IExecutable
+    public sealed class AsteroidsTask : BaseTask, IExecutable
     {
         #region Fields
 
@@ -32,8 +32,7 @@ namespace OMONGoose
 
 
         #region Methods
-
-        //TODO: Поменять Update на Execute и вызывать его из другого места
+        
         public void Execute(float deltaTime)
         {
             foreach (var asteroid in _asteroids)

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-public class PostProcessing : MonoBehaviour
+public sealed class PostProcessing : MonoBehaviour
 {
     void Start()
     {

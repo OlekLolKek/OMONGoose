@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
-    public class TaskModel : IInitializable
+    public class TaskModel
     {
         #region Fields
 
@@ -27,10 +27,6 @@ namespace OMONGoose
         public TaskModel(Transform taskRoot)
         {
             _taskObjects = taskRoot.GetComponentsInChildren<TaskObject>();
-        }
-
-        public void Initialization()
-        {
         }
 
         public TaskObject[] GetTasks()

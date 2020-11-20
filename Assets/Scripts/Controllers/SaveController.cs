@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public class SaveController : IInitializable, ICleanable
+    public sealed class SaveController : ICleanable
     {
         private readonly SaveDataRepository _saveDataRepository;
         private readonly IInputKeyPressable _load;
@@ -26,10 +26,6 @@ namespace OMONGoose
 
             _load.OnKeyPressed += LoadGame;
             _save.OnKeyPressed += SaveGame;
-        }
-        
-        public void Initialization()
-        {
         }
         
         private void LoadGame(bool b)

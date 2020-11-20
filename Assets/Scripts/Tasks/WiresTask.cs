@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace OMONGoose
 {
-    public class WiresTask : BaseTask
+    public sealed class WiresTask : BaseTask
     {
         #region Fields
     

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace OMONGoose
 {
-    public class TaskbarView : MonoBehaviour
+    public sealed class TaskbarView : MonoBehaviour
     {
         #region Fields
 

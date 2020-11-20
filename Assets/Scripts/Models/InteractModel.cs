@@ -1,6 +1,6 @@
 ﻿namespace OMONGoose
 {
-    public class InteractModel : IInitializable
+    public class InteractModel 
     {
         #region Fields
 
@@ -11,10 +11,6 @@
         public InteractModel()
         {
             _switch = new InteractionSwitch();
-        }
-
-        public void Initialization()
-        {
         }
 
         public InteractionSwitch GetInteractionSwitch()
