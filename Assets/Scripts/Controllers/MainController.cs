@@ -49,6 +49,7 @@ namespace OMONGoose
             _controllers.Add(new SaveController(inputModel.GetInputLoad(), inputModel.GetInputSave(), 
                 saveDataRepository, playerFactory, camera.transform, taskModel));
             _controllers.Add(new MinimapController(_context.MinimapView, playerFactory.GetTransform(), inputModel.GetInputMap()));
+            
             _controllers.Initialization();
         }
 

@@ -6,14 +6,12 @@ namespace OMONGoose.Minimap
     public sealed class MinimapView : MonoBehaviour
     {
         [SerializeField] private GameObject _minimapRoot;
-        [SerializeField] private Transform _minimapSprite;
+        [SerializeField] private RectTransform _minimapRectTransform;
         [SerializeField] private Transform _minimapRotation;
         
         [SerializeField] private GameObject _mapSprite;
-        [SerializeField] private Transform _playerDot;
-
-        private RectTransform _minimapRectTransform;
-        private RectTransform _playerRectTransform;
+        [SerializeField] private RectTransform _playerDotRectTransform;
+        
         private Transform _playerTransform;
 
         // Размеры карты и миникарты я высчитал вручную, так что тут придётся оставить числа. Другого способа не нашёл.
@@ -23,8 +21,6 @@ namespace OMONGoose.Minimap
 
         public void Initialization(Transform playerTransform)
         {
-            _minimapRectTransform = _minimapSprite.GetComponent<RectTransform>();
-            _playerRectTransform = _playerDot.GetComponent<RectTransform>();
             _playerTransform = playerTransform;
         }
         
@@ -34,7 +30,7 @@ namespace OMONGoose.Minimap
             {
                 var playerPosition = _playerTransform.position;
                 var newPosition = new Vector3(playerPosition.x, playerPosition.z, 0.0f);
-                _playerRectTransform.anchoredPosition = newPosition * _mapRatio;
+                _playerDotRectTransform.anchoredPosition = newPosition * _mapRatio;
             }
             else
             {
