@@ -10,7 +10,7 @@ namespace OMONGoose
         private readonly IInputKeyPressable _interact;
         private readonly Transform _cameraTransform;
         private readonly CrosshairView _crosshairView;
-        private TaskObject _visibleTask;
+        private TaskObjectStatic _visibleTask;
         private bool _seesTask;
 
         #endregion
@@ -32,7 +32,7 @@ namespace OMONGoose
             var ray = new Ray(_cameraTransform.position, _cameraTransform.forward);
             if (Physics.Raycast(ray, out var hit, 3.0f))
             {
-                if (hit.collider.TryGetComponent<TaskObject>(out var taskObject))
+                if (hit.collider.TryGetComponent<TaskObjectStatic>(out var taskObject))
                 {
                     _seesTask = true;
                     _visibleTask = taskObject;

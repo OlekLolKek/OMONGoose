@@ -25,9 +25,9 @@ namespace OMONGoose
             
             foreach (var taskObject in _taskObjects)
             {
-                taskObject.Initialize(context, taskData);
+                taskObject.Initialize(context.Canvas, taskData);
                 taskObject.CompletedTask += CompleteTask;
-                if (taskObject is IExecutable executeTask)
+                if (taskObject is TaskObjectExecutable executeTask)
                 {
                     _executeTasks.Add(executeTask);
                 }

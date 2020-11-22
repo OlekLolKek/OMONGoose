@@ -1,12 +1,9 @@
 ﻿namespace OMONGoose
 {
-    public enum TaskTypes
+    public enum StaticTaskTypes
     {
-        Asteroids,
         Wires,
-        Memory,
         Upload,
         Garbage,
-        VendingMachine
     }
 }

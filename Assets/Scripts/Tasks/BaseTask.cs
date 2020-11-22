@@ -10,9 +10,9 @@ namespace OMONGoose
 
         public delegate void CompletedTaskChange();
         public event CompletedTaskChange CompletedTask;
-        public RoomNames RoomName;
-        public TaskTypes Type;
         
+        public RoomNames RoomName;
+
         [HideInInspector] public bool IsDone = false;
 
         [SerializeField] protected AudioClipsData _audioClips;
