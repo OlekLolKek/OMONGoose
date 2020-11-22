@@ -7,7 +7,9 @@ namespace OMONGoose
     {
         #region Fields
 
+        [Tooltip("The root Game Object for all the Task Objects.")]
         [SerializeField] private Transform _taskRoot;
+        [Tooltip("The Data Scriptable Object.")]
         [SerializeField] private Data _data;
 
         private GameContext _context;

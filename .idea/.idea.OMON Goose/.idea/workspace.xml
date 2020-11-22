@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/InteractionSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CursorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/UIStruct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/UIController.cs" />
@@ -100,15 +103,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
       </list>
     </option>
   </component>
@@ -212,7 +216,8 @@
       <workItem from="1605076559816" duration="4140000" />
       <workItem from="1605081167564" duration="2673000" />
       <workItem from="1605877087631" duration="8861000" />
-      <workItem from="1605903366362" duration="294000" />
+      <workItem from="1605903366362" duration="601000" />
+      <workItem from="1606040667988" duration="3102000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public sealed class CrosshairView : MonoBehaviour, IInitializable
+    public sealed class CrosshairView : MonoBehaviour
     {
         #region Fields
 
@@ -16,10 +16,6 @@ namespace OMONGoose
 
         #region Methods
 
-        public void Initialization()
-        {
-        }
-        
         public void TaskLocated()
         {
             LeanTween.scale(gameObject, _largeScale, _scaleTime);
@@ -31,7 +27,5 @@ namespace OMONGoose
         }
 
         #endregion
-
-
     }
 }
