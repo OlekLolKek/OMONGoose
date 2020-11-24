@@ -6,6 +6,7 @@ namespace OMONGoose
 {
     public sealed class TaskObjectStatic : TaskObject
     {
+        [Tooltip("The type of the panel that is going to appear when players interacts with this TaskObject.")]
         [SerializeField] private StaticTaskTypes _type;
         private BaseTask _taskPanel;
         

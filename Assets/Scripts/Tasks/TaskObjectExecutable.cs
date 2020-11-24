@@ -4,6 +4,7 @@ namespace OMONGoose
 {
     public class TaskObjectExecutable : TaskObject, IExecutable
     {
+        [Tooltip("The type of the panel that is going to appear when players interacts with this TaskObject.")]
         [SerializeField] private ExecutableTaskTypes _type;
         private BaseTaskExecutable _taskPanel;
 

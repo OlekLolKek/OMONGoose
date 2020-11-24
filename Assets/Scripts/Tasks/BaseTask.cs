@@ -11,10 +11,10 @@ namespace OMONGoose
         public delegate void CompletedTaskChange();
         public event CompletedTaskChange CompletedTask;
         
-        public RoomNames RoomName;
-
+        [HideInInspector] public RoomNames RoomName;
         [HideInInspector] public bool IsDone = false;
 
+        [Tooltip("The AudioClips Scriptable Object.")]
         [SerializeField] protected AudioClipsData _audioClips;
         protected AudioSource _audioSource;
         protected Canvas _canvas;

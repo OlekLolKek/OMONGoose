@@ -8,10 +8,10 @@ namespace OMONGoose
         public event CompletedTaskChange CompletedTask;
         public bool IsDone { get; set; }
         
+        [Tooltip("The room this TaskObject is located in.")]
         [SerializeField] protected RoomNames _roomName;
 
         protected GameObject _panelPrefab;
-        //protected BaseTask _taskPanel;
         protected Canvas _canvas;
 
         public abstract void Initialize(Canvas canvas, TaskData taskData);

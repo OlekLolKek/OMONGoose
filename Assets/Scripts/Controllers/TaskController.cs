@@ -22,11 +22,13 @@ namespace OMONGoose
             _taskObjects = taskModel.GetTasks();
             _taskbar = Object.Instantiate(taskData.TaskStruct.TaskbarPrefab, context.Canvas.transform).GetComponent<TaskbarView>();
             _taskbar.Initialize(_taskObjects.Length, taskModel);
+            taskModel.LoadTaskObject += LoadTaskObject;
             
             foreach (var taskObject in _taskObjects)
             {
                 taskObject.Initialize(context.Canvas, taskData);
                 taskObject.CompletedTask += CompleteTask;
+
                 if (taskObject is TaskObjectExecutable executeTask)
                 {
                     _executeTasks.Add(executeTask);
@@ -48,6 +50,11 @@ namespace OMONGoose
         {
             _taskModel.TasksDone++;
             taskObject.CompletedTask -= CompleteTask;
+        }
+
+        private void LoadTaskObject(TaskObject taskObject)
+        {
+            taskObject.CompletedTask += CompleteTask;
         }
 
         public void Cleanup()
