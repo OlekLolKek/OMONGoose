@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
       </list>
     </option>
@@ -226,7 +226,7 @@
       <workItem from="1605903366362" duration="601000" />
       <workItem from="1606040667988" duration="3102000" />
       <workItem from="1606045595985" duration="10052000" />
-      <workItem from="1606215238879" duration="4790000" />
+      <workItem from="1606215238879" duration="5442000" />
     </task>
     <servers />
   </component>
