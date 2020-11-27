@@ -12,5 +12,6 @@ namespace OMONGoose
         public GameObject GarbagePanelPrefab;
         public GameObject WiresPanelPrefab;
         public GameObject AsteroidsPanelPrefab;
+        public GameObject AcceptDivertedPowerPanelPrefab;
     }
 }

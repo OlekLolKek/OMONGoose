@@ -23,3 +23,5 @@ MonoBehaviour:
       type: 3}
     AsteroidsPanelPrefab: {fileID: 2217291763687555909, guid: 945186e869097a74393b54cf31d922b6,
       type: 3}
+    AcceptDivertedPowerPanelPrefab: {fileID: 8971732485011560786, guid: 4b7ac7c0d4b5b5340b3bdacfce9d59d1,
+      type: 3}

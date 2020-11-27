@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
+    [RequireComponent(typeof(AudioSource))]
     public abstract class BaseTask : MonoBehaviour
     {
         #region Fields
