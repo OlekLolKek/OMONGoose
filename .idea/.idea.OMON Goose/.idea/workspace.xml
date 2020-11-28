@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/TaskData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/TaskData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DataStructs/TaskStruct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataStructs/TaskStruct.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/StaticTaskTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/StaticTaskTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ExecutableTaskTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITaskObjectable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/TaskObject.cs" />
@@ -120,6 +112,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/TaskStruct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
       </list>
     </option>
   </component>
@@ -228,7 +221,8 @@
       <workItem from="1606045595985" duration="10052000" />
       <workItem from="1606215238879" duration="5442000" />
       <workItem from="1606408218307" duration="830000" />
-      <workItem from="1606480371244" duration="5345000" />
+      <workItem from="1606480371244" duration="6008000" />
+      <workItem from="1606580655045" duration="2180000" />
     </task>
     <servers />
   </component>
