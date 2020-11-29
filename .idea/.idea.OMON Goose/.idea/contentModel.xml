@@ -83,6 +83,7 @@
           <e p="Controllers" t="Include">
             <e p="CameraController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
+            <e p="CursorController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="InteractController.cs" t="Include" />
             <e p="MainController.cs" t="Include" />
@@ -109,10 +110,15 @@
             <e p="RoomNames.cs" t="Include" />
             <e p="TaskTypes.cs" t="Include" />
           </e>
+          <e p="Events" t="Include">
+            <e p="CrosshairEvent.cs" t="Include" />
+          </e>
           <e p="FootstepEvent.cs" t="Include" />
           <e p="GameContext.cs" t="Include" />
           <e p="Initializators" t="Include">
+            <e p="CrosshairInitializator.cs" t="Include" />
             <e p="InputInitialization.cs" t="Include" />
+            <e p="InteractInitialization.cs" t="Include" />
             <e p="PlayerInitialization.cs" t="Include" />
             <e p="TaskInitialization.cs" t="Include" />
           </e>
@@ -140,9 +146,7 @@
             <e p="AxisManager.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
-            <e p="InputModel.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
-            <e p="TaskModel.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerFactory.cs" t="Include" />
@@ -157,6 +161,7 @@
             <e p="BaseTask.cs" t="Include" />
             <e p="Download.cs" t="Include" />
             <e p="Garbage.cs" t="Include" />
+            <e p="InteractionSwitch.cs" t="Include" />
             <e p="TaskFactory.cs" t="Include" />
             <e p="TaskObject.cs" t="Include" />
             <e p="WiresTask.cs" t="Include" />
@@ -167,7 +172,6 @@
             <e p="WireTweening.cs" t="Include" />
           </e>
           <e p="Views" t="Include">
-            <e p="AsteroidsTaskView.cs" t="Include" />
             <e p="CrosshairView.cs" t="Include" />
             <e p="TaskbarView.cs" t="Include" />
           </e>

@@ -3,7 +3,11 @@
 
 namespace OMONGoose
 {
-    public sealed class TaskObject : MonoBehaviour
+    //TODO: сделать класс ExecuteTaskObject с наследованием от интерфейса ITaskObjectable
+    //             ITaskObjectable      IExecutable
+    //                  / \                 /
+    //  TaskObjectStatic   TaskObjectExecute
+    public sealed class TaskObject : MonoBehaviour, IExecutable
     {
         #region Fields
         
@@ -14,7 +18,8 @@ namespace OMONGoose
 
         [SerializeField] private RoomNames _roomName; 
         [SerializeField] private TaskTypes _type;
-        
+
+        private IExecutable _executeTask;
         private GameObject _panelPrefab;
         private BaseTask _taskPanel;
         private Canvas _canvas;
@@ -44,13 +49,22 @@ namespace OMONGoose
             }
         }
 
+        public void Execute(float deltaTime)
+        {
+            _executeTask?.Execute(deltaTime);
+        }
+
         public void Switch()
         {
             if (!_taskPanel)
             {
                 _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
-                _taskPanel.Initialize(_roomName);
+                _taskPanel.Initialize(_roomName, _canvas);
                 _taskPanel.CompletedTask += OnTaskCompleted;
+                if (_taskPanel is IExecutable executeTask)
+                {
+                    _executeTask = executeTask;
+                }
             }
             else
             {

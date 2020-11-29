@@ -22,9 +22,9 @@ namespace OMONGoose
 
         #region Methods
 
-        public override void Initialize(RoomNames roomName)
+        public override void Initialize(RoomNames roomName, Canvas canvas)
         {
-            base.Initialize(roomName);
+            base.Initialize(roomName, canvas);
             _maxProgress = 100.0f;
             var random = new System.Random();
             int arrowRotation = random.Next(2);

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 
 namespace OMONGoose
@@ -10,6 +9,7 @@ namespace OMONGoose
 
         private readonly CharacterController _characterController;
         private readonly Transform _transform;
+        private readonly Animator _animator;
         private readonly Camera _camera;
 
         #endregion
@@ -20,11 +20,11 @@ namespace OMONGoose
             _characterController = playerFactory.GetCharacterController();
             _transform = playerFactory.GetTransform();
             _camera = playerFactory.GetCamera();
+            _animator = playerFactory.GetAnimator();
         }
         
         public void Initialization()
         {
-            
         }
 
         public Transform GetTransform()
@@ -39,6 +39,11 @@ namespace OMONGoose
         public CharacterController GetCharacterController()
         {
             return _characterController;
+        }
+
+        public Animator GetAnimator()
+        {
+            return _animator;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace OMONGoose
         private readonly PlayerData _playerData;
         private CharacterController _characterController;
         private Transform _transform;
+        private Animator _animator;
         private GameObject _player;
         private Camera _camera;
 
@@ -24,6 +25,7 @@ namespace OMONGoose
             _transform = _player.transform;
             _characterController = _player.GetComponent<CharacterController>();
             _camera = _player.GetComponentInChildren<Camera>();
+            _animator = _player.GetComponent<Animator>();
         }
 
         public Camera GetCamera()
@@ -39,6 +41,11 @@ namespace OMONGoose
         public CharacterController GetCharacterController()
         {
             return _characterController;
+        }
+
+        public Animator GetAnimator()
+        {
+            return _animator;
         }
     }
 }
