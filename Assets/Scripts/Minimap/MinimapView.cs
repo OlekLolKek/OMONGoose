@@ -16,7 +16,7 @@ namespace OMONGoose.Minimap
         
         private float _minimapRatio = 500.0f / 135.0f;
         private float _mapRatio = 750 / 135.0f;
-        private bool _isMaximized = false;
+        private bool _isMaximized;
 
         public void Initialization(Transform playerTransform)
         {

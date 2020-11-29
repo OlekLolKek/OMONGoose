@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tweening/ButtonTweening.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tweening/ButtonTweening.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dataSave/data.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dataSave/data.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/UIInitializator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
@@ -85,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ExecutableTaskTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITaskObjectable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/TaskObject.cs" />
@@ -93,7 +95,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExeutable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/CompletedTaskChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" />
@@ -102,7 +103,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Priokl.cs" />
@@ -113,6 +113,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweening/ButtonTweening.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
       </list>
     </option>
   </component>
@@ -223,6 +228,7 @@
       <workItem from="1606408218307" duration="830000" />
       <workItem from="1606480371244" duration="6008000" />
       <workItem from="1606580655045" duration="2180000" />
+      <workItem from="1606650781421" duration="4291000" />
     </task>
     <servers />
   </component>
