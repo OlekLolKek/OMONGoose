@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public class MoveController : IExecutable, ICleanable
+    public sealed class MoveController : IExecutable, ICleanable
     {
         #region Fields
 

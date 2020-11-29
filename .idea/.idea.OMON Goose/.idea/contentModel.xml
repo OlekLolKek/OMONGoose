@@ -88,8 +88,9 @@
             <e p="InteractController.cs" t="Include" />
             <e p="MainController.cs" t="Include" />
             <e p="MainMenuController.cs" t="Include" />
+            <e p="MinimapController.cs" t="Include" />
             <e p="MoveController.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
+            <e p="SaveController.cs" t="Include" />
             <e p="TaskController.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
@@ -98,6 +99,15 @@
             <e p="InputData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
             <e p="TaskData.cs" t="Include" />
+          </e>
+          <e p="DataSaving" t="Include">
+            <e p="Crypto.cs" t="Include" />
+            <e p="IData.cs" t="Include" />
+            <e p="JsonData.cs" t="Include" />
+            <e p="QuaternionSerializable.cs" t="Include" />
+            <e p="SaveDataRepository.cs" t="Include" />
+            <e p="SavedData.cs" t="Include" />
+            <e p="Vector3Serializable.cs" t="Include" />
           </e>
           <e p="DataStructs" t="Include">
             <e p="AudioClips.cs" t="Include" />
@@ -115,16 +125,9 @@
           </e>
           <e p="FootstepEvent.cs" t="Include" />
           <e p="GameContext.cs" t="Include" />
-          <e p="Initializators" t="Include">
-            <e p="CrosshairInitializator.cs" t="Include" />
-            <e p="InputInitialization.cs" t="Include" />
-            <e p="InteractInitialization.cs" t="Include" />
-            <e p="PlayerInitialization.cs" t="Include" />
-            <e p="TaskInitialization.cs" t="Include" />
-          </e>
           <e p="Input" t="Include">
             <e p="PCInputHorizontal.cs" t="Include" />
-            <e p="PCInputInteract.cs" t="Include" />
+            <e p="PCInputKey.cs" t="Include" />
             <e p="PCInputMouseX.cs" t="Include" />
             <e p="PCInputMouseY.cs" t="Include" />
             <e p="PCInputVertical.cs" t="Include" />
@@ -145,16 +148,19 @@
           <e p="Managers" t="Include">
             <e p="AxisManager.cs" t="Include" />
           </e>
+          <e p="Minimap" t="Include">
+            <e p="MinimapView.cs" t="Include" />
+          </e>
           <e p="Models" t="Include">
+            <e p="InputModel.cs" t="Include" />
+            <e p="InteractModel.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
+            <e p="TaskModel.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerFactory.cs" t="Include" />
           </e>
           <e p="PostProcessing.cs" t="Include" />
-          <e p="ServiceLocators" t="Include">
-            <e p="ServiceLocator.cs" t="Include" />
-          </e>
           <e p="Tasks" t="Include">
             <e p="Asteroid.cs" t="Include" />
             <e p="AsteroidsTask.cs" t="Include" />

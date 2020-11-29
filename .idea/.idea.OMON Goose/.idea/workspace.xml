@@ -20,23 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/CursorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CursorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/AsteroidsTaskView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/AsteroidsTaskView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +41,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC2876E8-FF0B-42A2-A2A1-1B51F2B23C8A/51/13b7f1d8/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/0f/6bf9611f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/8d/cf1343d8/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.2.3/Runtime/Core/Log.cs" root0="SKIP_HIGHLIGHTING" />
@@ -71,48 +58,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Controllers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitializator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/MobileInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMobileInputFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/MobileInputFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/AudioClipsData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITaskFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/IUnit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseY.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputHorizontal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUserInputProxy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputAxisChangeable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputKeyPressable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/TaskInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputInteract.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CursorInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InteractInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/InteractionSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CursorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/UIStruct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/UIController.cs" />
@@ -120,8 +82,33 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/InputModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputHorizontal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputKey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseY.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
       </list>
     </option>
   </component>
@@ -224,6 +211,8 @@
       <workItem from="1605044849854" duration="8909000" />
       <workItem from="1605076559816" duration="4140000" />
       <workItem from="1605081167564" duration="2673000" />
+      <workItem from="1605877087631" duration="8861000" />
+      <workItem from="1605903366362" duration="294000" />
     </task>
     <servers />
   </component>
@@ -256,10 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="220" key="RiderGenerateDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604706729025" />
-    <state x="169" y="201" width="1089" height="711" key="SettingsEditor" timestamp="1605083260057">
+    <state x="169" y="201" width="1089" height="711" key="SettingsEditor" timestamp="1605891402613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="169" y="201" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605083260057" />
+    <state x="169" y="201" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605891402613" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1605077481850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

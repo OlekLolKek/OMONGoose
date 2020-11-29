@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public class FootstepEvent : MonoBehaviour
+    public sealed class FootstepEvent : MonoBehaviour
     {
         private AudioSource _audioSource;
 

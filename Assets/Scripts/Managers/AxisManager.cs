@@ -9,5 +9,9 @@ namespace OMONGoose
         public const string MOUSE_X = "Mouse X";
         public const string MOUSE_Y = "Mouse Y";
         public const KeyCode INTERACT = KeyCode.E;
+        public const KeyCode SAVE = KeyCode.C;
+        public const KeyCode LOAD = KeyCode.V;
+        public const KeyCode MAP1 = KeyCode.Tab;
+        public const KeyCode MAP2 = KeyCode.M;
     }
 }

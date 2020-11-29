@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace OMONGoose
 {
-    public class PCInputMouseX : IInputAxisChangeable
+    public sealed class PCInputMouseX : IInputAxisChangeable
     {
         public event Action<float> OnAxisChanged = delegate(float f) {  };
         

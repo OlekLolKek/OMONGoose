@@ -1,8 +1,7 @@
 ﻿namespace OMONGoose
 {
-    public interface ICleanable
+    public interface ICleanable : IControllable
     {
         void Cleanup();
-        
     }
 }

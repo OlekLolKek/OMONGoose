@@ -18,7 +18,6 @@ namespace OMONGoose
 
         public void Initialization()
         {
-            
         }
         
         public void TaskLocated()

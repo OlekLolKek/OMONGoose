@@ -5,8 +5,8 @@ namespace OMONGoose
     public interface IPlayerFactory
     {
         void CreatePlayer();
-        CharacterController GetCharacterController();
         Transform GetTransform();
+        CharacterController GetCharacterController();
         Camera GetCamera();
         Animator GetAnimator();
     }
