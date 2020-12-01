@@ -13,5 +13,6 @@ namespace OMONGoose
         public AudioClip WindowAppear;
         public AudioClip WindowDisappear;
         public AudioClip AsteroidExplosion;
+        public AudioClip TaskDone;
     }
 }

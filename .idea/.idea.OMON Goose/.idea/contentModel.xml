@@ -187,6 +187,7 @@
             <e p="Download.cs" t="Include" />
             <e p="Garbage.cs" t="Include" />
             <e p="InteractionSwitch.cs" t="Include" />
+            <e p="StabilizeSteering.cs" t="Include" />
             <e p="TaskFactory.cs" t="Include" />
             <e p="TaskObject.cs" t="Include" />
             <e p="TaskObjectExecutable.cs" t="Include" />

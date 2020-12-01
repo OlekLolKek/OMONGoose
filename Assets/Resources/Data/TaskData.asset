@@ -25,3 +25,5 @@ MonoBehaviour:
       type: 3}
     AcceptDivertedPowerPanelPrefab: {fileID: 8971732485011560786, guid: 4b7ac7c0d4b5b5340b3bdacfce9d59d1,
       type: 3}
+    StabilizeSteeringPanelPrefab: {fileID: 5541968071462983525, guid: c19ad9705f666be43a7547eb8146640d,
+      type: 3}

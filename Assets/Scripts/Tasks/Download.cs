@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -48,7 +49,7 @@ namespace OMONGoose
         private IEnumerator StartDownload()
         {
             _downloadButton.interactable = false;
-            LeanTween.scale(_downloadButton.gameObject, _normalSize, _tweenTime);
+            _downloadButton.transform.DOScale(Vector3.zero, _tweenTime);
             Destroy(_downloadButton.gameObject, _tweenTime);
 
             while (_progress < _maxProgress)
@@ -58,8 +59,9 @@ namespace OMONGoose
                 yield return 0;
             }
             Completed();
+            _progressBar.DOColor(Color.green, _tweenTime);
             yield return new WaitForSeconds(0.75f);
-            LeanTween.scale(_progressBar.gameObject, Vector3.zero, 0.1f);
+            _progressBar.transform.DOScale(Vector3.zero, _tweenTime);
         }
 
         #endregion

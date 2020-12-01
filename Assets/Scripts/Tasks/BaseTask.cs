@@ -13,7 +13,7 @@ namespace OMONGoose
         public event CompletedTaskChange CompletedTask;
         
         [HideInInspector] public RoomNames RoomName;
-        [HideInInspector] public bool IsDone = false;
+        [HideInInspector] public bool IsDone;
 
         [Tooltip("The AudioClips Scriptable Object.")]
         [SerializeField] protected AudioClipsData _audioClips;
@@ -50,6 +50,8 @@ namespace OMONGoose
         protected void Completed()
         {
             IsDone = true;
+            _audioSource.clip = _audioClips.AudioClips.TaskDone;
+            _audioSource.Play();
             CompletedTask?.Invoke();
         }
 

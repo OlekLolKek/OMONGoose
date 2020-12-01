@@ -13,5 +13,6 @@ namespace OMONGoose
         public GameObject WiresPanelPrefab;
         public GameObject AsteroidsPanelPrefab;
         public GameObject AcceptDivertedPowerPanelPrefab;
+        public GameObject StabilizeSteeringPanelPrefab;
     }
 }

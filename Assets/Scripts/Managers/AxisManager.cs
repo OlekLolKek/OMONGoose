@@ -13,5 +13,6 @@ namespace OMONGoose
         public const KeyCode LOAD = KeyCode.V;
         public const KeyCode MAP1 = KeyCode.Tab;
         public const KeyCode MAP2 = KeyCode.M;
+        public const KeyCode LEFT_MOUSE_BUTTON = KeyCode.Mouse0;
     }
 }

@@ -2,6 +2,7 @@
 {
     public enum ExecutableTaskTypes
     {
-        Asteroids
+        Asteroids,
+        StabilizeSteering
     }
 }
