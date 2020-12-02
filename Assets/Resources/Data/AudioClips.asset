@@ -19,3 +19,4 @@ MonoBehaviour:
     WindowAppear: {fileID: 8300000, guid: 04b88b83c7305c34c9ebb0266827d783, type: 3}
     WindowDisappear: {fileID: 8300000, guid: 1341c93043559644386b563830cabbcb, type: 3}
     AsteroidExplosion: {fileID: 8300000, guid: 91df237eac8f9d142be8bed8df282f42, type: 3}
+    TaskDone: {fileID: 8300000, guid: 73d8988fd3e67bf4f83e69390702f477, type: 3}
