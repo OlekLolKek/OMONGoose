@@ -6,10 +6,10 @@ namespace OMONGoose
 {
     public sealed class TaskObjectStatic : TaskObject
     {
-        [Tooltip("The type of the panel that is going to appear when players interacts with this TaskObject.")]
+        [Tooltip("The type of the panel that is going to appear when a player interacts with this TaskObject.")]
         [SerializeField] private StaticTaskTypes _type;
-        private BaseTask _taskPanel;
-        
+        //private BaseTaskView _taskViewPanel;
+
         #region Methods
         
         public override void Initialize(Canvas canvas, TaskData taskData)
@@ -19,37 +19,51 @@ namespace OMONGoose
             {
                 case StaticTaskTypes.UploadData:
                     _panelPrefab = taskData.TaskStruct.DownloadPanelPrefab;
+                    TaskPanelController = new DownloadTaskPanelController(_roomName, _canvas, _panelPrefab);
                     break;
                 case StaticTaskTypes.EmptyGarbage:
-                    _panelPrefab = taskData.TaskStruct.GarbagePanelPrefab;
+                    //TaskPanelController = new GarbageTaskPanelController();
                     break;
                 case StaticTaskTypes.FixWiring:
-                    _panelPrefab = taskData.TaskStruct.WiresPanelPrefab;
+                    //TaskPanelController = new WiresTaskPanelController();
                     break;
                 case StaticTaskTypes.AcceptDivertedPower:
-                    _panelPrefab = taskData.TaskStruct.AcceptDivertedPowerPanelPrefab;
+                    //TaskPanelController = new AcceptDivertedPowerTaskPanelController();
                     break;
             }
         }
 
         public override void Switch()
         {
-            if (!_taskPanel)
+            TaskPanelController.Switch();
+            if (TaskPanelController.IsActive)
             {
-                _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTask>();
-                _taskPanel.Initialize(_roomName, _canvas);
-                _taskPanel.CompletedTask += OnTaskCompleted;
+                TaskPanelController.CompletedTask += OnTaskPanelCompleted;
             }
             else
             {
-                if (_taskPanel.IsDone)
+                if (TaskPanelController.IsDone)
                 {
                     IsDone = true;
                 }
-
-                _taskPanel.CompletedTask -= OnTaskCompleted;
-                _taskPanel.Deactivate();
+                TaskPanelController.CompletedTask -= OnTaskPanelCompleted;
             }
+            // if (!_taskViewPanel)
+            // {
+            //     _taskViewPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTaskView>();
+            //     _taskViewPanel.Initialize(_roomName, _canvas);
+            //     _taskViewPanel.CompletedTask += OnTaskCompleted;
+            // }
+            // else
+            // {
+            //     if (_taskViewPanel.IsDone)
+            //     {
+            //         IsDone = true;
+            //     }
+            //
+            //     _taskViewPanel.CompletedTask -= OnTaskCompleted;
+            //     _taskViewPanel.Deactivate();
+            // }
         }
 
         #endregion

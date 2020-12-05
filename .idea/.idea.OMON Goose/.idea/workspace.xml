@@ -20,13 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects/RoundTable.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects/RoundTable.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/AudioClips.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/AudioClips.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTaskView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTaskView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskViewExecutable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskViewExecutable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,37 +66,28 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC2876E8-FF0B-42A2-A2A1-1B51F2B23C8A/51/13b7f1d8/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/0f/6bf9611f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/8d/cf1343d8/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/db/629d646e/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.2.3/Runtime/Core/Log.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/33/a35fa940/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Programs/Apps/Unity/2019.3.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/a2/9c9176e1/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/de/544df211/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/44/1ce98c7b/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/22/af0ecd1d/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/97/9eef93ce/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/67/29e5aae4/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/Programs/Apps/Unity/2019.3.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/6e/d2069d3c/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CrosshairEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputHorizontal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputKey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputMouseY.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" />
@@ -92,14 +103,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Priokl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/StaticTaskTypes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tweening/ButtonTweening.cs" />
@@ -110,13 +118,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ExecutableTaskTypes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/TaskStruct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/AudioClips.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteeringView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTaskView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
       </list>
     </option>
   </component>
@@ -232,6 +254,11 @@
       <workItem from="1606831825143" duration="6312000" />
       <workItem from="1606859461755" duration="1026000" />
       <workItem from="1606914150884" duration="2997000" />
+      <workItem from="1606930192758" duration="1231000" />
+      <workItem from="1607086796807" duration="9772000" />
+      <workItem from="1607180608588" duration="578000" />
+      <workItem from="1607183727222" duration="2509000" />
+      <workItem from="1607189343430" duration="15235000" />
     </task>
     <servers />
   </component>
@@ -288,9 +315,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606784982419" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606058390936">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607208164589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606058390936" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1607208164589" />
   </component>
 </project>

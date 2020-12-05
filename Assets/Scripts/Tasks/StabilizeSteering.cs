@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace OMONGoose
 {
-    public class StabilizeSteering : BaseTaskExecutable
+    public class StabilizeSteering : BaseTaskViewExecutable
     {
         #region Fields
 
@@ -24,13 +24,13 @@ namespace OMONGoose
 
         #region Methods
 
-        public override void Initialize(RoomNames roomName, Canvas canvas)
+        public override void Initialize()
         {
-            base.Initialize(roomName, canvas);
+            base.Initialize();
 
             var rectTransform = GetComponent<RectTransform>();
             _circleRadius = rectTransform.sizeDelta.x / 2;
-            _maxDistance = _canvas.scaleFactor * _circleRadius * _originalSpriteRatio;
+            //_maxDistance = _canvas.scaleFactor * _circleRadius * _originalSpriteRatio;
             _crosshair = Instantiate(
                 _crosshairPrefab,
                 _crosshairParent

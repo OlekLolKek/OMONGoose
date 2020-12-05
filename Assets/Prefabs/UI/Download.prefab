@@ -167,12 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03b63a5ac863dc4b97b6c072a03eb63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: 0
-  Type: 3
   IsDone: 0
   _audioClips: {fileID: 11400000, guid: 21d3a1490da94a249aa4128b49399e18, type: 2}
-  _downloadButton: {fileID: 4319926673377530089}
-  _progressBar: {fileID: 516334803584111289}
+  DownloadButton: {fileID: 4319926673377530089}
+  ProgressBar: {fileID: 516334803584111289}
   _arrow: {fileID: 4183535591146733130}
   _thisRoomText: {fileID: 1954361487066266696}
   _buttonText: {fileID: 3206618478596483215}
