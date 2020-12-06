@@ -91,12 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2020c2394f6106246b6aa1d288ee451a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: 0
-  Type: 4
   IsDone: 0
   _audioClips: {fileID: 11400000, guid: 21d3a1490da94a249aa4128b49399e18, type: 2}
-  _garbageSlider: {fileID: 827385542329834916}
-  _garbageCan: {fileID: 827385542820611774}
+  GarbageSlider: {fileID: 827385542329834916}
+  GarbageCan: {fileID: 827385542820611774}
+  GarbageCanColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!82 &8472949322624478766
 AudioSource:
   m_ObjectHideFlags: 0

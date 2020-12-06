@@ -458,6 +458,7 @@
           </e>
           <e p="PostProcessing.cs" t="Include" />
           <e p="Tasks" t="Include">
+            <e p="AcceptDivertedPowerTaskPanelController.cs" t="Include" />
             <e p="AcceptDivertedPowerView.cs" t="Include" />
             <e p="AsteroidsTaskView.cs" t="Include" />
             <e p="AsteroidView.cs" t="Include" />
@@ -466,6 +467,7 @@
             <e p="BaseTaskViewExecutable.cs" t="Include" />
             <e p="DownloadTaskPanelController.cs" t="Include" />
             <e p="DownloadTaskView.cs" t="Include" />
+            <e p="GarbageTaskPanelController.cs" t="Include" />
             <e p="GarbageTaskView.cs" t="Include" />
             <e p="InteractionSwitch.cs" t="Include" />
             <e p="StabilizeSteering.cs" t="Include" />
@@ -473,6 +475,7 @@
             <e p="TaskObject.cs" t="Include" />
             <e p="TaskObjectExecutable.cs" t="Include" />
             <e p="TaskObjectStatic.cs" t="Include" />
+            <e p="WiresTaskPanelController.cs" t="Include" />
             <e p="WiresTaskView.cs" t="Include" />
           </e>
           <e p="Tweening" t="Include">

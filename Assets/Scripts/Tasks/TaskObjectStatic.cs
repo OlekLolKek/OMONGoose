@@ -22,13 +22,16 @@ namespace OMONGoose
                     TaskPanelController = new DownloadTaskPanelController(_roomName, _canvas, _panelPrefab);
                     break;
                 case StaticTaskTypes.EmptyGarbage:
-                    //TaskPanelController = new GarbageTaskPanelController();
+                    _panelPrefab = taskData.TaskStruct.GarbagePanelPrefab;
+                    TaskPanelController = new GarbageTaskPanelController(_canvas, _panelPrefab);
                     break;
                 case StaticTaskTypes.FixWiring:
-                    //TaskPanelController = new WiresTaskPanelController();
+                    _panelPrefab = taskData.TaskStruct.WiresPanelPrefab;
+                    TaskPanelController = new WiresTaskPanelController(_canvas, _panelPrefab);
                     break;
                 case StaticTaskTypes.AcceptDivertedPower:
-                    //TaskPanelController = new AcceptDivertedPowerTaskPanelController();
+                    _panelPrefab = taskData.TaskStruct.AcceptDivertedPowerPanelPrefab;
+                    TaskPanelController = new AcceptDivertedPowerTaskPanelController(_canvas, _panelPrefab);
                     break;
             }
         }

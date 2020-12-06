@@ -20,33 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerTaskPanelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerTaskPanelController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskPanelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskPanelController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskPanelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskPanelController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Download.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTaskView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTaskView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskViewExecutable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskViewExecutable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GarbageTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GarbageTask.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WiresTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WiresTask.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
@@ -123,22 +110,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteeringView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTaskView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerTaskPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskPanelController.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +158,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -258,7 +248,9 @@
       <workItem from="1607086796807" duration="9772000" />
       <workItem from="1607180608588" duration="578000" />
       <workItem from="1607183727222" duration="2509000" />
-      <workItem from="1607189343430" duration="15235000" />
+      <workItem from="1607189343430" duration="16054000" />
+      <workItem from="1607264053292" duration="119000" />
+      <workItem from="1607264193045" duration="6061000" />
     </task>
     <servers />
   </component>
@@ -299,10 +291,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="751" y="220" key="RiderGenerateDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606050166440" />
-    <state x="683" y="329" width="1089" height="711" key="SettingsEditor" timestamp="1606058475624">
+    <state x="683" y="329" width="1089" height="711" key="SettingsEditor" timestamp="1607264170658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="683" y="329" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606058475624" />
+    <state x="683" y="329" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1607264170658" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1606051458743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

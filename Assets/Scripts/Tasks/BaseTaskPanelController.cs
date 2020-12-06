@@ -1,27 +1,25 @@
-﻿using DG.Tweening;
-using UnityEngine;
+﻿using UnityEngine;
+
 
 namespace OMONGoose
 {
     public class BaseTaskPanelController
     {
-        public bool IsDone { get; set; }
+        public bool IsDone { get; private set; }
         
         public delegate void CompletedTaskChange();
         public event CompletedTaskChange CompletedTask;
         public bool IsActive;
         
-        protected RoomNames _roomName;
-        protected GameObject _taskPanelPrefab;
         protected BaseTaskView _taskViewPanel;
-        protected Canvas _canvas;
         protected readonly float _tweenTime = 0.2f;
-        protected float _progress = 0.0f;
+        protected float _progress;
         protected float _maxProgress;
+        private readonly GameObject _taskPanelPrefab;
+        private readonly Canvas _canvas;
         
-
-
-        protected BaseTaskPanelController(RoomNames roomName, Canvas canvas, GameObject taskPanelPrefab)
+        
+        protected BaseTaskPanelController(Canvas canvas, GameObject taskPanelPrefab)
         {
             _canvas = canvas;
             _taskPanelPrefab = taskPanelPrefab;

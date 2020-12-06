@@ -12,12 +12,13 @@ namespace OMONGoose
     public class DownloadTaskPanelController : BaseTaskPanelController
     {
         private DownloadTaskView _downloadTaskViewPanel;
-        private RoomNames _roomName;
         private float _downloadSpeed = 15.0f;
-        private IDisposable coroutine;
+        private float _completedDelay = 0.75f;
+        private IDisposable _coroutine;
+        private readonly RoomNames _roomName;
 
         public DownloadTaskPanelController(RoomNames roomName, Canvas canvas, GameObject taskPanelPrefab) 
-            : base(roomName, canvas, taskPanelPrefab)
+            : base(canvas, taskPanelPrefab)
         {
             _maxProgress = 100.0f;
             _roomName = roomName;
@@ -34,7 +35,7 @@ namespace OMONGoose
         protected override void Deactivate()
         {
             base.Deactivate();
-            coroutine.Dispose();
+            _coroutine?.Dispose();
             _downloadTaskViewPanel.DownloadButton.onClick.RemoveAllListeners();
         }
 
@@ -54,7 +55,7 @@ namespace OMONGoose
 
         private void OnDownloadButtonPressed()
         {
-            coroutine = Observable.FromCoroutine(StartDownload).Subscribe();
+            _coroutine = Observable.FromCoroutine(StartDownload).Subscribe();
         }
 
         private IEnumerator StartDownload()
@@ -73,7 +74,7 @@ namespace OMONGoose
             }
             _downloadTaskViewPanel.Completed();
             progressBar.DOColor(Color.green, _tweenTime);
-            yield return new WaitForSeconds(0.75f);
+            yield return new WaitForSeconds(_completedDelay);
             progressBar.transform.DOScale(Vector3.zero, _tweenTime);
         }
     }
