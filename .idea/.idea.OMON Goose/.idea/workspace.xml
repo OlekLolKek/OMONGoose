@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dataSave/data.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dataSave/data.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +52,15 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/0f/6bf9611f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/8d/cf1343d8/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/db/629d646e/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.2.3/Runtime/Core/Log.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/33/a35fa940/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/Programs/Apps/Unity/2019.3.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/a2/9c9176e1/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/de/544df211/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/44/1ce98c7b/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/22/af0ecd1d/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/97/9eef93ce/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,23 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputAxisChangeable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputKeyPressable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/TaskInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InputInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputInteract.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/PlayerInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CursorInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/InteractInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/InteractionSwitch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CursorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/UIStruct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/UIController.cs" />
@@ -82,12 +76,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/InputModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanable.cs" />
@@ -99,16 +90,36 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/PCInputVertical.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/InteractModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/TaskbarView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FootstepEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ExecutableTaskTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITaskObjectable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/TaskObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/StaticTaskTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/IBaseTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExeutable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Events/CompletedTaskChange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskStatic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
       </list>
     </option>
   </component>
@@ -138,7 +149,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -212,7 +223,10 @@
       <workItem from="1605076559816" duration="4140000" />
       <workItem from="1605081167564" duration="2673000" />
       <workItem from="1605877087631" duration="8861000" />
-      <workItem from="1605903366362" duration="294000" />
+      <workItem from="1605903366362" duration="601000" />
+      <workItem from="1606040667988" duration="3102000" />
+      <workItem from="1606045595985" duration="10052000" />
+      <workItem from="1606215238879" duration="5442000" />
     </task>
     <servers />
   </component>
@@ -237,29 +251,33 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="682" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606046318665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606046318665" />
     <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1604342483089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604342483089" />
-    <state x="751" y="220" key="RiderGenerateDialog" timestamp="1604706729025">
+    <state x="751" y="220" key="RiderGenerateDialog" timestamp="1606050166440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="751" y="220" key="RiderGenerateDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604706729025" />
-    <state x="169" y="201" width="1089" height="711" key="SettingsEditor" timestamp="1605891402613">
+    <state x="751" y="220" key="RiderGenerateDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606050166440" />
+    <state x="683" y="329" width="1089" height="711" key="SettingsEditor" timestamp="1606058475624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="169" y="201" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605891402613" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1605077481850">
+    <state x="683" y="329" width="1089" height="711" key="SettingsEditor/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606058475624" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1606051458743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605077481850" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606051458743" />
     <state x="-1570" y="-181" width="1586" height="947" key="dock-window-1" timestamp="1604528187535">
       <screen x="-1600" y="-181" width="1600" height="860" />
     </state>
     <state x="-1570" y="-181" width="1586" height="947" key="dock-window-1/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604528187535" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605050861843">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606058390936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1605050861843" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606058390936" />
   </component>
 </project>

@@ -13,8 +13,7 @@ namespace OMONGoose.Minimap
         [SerializeField] private RectTransform _playerDotRectTransform;
         
         private Transform _playerTransform;
-
-        // Размеры карты и миникарты я высчитал вручную, так что тут придётся оставить числа. Другого способа не нашёл.
+        
         private float _minimapRatio = 500.0f / 135.0f;
         private float _mapRatio = 750 / 135.0f;
         private bool _isMaximized = false;

@@ -47,15 +47,11 @@ namespace OMONGoose
         
         private void ChangeSliderValue(Slider slider, float value)
         {
-            if (value >= 0.95f)
-            {
-                slider.value = 1.0f;
-                if (slider.interactable)
-                {
-                    AddProgress();
-                    slider.interactable = false;
-                }
-            }
+            if (!(value >= 0.95f)) return;
+            slider.value = 1.0f;
+            if (!slider.interactable) return;
+            AddProgress();
+            slider.interactable = false;
         }
     
         private void AddProgress()

@@ -33,6 +33,7 @@ namespace OMONGoose
 
         #endregion
 
+        
         #region Methods
 
         public void Initialization(int index, float maxRight, float maxLeft, float maxUp, float maxDown)

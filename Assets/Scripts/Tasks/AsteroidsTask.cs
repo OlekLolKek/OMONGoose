@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 namespace OMONGoose
 {
-    public sealed class AsteroidsTask : BaseTask, IExecutable
+    public sealed class AsteroidsTask : BaseTaskExecutable
     {
         #region Fields
 
@@ -21,19 +21,19 @@ namespace OMONGoose
         private Vector2 _direction;
         private float _asteroidSpeed = 2.0f;
         private float _canvasScaleFactor;
-        private int _asteroidsCount = 10;
+        private float _startOffset = 150.0f;
         private float _maxRight;
         private float _maxLeft;
-        private float _maxUp;
         private float _maxDown;
-        private float _startOffset = 150.0f;
+        private float _maxUp;
+        private int _asteroidsCount = 10;
 
         #endregion
 
 
         #region Methods
         
-        public void Execute(float deltaTime)
+        public override void Execute(float deltaTime)
         {
             foreach (var asteroid in _asteroids)
             {

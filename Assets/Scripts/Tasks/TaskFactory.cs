@@ -12,13 +12,13 @@ namespace OMONGoose
 
         private GameContext _context;
         private TaskData _taskData;
-        private TaskObject[] _tasks;
+        private TaskObjectStatic[] _tasks;
 
         #endregion
         
         public TaskFactory(TaskData taskData, Transform root, GameContext context)
         {
-            _tasks = root.GetComponentsInChildren<TaskObject>();
+            _tasks = root.GetComponentsInChildren<TaskObjectStatic>();
             _context = context;
         }
 

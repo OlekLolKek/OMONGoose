@@ -10,7 +10,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ClassDiagram1.cd" t="Include" />
         <e p="LeanTween" t="Include">
           <e p="Editor" t="Include">
             <e p="LeanTweenDocumentationEditor.cs" t="Include" />
@@ -116,11 +115,13 @@
             <e p="TaskStruct.cs" t="Include" />
           </e>
           <e p="Enums" t="Include">
+            <e p="ExecutableTaskTypes.cs" t="Include" />
             <e p="MainMenuStates.cs" t="Include" />
             <e p="RoomNames.cs" t="Include" />
-            <e p="TaskTypes.cs" t="Include" />
+            <e p="StaticTaskTypes.cs" t="Include" />
           </e>
           <e p="Events" t="Include">
+            <e p="CompletedTaskChange.cs" t="Include" />
             <e p="CrosshairEvent.cs" t="Include" />
           </e>
           <e p="FootstepEvent.cs" t="Include" />
@@ -165,11 +166,14 @@
             <e p="Asteroid.cs" t="Include" />
             <e p="AsteroidsTask.cs" t="Include" />
             <e p="BaseTask.cs" t="Include" />
+            <e p="BaseTaskExecutable.cs" t="Include" />
             <e p="Download.cs" t="Include" />
             <e p="Garbage.cs" t="Include" />
             <e p="InteractionSwitch.cs" t="Include" />
             <e p="TaskFactory.cs" t="Include" />
             <e p="TaskObject.cs" t="Include" />
+            <e p="TaskObjectExecutable.cs" t="Include" />
+            <e p="TaskObjectStatic.cs" t="Include" />
             <e p="WiresTask.cs" t="Include" />
           </e>
           <e p="Tweening" t="Include">

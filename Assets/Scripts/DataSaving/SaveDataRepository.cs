@@ -71,10 +71,12 @@ namespace OMONGoose
 
             for (int i = 0; i < savedData.TasksDone.Length; i++)
             {
+                if (tasks[i].IsDone && !savedData.TasksDone[i])
+                {
+                    taskModel.LoadTask(tasks[i]);
+                }
                 tasks[i].IsDone = savedData.TasksDone[i];
             }
-            
-            Debug.Log(cameraTransform.rotation);
         }
 
         #endregion
