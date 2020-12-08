@@ -20,23 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerTaskPanelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerTaskPanelController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskPanelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskPanelController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskPanelController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskPanelController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GarbageTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GarbageTask.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/WiresTask.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WiresTask.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,12 +109,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/DownloadTaskPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPowerTaskPanelController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskPanelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTaskPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/GarbageTaskView.cs" />
       </list>
     </option>
   </component>
@@ -251,6 +237,7 @@
       <workItem from="1607189343430" duration="16054000" />
       <workItem from="1607264053292" duration="119000" />
       <workItem from="1607264193045" duration="6061000" />
+      <workItem from="1607366206006" duration="2678000" />
     </task>
     <servers />
   </component>
