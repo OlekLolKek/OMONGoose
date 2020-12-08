@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4356499127049405888}
   - component: {fileID: 4688417092597129480}
   m_Layer: 5
-  m_Name: Thing
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,12 +394,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f431153505c4e3bad07b83fa115ffd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: 0
   IsDone: 0
   _audioClips: {fileID: 11400000, guid: 21d3a1490da94a249aa4128b49399e18, type: 2}
-  _button: {fileID: 44247910263858706}
-  _wires: {fileID: 5896618047486941490}
-  _wiresColor: {r: 0.9803922, g: 0.9490197, b: 0.21176472, a: 1}
+  Button: {fileID: 44247910263858706}
+  Wires: {fileID: 5896618047486941490}
+  WiresColor: {r: 0.9803922, g: 0.9490197, b: 0.21176472, a: 1}
 --- !u!82 &-4854745276944587126
 AudioSource:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ namespace OMONGoose
     {
         [Tooltip("The type of the panel that is going to appear when players interacts with this TaskObject.")]
         [SerializeField] private ExecutableTaskTypes _type;
-        private BaseTaskExecutable _taskPanel;
+        private BaseTaskViewExecutable _taskViewPanel;
 
         public override void Initialize(Canvas canvas, TaskData taskData)
         {
@@ -24,27 +24,27 @@ namespace OMONGoose
 
         public void Execute(float deltaTime)
         {
-            if (!_taskPanel) return;
-            _taskPanel.Execute(deltaTime);
+            if (!_taskViewPanel) return;
+            _taskViewPanel.Execute(deltaTime);
         }
 
         public override void Switch()
         {
-            if (!_taskPanel)
+            if (!_taskViewPanel)
             {
-                _taskPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTaskExecutable>();
-                _taskPanel.Initialize(_roomName, _canvas);
-                _taskPanel.CompletedTask += OnTaskCompleted;
+                _taskViewPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTaskViewExecutable>();
+                _taskViewPanel.Initialize();
+                _taskViewPanel.CompletedTask += OnTaskPanelCompleted;
             }
             else
             {
-                if (_taskPanel.IsDone)
+                if (_taskViewPanel.IsDone)
                 {
                     IsDone = true;
                 }
 
-                _taskPanel.CompletedTask -= OnTaskCompleted;
-                _taskPanel.Deactivate();
+                _taskViewPanel.CompletedTask -= OnTaskPanelCompleted;
+                _taskViewPanel.Deactivate();
             }
         }
     }
