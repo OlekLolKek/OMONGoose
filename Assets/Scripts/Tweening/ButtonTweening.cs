@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -12,12 +13,13 @@ namespace OMONGoose
         [SerializeField] private AudioClipsData _audioClips;
 
         private AudioSource _audioSource;
-        private Vector3 _tweeningScale = new Vector3(1.05f, 1.05f, 1.05f);
-        private Vector3 _defaultScale = new Vector3(1.0f, 1.0f, 1.0f);
+        private readonly Vector3 _tweeningScale = new Vector3(1.05f, 1.05f, 1.05f);
+        private readonly Vector3 _defaultScale = new Vector3(1.0f, 1.0f, 1.0f);
+        private readonly Vector3 _tweeningAngle = new Vector3(0.0f, 0.0f, 3.0f);
         private Button _thisButton;
-        private float _tweeningAngle = 3.0f;
-        private float _defaultAngle = 0.0f;
-        private float _tweeningTime = 0.05f;
+
+        private readonly float _defaultAngle = 0.0f;
+        private readonly float _tweeningTime = 0.05f;
 
         #endregion
 
@@ -33,8 +35,8 @@ namespace OMONGoose
         public void OnPointerEnter(PointerEventData eventData)
         {
             if (!_thisButton.interactable) return;
-            LeanTween.scale(gameObject, _tweeningScale, _tweeningTime);
-            LeanTween.rotateZ(gameObject, _tweeningAngle, _tweeningTime);
+            transform.DOScale(_tweeningScale, _tweeningTime);
+            transform.DORotate(_tweeningAngle, _tweeningTime);
             _audioSource.clip = _audioClips.AudioClips.Woosh;
             _audioSource.Play();
         }
@@ -42,14 +44,14 @@ namespace OMONGoose
         public void OnPointerExit(PointerEventData eventData)
         {
             if (!_thisButton.interactable) return;
-            LeanTween.scale(gameObject, _defaultScale, _tweeningTime);
-            LeanTween.rotateZ(gameObject, _defaultAngle, _tweeningTime);
+            transform.DOScale(_defaultScale, _tweeningTime);
+            transform.DORotate(Vector3.zero, _tweeningTime);
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
             if (!_thisButton.interactable) return;
-            LeanTween.scale(gameObject, _defaultScale, _tweeningTime);
+            transform.DOScale(_defaultScale, _tweeningTime);
             _audioSource.clip = _audioClips.AudioClips.Pop;
             _audioSource.Play();
         }
@@ -57,7 +59,7 @@ namespace OMONGoose
         public void OnPointerUp(PointerEventData eventData)
         {
             if (!_thisButton.interactable) return;
-            LeanTween.scale(gameObject, _tweeningScale, _tweeningTime);
+            transform.DOScale(_tweeningScale, _tweeningTime);
         }
 
         #endregion

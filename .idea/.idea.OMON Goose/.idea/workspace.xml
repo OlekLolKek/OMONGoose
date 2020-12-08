@@ -21,16 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d4db6b00-d37a-4d73-8c79-f7662dfd11c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMON Goose/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects/RoundTable.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Objects/RoundTable.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AcceptDivertedPower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/AudioClips.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/AudioClips.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Skeld.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dataSave/data.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dataSave/data.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,21 +59,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/22/af0ecd1d/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/97/9eef93ce/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/67/29e5aae4/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23A7799D-A2E9-41B8-8C6D-B790C607D655/6e/d2069d3c/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/UIStruct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/UIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/UIInitializator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Data.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Initializators/CrosshairInitializator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/InputModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IControllable.cs" />
@@ -95,31 +83,40 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/CrosshairView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Asteroid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ExecutableTaskTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ITaskObjectable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/TaskObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/StaticTaskTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/IBaseTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExeutable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Events/CompletedTaskChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskExecutable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTaskStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/WiresTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Garbage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InteractController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MinimapController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataSaving/SaveDataRepository.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/TaskController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Priokl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/StaticTaskTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectStatic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AcceptDivertedPower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweening/ButtonTweening.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweening/SliderTweening.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/TaskModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Minimap/MinimapView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/SaveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/AsteroidsTask.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ExecutableTaskTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/TaskObjectExecutable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/TaskStruct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/StabilizeSteering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataStructs/AudioClips.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/Download.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tasks/BaseTask.cs" />
       </list>
     </option>
   </component>
@@ -227,6 +224,14 @@
       <workItem from="1606040667988" duration="3102000" />
       <workItem from="1606045595985" duration="10052000" />
       <workItem from="1606215238879" duration="5442000" />
+      <workItem from="1606408218307" duration="830000" />
+      <workItem from="1606480371244" duration="6008000" />
+      <workItem from="1606580655045" duration="2180000" />
+      <workItem from="1606650781421" duration="4998000" />
+      <workItem from="1606776246733" duration="7198000" />
+      <workItem from="1606831825143" duration="6312000" />
+      <workItem from="1606859461755" duration="1026000" />
+      <workItem from="1606914150884" duration="2997000" />
     </task>
     <servers />
   </component>
@@ -251,14 +256,18 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="161" key="#Plugins" timestamp="1606777366665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606777366665" />
     <state x="682" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606046318665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="682" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606046318665" />
-    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1604342483089">
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1606835141890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604342483089" />
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606835141890" />
     <state x="751" y="220" key="RiderGenerateDialog" timestamp="1606050166440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -275,6 +284,10 @@
       <screen x="-1600" y="-181" width="1600" height="860" />
     </state>
     <state x="-1570" y="-181" width="1586" height="947" key="dock-window-1/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1604528187535" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606784982419">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1600.-181.1600.860@0.0.1920.1040" timestamp="1606784982419" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606058390936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

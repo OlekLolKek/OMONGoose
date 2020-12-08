@@ -17,14 +17,17 @@ namespace OMONGoose
             _canvas = canvas;
             switch (_type)
             {
-                case StaticTaskTypes.Upload:
+                case StaticTaskTypes.UploadData:
                     _panelPrefab = taskData.TaskStruct.DownloadPanelPrefab;
                     break;
-                case StaticTaskTypes.Garbage:
+                case StaticTaskTypes.EmptyGarbage:
                     _panelPrefab = taskData.TaskStruct.GarbagePanelPrefab;
                     break;
-                case StaticTaskTypes.Wires:
+                case StaticTaskTypes.FixWiring:
                     _panelPrefab = taskData.TaskStruct.WiresPanelPrefab;
+                    break;
+                case StaticTaskTypes.AcceptDivertedPower:
+                    _panelPrefab = taskData.TaskStruct.AcceptDivertedPowerPanelPrefab;
                     break;
             }
         }

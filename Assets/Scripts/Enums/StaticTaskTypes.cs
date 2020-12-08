@@ -2,8 +2,10 @@
 {
     public enum StaticTaskTypes
     {
-        Wires,
-        Upload,
-        Garbage,
+        FixWiring,
+        UploadData,
+        DownloadData,
+        EmptyGarbage,
+        AcceptDivertedPower
     }
 }

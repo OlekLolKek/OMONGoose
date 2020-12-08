@@ -12,14 +12,10 @@ namespace OMONGoose
         #region Fields
 
         [SerializeField] private Asteroid _asteroidPrefab;
-        [SerializeField] private AnimationClip _clip;
 
         private readonly List<Asteroid> _asteroids = new List<Asteroid>();
-        private Animator _animator;
         private Image _thisImage;
         private Vector2 _sizeDelta;
-        private Vector2 _direction;
-        private float _asteroidSpeed = 2.0f;
         private float _canvasScaleFactor;
         private float _startOffset = 150.0f;
         private float _maxRight;
@@ -48,7 +44,6 @@ namespace OMONGoose
             _thisImage = GetComponent<Image>();
             _maxProgress = 10.0f;
             
-            _audioSource = GetComponent<AudioSource>();
             _sizeDelta = _thisImage.rectTransform.sizeDelta;
             _canvasScaleFactor = _canvas.scaleFactor;
 

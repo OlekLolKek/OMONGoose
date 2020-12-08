@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -30,7 +31,7 @@ namespace OMONGoose
         public void OnPointerEnter(PointerEventData eventData)
         {
             if (!_parentSlider.interactable) return;
-            LeanTween.scale(gameObject, _tweeningScale, _tweeningTime);
+            transform.DOScale(_tweeningScale, _tweeningTime);
             _audioSource.clip = _audioClips.AudioClips.Woosh;
             _audioSource.Play();
         }
@@ -38,13 +39,13 @@ namespace OMONGoose
         public void OnPointerExit(PointerEventData eventData)
         {
             if (!_parentSlider.interactable) return;
-            LeanTween.scale(gameObject, _defaultScale, _tweeningTime);
+            transform.DOScale(_defaultScale, _tweeningTime);
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
             if (!_parentSlider.interactable) return;
-            LeanTween.scale(gameObject, _defaultScale, _tweeningTime);
+            transform.DOScale(_defaultScale, _tweeningTime);
             _audioSource.clip = _audioClips.AudioClips.Pop;
             _audioSource.Play();
         }
@@ -52,7 +53,7 @@ namespace OMONGoose
         public void OnPointerUp(PointerEventData eventData)
         {
             if (!_parentSlider.interactable) return;
-            LeanTween.scale(gameObject, _tweeningScale, _tweeningTime);
+            transform.DOScale(_tweeningScale, _tweeningTime);
         }
 
         #endregion

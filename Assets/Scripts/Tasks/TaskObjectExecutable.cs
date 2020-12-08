@@ -16,6 +16,9 @@ namespace OMONGoose
                 case ExecutableTaskTypes.Asteroids :
                     _panelPrefab = taskData.TaskStruct.AsteroidsPanelPrefab;
                     break;
+                case ExecutableTaskTypes.StabilizeSteering:
+                    _panelPrefab = taskData.TaskStruct.StabilizeSteeringPanelPrefab;
+                    break;
             }
         }
 

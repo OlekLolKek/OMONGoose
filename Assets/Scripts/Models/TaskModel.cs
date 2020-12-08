@@ -38,7 +38,6 @@ namespace OMONGoose
 
         public void LoadTask(TaskObject taskObject)
         {
-            Debug.Log("Invoke");
             LoadTaskObject.Invoke(taskObject);
         }
     }
