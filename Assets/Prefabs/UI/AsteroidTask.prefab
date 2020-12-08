@@ -88,13 +88,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d4573fa32c1b5d4ab578cfdb5dda6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: 0
-  Type: 0
   IsDone: 0
   _audioClips: {fileID: 11400000, guid: 21d3a1490da94a249aa4128b49399e18, type: 2}
-  _asteroidPrefab: {fileID: 5964175751151836604, guid: 30ec2fa0977de2f44874f991feae2c05,
+  AsteroidViewPrefab: {fileID: 5964175751151836604, guid: 30ec2fa0977de2f44874f991feae2c05,
     type: 3}
-  _clip: {fileID: 7400000, guid: 95626c0f774f0ce4580d80675bd69346, type: 2}
 --- !u!82 &4753193024110840375
 AudioSource:
   m_ObjectHideFlags: 0

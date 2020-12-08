@@ -11,13 +11,28 @@ namespace OMONGoose
         [Tooltip("The room this TaskObject is located in.")]
         [SerializeField] protected RoomNames _roomName;
 
-        protected BaseTaskPanelController TaskPanelController;
+        protected BaseTaskPanelController _taskPanelController;
         protected GameObject _panelPrefab;
         protected Canvas _canvas;
 
         public abstract void Initialize(Canvas canvas, TaskData taskData);
 
-        public abstract void Switch();
+        public void Switch()
+        {
+            _taskPanelController.Switch();
+            if (_taskPanelController.IsActive)
+            {
+                _taskPanelController.CompletedTask += OnTaskPanelCompleted;
+            }
+            else
+            {
+                if (_taskPanelController.IsDone)
+                {
+                    IsDone = true;
+                }
+                _taskPanelController.CompletedTask -= OnTaskPanelCompleted;
+            }
+        }
 
         protected void OnTaskPanelCompleted()
         {

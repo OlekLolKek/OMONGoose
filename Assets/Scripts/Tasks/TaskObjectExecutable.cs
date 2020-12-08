@@ -6,7 +6,7 @@ namespace OMONGoose
     {
         [Tooltip("The type of the panel that is going to appear when players interacts with this TaskObject.")]
         [SerializeField] private ExecutableTaskTypes _type;
-        private BaseTaskViewExecutable _taskViewPanel;
+        private BaseTaskPanelControllerExecute _taskPanelControllerExecute;
 
         public override void Initialize(Canvas canvas, TaskData taskData)
         {
@@ -15,6 +15,8 @@ namespace OMONGoose
             {
                 case ExecutableTaskTypes.Asteroids :
                     _panelPrefab = taskData.TaskStruct.AsteroidsPanelPrefab;
+                    _taskPanelController = new AsteroidsTaskPanelController(_canvas, _panelPrefab);
+                    _taskPanelControllerExecute = (BaseTaskPanelControllerExecute) _taskPanelController;
                     break;
                 case ExecutableTaskTypes.StabilizeSteering:
                     _panelPrefab = taskData.TaskStruct.StabilizeSteeringPanelPrefab;
@@ -24,28 +26,9 @@ namespace OMONGoose
 
         public void Execute(float deltaTime)
         {
-            if (!_taskViewPanel) return;
-            _taskViewPanel.Execute(deltaTime);
-        }
-
-        public override void Switch()
-        {
-            if (!_taskViewPanel)
-            {
-                _taskViewPanel = Instantiate(_panelPrefab, _canvas.transform).GetComponent<BaseTaskViewExecutable>();
-                _taskViewPanel.Initialize();
-                _taskViewPanel.CompletedTask += OnTaskPanelCompleted;
-            }
-            else
-            {
-                if (_taskViewPanel.IsDone)
-                {
-                    IsDone = true;
-                }
-
-                _taskViewPanel.CompletedTask -= OnTaskPanelCompleted;
-                _taskViewPanel.Deactivate();
-            }
+            if (_taskPanelController == null) return;
+            if (!_taskPanelController.IsActive) return;
+            _taskPanelControllerExecute.Execute(deltaTime);
         }
     }
 }

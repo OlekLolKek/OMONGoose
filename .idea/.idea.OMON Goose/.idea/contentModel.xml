@@ -460,9 +460,12 @@
           <e p="Tasks" t="Include">
             <e p="AcceptDivertedPowerTaskPanelController.cs" t="Include" />
             <e p="AcceptDivertedPowerView.cs" t="Include" />
+            <e p="AsteroidController.cs" t="Include" />
+            <e p="AsteroidsTaskPanelController.cs" t="Include" />
             <e p="AsteroidsTaskView.cs" t="Include" />
             <e p="AsteroidView.cs" t="Include" />
             <e p="BaseTaskPanelController.cs" t="Include" />
+            <e p="BaseTaskPanelControllerExecute.cs" t="Include" />
             <e p="BaseTaskView.cs" t="Include" />
             <e p="BaseTaskViewExecutable.cs" t="Include" />
             <e p="DownloadTaskPanelController.cs" t="Include" />

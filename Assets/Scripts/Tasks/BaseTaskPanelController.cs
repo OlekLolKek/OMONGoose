@@ -3,7 +3,7 @@
 
 namespace OMONGoose
 {
-    public class BaseTaskPanelController
+    public abstract class BaseTaskPanelController
     {
         public bool IsDone { get; private set; }
         
@@ -12,11 +12,12 @@ namespace OMONGoose
         public bool IsActive;
         
         protected BaseTaskView _taskViewPanel;
-        protected readonly float _tweenTime = 0.2f;
         protected float _progress;
         protected float _maxProgress;
+        protected readonly Canvas _canvas;
+        protected readonly float _tweenTime = 0.2f;
         private readonly GameObject _taskPanelPrefab;
-        private readonly Canvas _canvas;
+
         
         
         protected BaseTaskPanelController(Canvas canvas, GameObject taskPanelPrefab)

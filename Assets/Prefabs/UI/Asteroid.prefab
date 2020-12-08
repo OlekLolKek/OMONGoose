@@ -249,4 +249,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130762e9cf9e95949a5ab837554f7cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 7400000, guid: 95626c0f774f0ce4580d80675bd69346, type: 2}
+  AnimationClip: {fileID: 7400000, guid: 95626c0f774f0ce4580d80675bd69346, type: 2}
